@@ -13,14 +13,14 @@ function OceanPlane() {
   const geom = useMemo(() => new THREE.PlaneGeometry(500, 500), []);
   const config = useMemo(
     () => ({
-      textureWidth: 512,
-      textureHeight: 512,
+      textureWidth: 64,
+      textureHeight: 64,
       waterNormals,
       sunDirection: new THREE.Vector3(),
       sunColor: 0xffffff,
-      waterColor: 0x58a5ff,
-      distortionScale: 3.7,
-      transparent: true,
+      waterColor: 0xfffff0,
+      distortionScale: 0,
+      transparent: false,
       format: gl.encoding,
     }),
     [waterNormals]

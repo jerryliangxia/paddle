@@ -9,7 +9,7 @@ export default function Player(props) {
   const body = useRef();
   const visualGroup = useRef();
 
-  const { nodes, materials } = useGLTF("/paddle.glb");
+  const { nodes } = useGLTF("/paddle.glb");
   const texture = useTexture("/img/paddleboard.png");
   const [subscribeKeys, getKeys] = useKeyboardControls();
 
@@ -18,7 +18,7 @@ export default function Player(props) {
 
     const cameraPosition = new THREE.Vector3();
     cameraPosition.copy(bodyPosition);
-    cameraPosition.y += 2.9;
+    cameraPosition.y += 1.5;
 
     state.camera.position.copy(cameraPosition);
   });
@@ -29,8 +29,9 @@ export default function Player(props) {
     const impulse = { x: 0, y: 0, z: 0 };
     const torque = { x: 0, y: 0, z: 0 };
 
-    const impulseStrength = 6 * delta;
-    const torqueStrength = 2 * delta;
+    const speedMultiplier = shift ? 2.5 : 1;
+    const impulseStrength = 3 * delta * speedMultiplier;
+    const torqueStrength = 1 * delta * speedMultiplier;
 
     // Get the forward direction of the visualGroup
     const forwardDirection = new THREE.Vector3(0, 0, -1);
@@ -88,17 +89,20 @@ export default function Player(props) {
         friction={0}
         linearDamping={0.5}
         angularDamping={0.5}
-        enabledRotations={[true, true, false]}
+        enabledRotations={[false, true, false]}
       >
         <mesh geometry={nodes.BaseColliders.geometry}>
           <meshPhongMaterial opacity={0} transparent />
         </mesh>
       </RigidBody>
-      <group ref={visualGroup}>
-        <mesh
-          geometry={nodes.BottomYellow.geometry}
-          material={materials.Yellow}
-        />
+      <group ref={visualGroup} scale={0.5}>
+        <mesh geometry={nodes.BottomYellow.geometry}>
+          <meshStandardMaterial
+            color={0xffe600}
+            metalness={0.5}
+            roughness={1}
+          />
+        </mesh>
         <mesh geometry={nodes.Top.geometry}>
           <meshBasicMaterial
             map={texture}
@@ -115,8 +119,16 @@ export default function Player(props) {
             roughness={0}
           />
         </mesh>
-        <mesh geometry={nodes.Cube007_1.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Cube007_2.geometry} material={materials.Yellow} />
+        <mesh geometry={nodes.Cube007_1.geometry}>
+          <meshStandardMaterial color={0x000000} metalness={0} roughness={0} />
+        </mesh>
+        <mesh geometry={nodes.Cube007_2.geometry}>
+          <meshStandardMaterial
+            color={0xffe600}
+            metalness={0.5}
+            roughness={1}
+          />
+        </mesh>
       </group>
     </group>
   );

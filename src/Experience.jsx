@@ -5,13 +5,14 @@ import Lights from "./Lights.jsx";
 import Player from "./components/Player.jsx";
 import { Perf } from "r3f-perf";
 import Ocean from "./components/Ocean.jsx";
+import SphereSky from "./components/shader/SphereSky.jsx";
 
 export default function Experience() {
   return (
     <>
       <Perf />
       <Ocean />
-      <Sky />
+      <SphereSky />
       <Physics>
         <PointerLockControls />
         <Lights />
