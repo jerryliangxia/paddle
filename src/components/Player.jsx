@@ -4,12 +4,13 @@ import { RigidBody } from "@react-three/rapier";
 import { useFrame } from "@react-three/fiber";
 import { useKeyboardControls } from "@react-three/drei";
 import * as THREE from "three";
+import { PlayerLight } from "./PlayerLight";
 
 export default function Player(props) {
   const body = useRef();
   const visualGroup = useRef();
 
-  const { nodes } = useGLTF("/paddle.glb");
+  const { nodes, materials } = useGLTF("/paddle.glb");
   const texture = useTexture("/img/paddleboard.png");
   const [subscribeKeys, getKeys] = useKeyboardControls();
 
@@ -18,7 +19,7 @@ export default function Player(props) {
 
     const cameraPosition = new THREE.Vector3();
     cameraPosition.copy(bodyPosition);
-    cameraPosition.y += 1.5;
+    cameraPosition.y += 1.25;
 
     state.camera.position.copy(cameraPosition);
   });
@@ -33,16 +34,14 @@ export default function Player(props) {
     const impulseStrength = 3 * delta * speedMultiplier;
     const torqueStrength = 1 * delta * speedMultiplier;
 
-    // Get the forward direction of the visualGroup
     const forwardDirection = new THREE.Vector3(0, 0, -1);
     forwardDirection.applyQuaternion(visualGroup.current.quaternion);
-    forwardDirection.y = 0; // Keep movement in the horizontal plane
+    forwardDirection.y = 0;
     forwardDirection.normalize();
 
-    // Get the right direction of the visualGroup
     const rightDirection = new THREE.Vector3(1, 0, 0);
     rightDirection.applyQuaternion(visualGroup.current.quaternion);
-    rightDirection.y = 0; // Keep movement in the horizontal plane
+    rightDirection.y = 0;
     rightDirection.normalize();
 
     if (forward) {
@@ -103,7 +102,7 @@ export default function Player(props) {
             roughness={1}
           />
         </mesh>
-        <mesh geometry={nodes.Top.geometry}>
+        <mesh geometry={nodes.Top.geometry} material={materials.Paddleboard}>
           <meshBasicMaterial
             map={texture}
             map-flipY={false}
@@ -111,27 +110,19 @@ export default function Player(props) {
             roughness={1}
           />
         </mesh>
-        <mesh geometry={nodes.Cube007.geometry}>
-          <meshStandardMaterial
-            map={texture}
-            map-flipY={false}
-            metalness={0}
-            roughness={0}
-          />
-        </mesh>
+        <mesh
+          geometry={nodes.Cube007.geometry}
+          material={materials.Paddleboard} // paddleboard
+        />
         <mesh geometry={nodes.Cube007_1.geometry}>
-          <meshStandardMaterial color={0x000000} metalness={0} roughness={0} />
+          <meshStandardMaterial color={0x000000} metalness={0} roughness={1} />
         </mesh>
         <mesh geometry={nodes.Cube007_2.geometry}>
-          <meshStandardMaterial
-            color={0xffe600}
-            metalness={0.5}
-            roughness={1}
-          />
+          <meshStandardMaterial color={0xffe600} metalness={1} roughness={1} />
         </mesh>
       </group>
+      <PlayerLight player={body} />
     </group>
   );
 }
-
 useGLTF.preload("/paddle.glb");
