@@ -10,8 +10,8 @@ root.render(
     map={[
       { name: "forward", keys: ["ArrowUp", "KeyW"] },
       { name: "backward", keys: ["ArrowDown", "KeyS"] },
-      { name: "leftward", keys: ["ArrowLeft", "KeyA"] },
-      { name: "rightward", keys: ["ArrowRight", "KeyD"] },
+      { name: "left", keys: ["ArrowLeft", "KeyA"] },
+      { name: "right", keys: ["ArrowRight", "KeyD"] },
       { name: "shift", keys: ["ShiftLeft", "ShiftRight"] },
     ]}
   >
