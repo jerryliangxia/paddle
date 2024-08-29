@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
-import { PointerLockControls as PointerLockControlsDesktop } from "@react-three/drei";
-import { PointerLockControls as PointerLockControlsImpl } from "./hooks/PointerLockControls.js";
 import { Physics, RigidBody } from "@react-three/rapier";
-import Lights from "./Lights.jsx";
-import Player from "./components/Player.jsx";
-import { Perf } from "r3f-perf";
-import Ocean from "./components/Ocean.jsx";
-import SphereSky from "./components/shader/SphereSky.jsx";
+import { PointerLockControls as PointerLockControlsDesktop } from "@react-three/drei";
 import { useGame } from "./stores/useGame.js";
+import { Perf } from "r3f-perf";
+import { PointerLockControls as PointerLockControlsImpl } from "./hooks/PointerLockControls.js";
 import MobileControls from "./components/MobileControls.jsx";
+import Player from "./components/Player.jsx";
+import Lights from "./Lights.jsx";
+import SphereSky from "./components/shader/SphereSky.jsx";
+import Ocean from "./components/Ocean.jsx";
 import * as THREE from "three";
 
 function PointerLockControlsMobile() {
