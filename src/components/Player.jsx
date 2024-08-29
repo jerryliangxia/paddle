@@ -10,7 +10,7 @@ export default function Player(props) {
   const body = useRef();
   const visualGroup = useRef();
 
-  const { nodes, materials } = useGLTF("/paddle.glb");
+  const { nodes } = useGLTF("/paddle.glb");
   const texture = useTexture("/img/paddleboard.png");
   const [subscribeKeys, getKeys] = useKeyboardControls();
 
@@ -102,7 +102,7 @@ export default function Player(props) {
             roughness={1}
           />
         </mesh>
-        <mesh geometry={nodes.Top.geometry} material={materials.Paddleboard}>
+        <mesh geometry={nodes.Top.geometry}>
           <meshBasicMaterial
             map={texture}
             map-flipY={false}
@@ -110,10 +110,14 @@ export default function Player(props) {
             roughness={1}
           />
         </mesh>
-        <mesh
-          geometry={nodes.Cube007.geometry}
-          material={materials.Paddleboard} // paddleboard
-        />
+        <mesh geometry={nodes.Cube007.geometry}>
+          <meshStandardMaterial
+            map={texture}
+            map-flipY={false}
+            metalness={0}
+            roughness={1}
+          />
+        </mesh>
         <mesh geometry={nodes.Cube007_1.geometry}>
           <meshStandardMaterial color={0x000000} metalness={0} roughness={1} />
         </mesh>
