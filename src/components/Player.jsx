@@ -5,10 +5,13 @@ import { useFrame } from "@react-three/fiber";
 import { useKeyboardControls } from "@react-three/drei";
 import * as THREE from "three";
 import { PlayerLight } from "./PlayerLight";
+import { useGame } from "../stores/useGame";
 
 export default function Player(props) {
   const body = useRef();
   const visualGroup = useRef();
+  const { controlsMobile } = useGame();
+  const deviceType = useGame((state) => state.deviceType);
 
   const { nodes } = useGLTF("/paddle.glb");
   const texture = useTexture("/img/paddleboard.png");
@@ -25,7 +28,23 @@ export default function Player(props) {
   });
 
   useFrame((state, delta) => {
-    const { forward, backward, leftward, rightward, shift } = getKeys();
+    let forward, backward, leftward, rightward, shift;
+
+    if (deviceType === 1) {
+      // Mobile
+      forward = controlsMobile.upPressed;
+      backward = controlsMobile.downPressed;
+      leftward = controlsMobile.leftPressed;
+      rightward = controlsMobile.rightPressed;
+      shift = controlsMobile.shiftPressed;
+    } else {
+      // Desktop
+      forward = getKeys().forward;
+      backward = getKeys().backward;
+      leftward = getKeys().left;
+      rightward = getKeys().right;
+      shift = getKeys().shift;
+    }
 
     const impulse = { x: 0, y: 0, z: 0 };
     const torque = { x: 0, y: 0, z: 0 };
