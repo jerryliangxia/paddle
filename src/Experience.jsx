@@ -17,7 +17,7 @@ export default function Experience() {
         <PointerLockControls />
         <Lights />
         <RigidBody type="fixed" friction={0}>
-          <mesh geometry={new THREE.BoxGeometry(100, 0.1, 100)}>
+          <mesh geometry={new THREE.BoxGeometry(400, 0.1, 400)}>
             <meshStandardMaterial opacity={0} transparent />
           </mesh>
         </RigidBody>
