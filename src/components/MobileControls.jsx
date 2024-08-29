@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useGame } from "../stores/useGame";
 import { bw, bh } from "../Constants";
 
@@ -7,19 +7,22 @@ export default function Overlay() {
   const shiftButtonRef = useRef(null);
   const [isTouched, setIsTouched] = useState(false);
   const [isJumpButtonTouched, setIsJumpButtonTouched] = useState(false);
+  const [touchPosition, setTouchPosition] = useState({ x: 0, y: 0 });
   const { setControlsMobile, resetControlsMobile } = useGame();
 
   const handleShiftTouchStart = (event) => {
+    event.stopPropagation();
     setIsJumpButtonTouched(true);
     setControlsMobile("shiftPressed", true);
   };
 
-  const handleShiftTouchEnd = (event) => {
+  const handleShiftTouchEnd = () => {
     setIsJumpButtonTouched(false);
     setControlsMobile("shiftPressed", false);
   };
 
   const handleTouchMove = (event) => {
+    event.stopPropagation();
     if (!dpadRef.current) return;
 
     const dpadRect = dpadRef.current.getBoundingClientRect();
@@ -29,29 +32,52 @@ export default function Overlay() {
     };
 
     const touchPos = {
-      x: event.touches[0].clientX,
-      y: event.touches[0].clientY,
+      x: event.touches[0].clientX - dpadCenter.x,
+      y: event.touches[0].clientY - dpadCenter.y,
     };
 
-    const dx = touchPos.x - dpadCenter.x;
-    const dy = touchPos.y - dpadCenter.y;
+    const radius = dpadRect.width / 2;
+    const distance = Math.sqrt(touchPos.x ** 2 + touchPos.y ** 2);
+    const angle = Math.atan2(touchPos.y, touchPos.x);
 
+    // Clamp the touch position to the circle
+    const clampedDistance = Math.min(distance, radius);
+    const clampedX = clampedDistance * Math.cos(angle);
+    const clampedY = clampedDistance * Math.sin(angle);
+
+    setTouchPosition({ x: clampedX, y: clampedY });
+
+    // Calculate direction based on angle
+    const direction = (angle + Math.PI * 2) % (Math.PI * 2);
     resetControlsMobile();
 
-    if (Math.abs(dx) > Math.abs(dy)) {
-      if (dx > 0) {
-        setControlsMobile("rightPressed", true);
-      } else {
-        setControlsMobile("leftPressed", true);
-      }
-    } else {
-      if (dy > 0) {
-        setControlsMobile("downPressed", true);
-      } else {
-        setControlsMobile("upPressed", true);
-      }
+    if (direction < Math.PI / 4 || direction > (Math.PI * 7) / 4) {
+      setControlsMobile("rightPressed", true);
+    } else if (direction < (Math.PI * 3) / 4) {
+      setControlsMobile("downPressed", true);
+    } else if (direction < (Math.PI * 5) / 4) {
+      setControlsMobile("leftPressed", true);
+    } else if (direction < (Math.PI * 7) / 4) {
+      setControlsMobile("upPressed", true);
     }
   };
+
+  useEffect(() => {
+    let animationFrameId;
+    const lerpTouchPosition = () => {
+      setTouchPosition((prev) => ({
+        x: prev.x * 0.8,
+        y: prev.y * 0.8,
+      }));
+      animationFrameId = requestAnimationFrame(lerpTouchPosition);
+    };
+
+    if (!isTouched) {
+      lerpTouchPosition();
+    }
+
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [isTouched]);
 
   const buttonOpacity = (isButtonTouched) =>
     isButtonTouched || isTouched ? 0.5 : 0;
@@ -67,27 +93,36 @@ export default function Overlay() {
           bottom: "1vh",
           zIndex: 3,
           opacity: isTouched ? 0.5 : 0,
-          transition: "opacity 0.25s ease-in-out",
-          width: bw,
-          height: bh,
+          transition: "opacity 0.5s ease-in-out",
+          width: bw * 0.8, // Reduced to 90% of original size
+          height: bw * 0.8, // Reduced to 90% of original size
+          borderRadius: "50%",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
         onTouchStart={(event) => {
           setIsTouched(true);
+          handleTouchMove(event);
         }}
         onTouchMove={handleTouchMove}
-        onTouchEnd={(event) => {
+        onTouchEnd={() => {
           resetControlsMobile();
           setIsTouched(false);
         }}
       >
         <div
           style={{
-            background: "black",
-            width: "100%",
-            height: "100%",
-            borderRadius: "8px",
+            position: "absolute",
+            left: `calc(50% + ${touchPosition.x}px)`,
+            top: `calc(50% + ${touchPosition.y}px)`,
+            width: "80px", // Increased by 100% (from 40px to 80px)
+            height: "80px", // Increased by 100% (from 40px to 80px)
+            borderRadius: "50%",
+            border: "2px solid white",
+            transform: "translate(-50%, -50%)",
+            opacity: isTouched ? 1 : 0,
+            transition: "opacity 0.5s ease-in-out",
           }}
-        ></div>
+        />
       </div>
       <div
         ref={shiftButtonRef}
