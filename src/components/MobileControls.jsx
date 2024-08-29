@@ -1,25 +1,12 @@
 import { useRef, useState, useEffect } from "react";
 import { useGame } from "../stores/useGame";
-import { bw, bh } from "../Constants";
+import { bw } from "../Constants";
 
 export default function Overlay() {
   const dpadRef = useRef();
-  const shiftButtonRef = useRef(null);
   const [isTouched, setIsTouched] = useState(false);
-  const [isJumpButtonTouched, setIsJumpButtonTouched] = useState(false);
   const [touchPosition, setTouchPosition] = useState({ x: 0, y: 0 });
   const { setControlsMobile, resetControlsMobile } = useGame();
-
-  const handleShiftTouchStart = (event) => {
-    event.stopPropagation();
-    setIsJumpButtonTouched(true);
-    setControlsMobile("shiftPressed", true);
-  };
-
-  const handleShiftTouchEnd = () => {
-    setIsJumpButtonTouched(false);
-    setControlsMobile("shiftPressed", false);
-  };
 
   const handleTouchMove = (event) => {
     event.stopPropagation();
@@ -40,14 +27,12 @@ export default function Overlay() {
     const distance = Math.sqrt(touchPos.x ** 2 + touchPos.y ** 2);
     const angle = Math.atan2(touchPos.y, touchPos.x);
 
-    // Clamp the touch position to the circle
     const clampedDistance = Math.min(distance, radius);
     const clampedX = clampedDistance * Math.cos(angle);
     const clampedY = clampedDistance * Math.sin(angle);
 
     setTouchPosition({ x: clampedX, y: clampedY });
 
-    // Calculate direction based on angle
     const direction = (angle + Math.PI * 2) % (Math.PI * 2);
     resetControlsMobile();
 
@@ -59,6 +44,12 @@ export default function Overlay() {
       setControlsMobile("leftPressed", true);
     } else if (direction < (Math.PI * 7) / 4) {
       setControlsMobile("upPressed", true);
+    }
+
+    if (distance > radius * 0.9) {
+      setControlsMobile("shiftPressed", true);
+    } else {
+      setControlsMobile("shiftPressed", false);
     }
   };
 
@@ -79,8 +70,35 @@ export default function Overlay() {
     return () => cancelAnimationFrame(animationFrameId);
   }, [isTouched]);
 
-  const buttonOpacity = (isButtonTouched) =>
-    isButtonTouched || isTouched ? 0.5 : 0;
+  useEffect(() => {
+    const dpad = dpadRef.current;
+
+    if (dpad) {
+      const options = { passive: false };
+
+      const handleTouchStart = (event) => {
+        event.preventDefault();
+        setIsTouched(true);
+        handleTouchMove(event);
+      };
+
+      const handleTouchEnd = (event) => {
+        event.preventDefault();
+        resetControlsMobile();
+        setIsTouched(false);
+      };
+
+      dpad.addEventListener("touchstart", handleTouchStart, options);
+      dpad.addEventListener("touchmove", handleTouchMove, options);
+      dpad.addEventListener("touchend", handleTouchEnd, options);
+
+      return () => {
+        dpad.removeEventListener("touchstart", handleTouchStart);
+        dpad.removeEventListener("touchmove", handleTouchMove);
+        dpad.removeEventListener("touchend", handleTouchEnd);
+      };
+    }
+  }, []);
 
   return (
     <div style={{ position: "relative", width: "100%", height: "100%" }}>
@@ -89,24 +107,15 @@ export default function Overlay() {
         id="controls"
         style={{
           position: "fixed",
-          left: "1vw",
+          left: "1vh",
           bottom: "1vh",
           zIndex: 3,
           opacity: isTouched ? 0.5 : 0,
           transition: "opacity 0.5s ease-in-out",
-          width: bw * 0.8, // Reduced to 90% of original size
-          height: bw * 0.8, // Reduced to 90% of original size
+          width: bw * 0.9,
+          height: bw * 0.9,
           borderRadius: "50%",
           backgroundColor: "rgba(0, 0, 0, 0.5)",
-        }}
-        onTouchStart={(event) => {
-          setIsTouched(true);
-          handleTouchMove(event);
-        }}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={() => {
-          resetControlsMobile();
-          setIsTouched(false);
         }}
       >
         <div
@@ -114,8 +123,8 @@ export default function Overlay() {
             position: "absolute",
             left: `calc(50% + ${touchPosition.x}px)`,
             top: `calc(50% + ${touchPosition.y}px)`,
-            width: "80px", // Increased by 100% (from 40px to 80px)
-            height: "80px", // Increased by 100% (from 40px to 80px)
+            width: "80px",
+            height: "80px",
             borderRadius: "50%",
             border: "2px solid white",
             transform: "translate(-50%, -50%)",
@@ -123,32 +132,6 @@ export default function Overlay() {
             transition: "opacity 0.5s ease-in-out",
           }}
         />
-      </div>
-      <div
-        ref={shiftButtonRef}
-        id="shiftButton"
-        onTouchStart={handleShiftTouchStart}
-        onTouchEnd={handleShiftTouchEnd}
-        style={{
-          position: "fixed",
-          right: "1vw",
-          bottom: "1vh",
-          zIndex: 3,
-          opacity: buttonOpacity(isJumpButtonTouched),
-          transition: "opacity 0.25s ease-in-out",
-          width: bw / 2,
-          height: bh / 2,
-          backgroundColor: "#000",
-          borderRadius: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "1.5rem",
-          color: "#FFF",
-          userSelect: "none",
-        }}
-      >
-        Boost
       </div>
     </div>
   );
