@@ -13,8 +13,8 @@ function OceanPlane() {
   const geom = useMemo(() => new THREE.PlaneGeometry(500, 500), []);
   const config = useMemo(
     () => ({
-      textureWidth: 64,
-      textureHeight: 64,
+      textureWidth: 1024,
+      textureHeight: 1024,
       waterNormals,
       sunDirection: new THREE.Vector3(),
       sunColor: 0xffffff,
@@ -25,9 +25,11 @@ function OceanPlane() {
     }),
     [waterNormals]
   );
+
   useFrame(
     (_, delta) => (ref.current.material.uniforms.time.value += delta / 20)
   );
+
   return (
     <water
       ref={ref}

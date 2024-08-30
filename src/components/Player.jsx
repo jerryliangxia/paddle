@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { RigidBody } from "@react-three/rapier";
+import { RigidBody, CuboidCollider } from "@react-three/rapier";
 import { useFrame } from "@react-three/fiber";
 import { useKeyboardControls } from "@react-three/drei";
 import * as THREE from "three";
@@ -50,8 +50,8 @@ export default function Player(props) {
     const torque = { x: 0, y: 0, z: 0 };
 
     const speedMultiplier = shift ? 2.5 : 1;
-    const impulseStrength = 3 * delta * speedMultiplier;
-    const torqueStrength = 1 * delta * speedMultiplier;
+    const impulseStrength = 0.5 * delta * speedMultiplier;
+    const torqueStrength = 0.25 * delta * speedMultiplier;
 
     const forwardDirection = new THREE.Vector3(0, 0, -1);
     forwardDirection.applyQuaternion(visualGroup.current.quaternion);
@@ -109,9 +109,7 @@ export default function Player(props) {
         angularDamping={0.5}
         enabledRotations={[false, true, false]}
       >
-        <mesh geometry={nodes.BaseColliders.geometry}>
-          <meshPhongMaterial opacity={0} transparent />
-        </mesh>
+        <CuboidCollider args={[0.5, 0.1, 2.4]} position={[0, 0, -0.42]} />
       </RigidBody>
       <group ref={visualGroup} scale={0.5}>
         <mesh geometry={nodes.BottomYellow.geometry}>

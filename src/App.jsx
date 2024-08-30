@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
-import { Physics, RigidBody } from "@react-three/rapier";
+import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import { PointerLockControls as PointerLockControlsDesktop } from "@react-three/drei";
 import { useGame } from "./stores/useGame.js";
 import { Perf } from "r3f-perf";
@@ -9,8 +9,9 @@ import MobileControls from "./components/MobileControls.jsx";
 import Player from "./components/Player.jsx";
 import Lights from "./Lights.jsx";
 import SphereSky from "./components/shader/SphereSky.jsx";
-import Ocean from "./components/Ocean.jsx";
 import * as THREE from "three";
+import Water from "./components/Water.jsx";
+import Dog from "./components/Dog.jsx";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -26,6 +27,9 @@ function PointerLockControlsMobile() {
 export default function App() {
   const deviceType = useGame((state) => state.deviceType);
   const setDeviceType = useGame((state) => state.setDeviceType);
+  const width = 100;
+  const depth = 100;
+  const heights = new Float32Array(width * depth).fill(0);
 
   useEffect(() => {
     if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
@@ -60,15 +64,9 @@ export default function App() {
         }}
       >
         {/* <Perf /> */}
-        <Ocean />
+        <Dog position={[0, -1, -5]} />
         <SphereSky />
-        <mesh
-          geometry={new THREE.BoxGeometry(20, 100, 20)}
-          position={[10, 0, 10]}
-        >
-          <meshStandardMaterial color="red" />
-        </mesh>
-        <Physics>
+        <Physics debug>
           {deviceType === 0 ? (
             <PointerLockControlsDesktop />
           ) : (
@@ -76,12 +74,21 @@ export default function App() {
           )}
           <Lights />
           <RigidBody type="fixed" friction={0}>
-            <mesh geometry={new THREE.BoxGeometry(400, 0.1, 400)}>
-              <meshStandardMaterial opacity={0} transparent />
-            </mesh>
+            <CuboidCollider args={[100, 0.1, 100]} />
           </RigidBody>
           <Player />
         </Physics>
+        <Water />
+
+        <mesh position={[-2, 0, -2]}>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshStandardMaterial color="red" />
+        </mesh>
+
+        <mesh position={[2, 0, -2]}>
+          <sphereGeometry args={[0.5, 32, 32]} />
+          <meshStandardMaterial color="blue" />
+        </mesh>
       </Canvas>
       {deviceType === 1 ? <MobileControls /> : <></>}
     </>
