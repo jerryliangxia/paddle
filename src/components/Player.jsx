@@ -6,6 +6,7 @@ import { useKeyboardControls } from "@react-three/drei";
 import * as THREE from "three";
 import { PlayerLight } from "./PlayerLight";
 import { useGame } from "../stores/useGame";
+import Dog from "./Dog";
 
 export default function Player(props) {
   const body = useRef();
@@ -112,6 +113,11 @@ export default function Player(props) {
         <CuboidCollider args={[0.5, 0.1, 2.4]} position={[0, 0, -0.42]} />
       </RigidBody>
       <group ref={visualGroup} scale={0.5}>
+        <Dog
+          rotation={[0, (-5 * Math.PI) / 4, 0]}
+          position={[0, 0.5, -3.2]}
+          scale={0.6}
+        />
         <mesh geometry={nodes.BottomYellow.geometry}>
           <meshStandardMaterial
             color={0xffe600}

@@ -11,7 +11,6 @@ import Lights from "./Lights.jsx";
 import SphereSky from "./components/shader/SphereSky.jsx";
 import * as THREE from "three";
 import Water from "./components/Water.jsx";
-import Dog from "./components/Dog.jsx";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -64,9 +63,8 @@ export default function App() {
         }}
       >
         {/* <Perf /> */}
-        <Dog position={[0, -1, -5]} />
         <SphereSky />
-        <Physics debug>
+        <Physics>
           {deviceType === 0 ? (
             <PointerLockControlsDesktop />
           ) : (
