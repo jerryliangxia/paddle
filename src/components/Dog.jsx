@@ -8,8 +8,14 @@ export default function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Cube.geometry}
-        material={nodes.Cube.material}
+        geometry={nodes.Cube001.geometry}
+        material={materials.Base}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_1.geometry}
+        material={materials.Eyes}
       />
     </group>
   );
