@@ -114,7 +114,7 @@ export default function Player(props) {
       </RigidBody>
       <group ref={visualGroup} scale={0.5}>
         <Dog
-          rotation={[0, (-5 * Math.PI) / 4, 0]}
+          rotation={[0, (-4.5 * Math.PI) / 4, 0]}
           position={[0, 0.5, -3.2]}
           scale={0.6}
         />
