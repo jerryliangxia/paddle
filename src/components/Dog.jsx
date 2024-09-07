@@ -14,7 +14,12 @@ export default function Dog(props) {
   const MIN_IDLE_LOOPS = 2;
   const MAX_IDLE_LOOPS = 3;
 
-  const specialActions = ["Idle1LongSniffAround", "Idle1LookRight"];
+  const specialActions = [
+    "Idle1LongSniffAround",
+    "Idle1LookRight",
+    "Idle1LookAhead",
+    "Idle1AdjustFeet",
+  ];
 
   useEffect(() => {
     let currentAnimationAction = null;

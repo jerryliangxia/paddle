@@ -11,6 +11,7 @@ import Lights from "./Lights.jsx";
 import SphereSky from "./components/shader/SphereSky.jsx";
 import * as THREE from "three";
 import Water from "./components/Water.jsx";
+import Scene from "./components/Scene.jsx";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -77,16 +78,7 @@ export default function App() {
           <Player />
         </Physics>
         <Water />
-
-        <mesh position={[-2, 0, -2]}>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial color="red" />
-        </mesh>
-
-        <mesh position={[2, 0, -2]}>
-          <sphereGeometry args={[0.5, 32, 32]} />
-          <meshStandardMaterial color="blue" />
-        </mesh>
+        <Scene />
       </Canvas>
       {deviceType === 1 ? <MobileControls /> : <></>}
     </>
