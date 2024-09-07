@@ -6,7 +6,7 @@ export default function Water2() {
   const loader = new THREE.TextureLoader();
 
   const water = new Water(waterGeometry, {
-    color: "cyan",
+    color: 0xc5f1ff,
     scale: 100,
     flowDirection: new THREE.Vector2(0.01, 0.01),
     textureWidth: 1024,

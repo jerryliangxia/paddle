@@ -9,540 +9,16 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF("/geom3.glb");
   return (
     <group {...props} dispose={null}>
-      <group
-        position={[-55.249, 0.737, 30.143]}
-        rotation={[0, 0.827, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
-      <group
-        position={[-66.006, 0.581, 41.635]}
-        rotation={[0, 0.676, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[-71.478, 1.665, 44.478]}
-        rotation={[0, 0.693, 0]}
-        scale={0.561}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.NurbsPath.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_2.geometry}
-            material={materials.Leaves2}
-          />
-        </group>
-      </group>
-      <group
-        position={[-82.656, 1.194, 44.367]}
-        rotation={[0.014, 0.003, -0.058]}
-        scale={0.553}
-      >
-        <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
-        </group>
-      </group>
-      <group
-        position={[-82.851, 1.381, 35.301]}
-        rotation={[-0.019, 0, 0.029]}
-        scale={0.601}
-      >
-        <group scale={0.201}>
-          <mesh
-            geometry={nodes.Cube001_65.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube001_66.geometry}
-            material={materials.Leaves}
-          />
-        </group>
-      </group>
-      <group
-        position={[-90.866, 1.381, 13.258]}
-        rotation={[-0.019, 0, 0.029]}
-        scale={0.601}
-      >
-        <group scale={0.201}>
-          <mesh
-            geometry={nodes.Cube001_65.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube001_66.geometry}
-            material={materials.Leaves}
-          />
-        </group>
-      </group>
-      <group
-        position={[-139.549, 1.829, 20.393]}
-        rotation={[0, 0.676, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[-145.021, 2.671, 23.236]}
-        rotation={[0, 0.693, 0]}
-        scale={0.561}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.NurbsPath.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_2.geometry}
-            material={materials.Leaves2}
-          />
-        </group>
-      </group>
-      <group
-        position={[-153.598, 2.736, 25.182]}
-        rotation={[-0.01, -0.002, -0.048]}
-        scale={0.553}
-      >
-        <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
-        </group>
-      </group>
-      <group
-        position={[-141.016, 2.645, 29.943]}
-        rotation={[0, 0.827, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
-      <group
-        position={[-151.773, 1.097, 41.434]}
-        rotation={[0, 0.676, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[-115.566, 0.714, -26.567]}
-        rotation={[0, 0.827, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
-      <group
-        position={[-126.323, 0.532, -15.076]}
-        rotation={[0, 0.676, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[-192.516, 0.919, -49.612]}
-        rotation={[0, 0.827, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
-      <group
-        position={[-203.273, 0.675, -38.121]}
-        rotation={[0, 0.676, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[20.443, 0.491, 49.671]}
-        rotation={[0, 1.117, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[16.706, 0.665, 54.576]}
-        rotation={[0, 1.134, 0]}
-        scale={0.561}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.NurbsPath.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_2.geometry}
-            material={materials.Leaves2}
-          />
-        </group>
-      </group>
-      <group
-        position={[30.514, 0.379, 32.798]}
-        rotation={[-3.073, 1.424, 3.025]}
-        scale={0.553}
-      >
-        <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
-        </group>
-      </group>
-      <group
-        position={[25.058, 0.786, 46.016]}
-        rotation={[0, 1.268, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
-      <group
-        position={[30.486, 2.768, 79.226]}
-        rotation={[0, 0.676, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[25.014, 2.757, 82.068]}
-        rotation={[0, 0.693, 0]}
-        scale={0.561}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.NurbsPath.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_2.geometry}
-            material={materials.Leaves2}
-          />
-        </group>
-      </group>
-      <group
-        position={[49.783, 0.715, 70.5]}
-        rotation={[-3.103, 1.311, 3.055]}
-        scale={0.553}
-      >
-        <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
-        </group>
-      </group>
-      <group
-        position={[16.898, 0.737, 92.92]}
-        rotation={[0, -0.039, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
-      <group
-        position={[1.175, 1.19, 92.167]}
-        rotation={[0, -0.19, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[-4.535, 1.499, 89.839]}
-        rotation={[0, -0.173, 0]}
-        scale={0.561}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.NurbsPath.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_2.geometry}
-            material={materials.Leaves2}
-          />
-        </group>
-      </group>
-      <group
-        position={[81.699, 0.835, 52.945]}
-        rotation={[0, 0.967, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
-      <group
-        position={[72.651, 1.73, 65.826]}
-        rotation={[0, 0.816, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[67.655, 1.008, 69.389]}
-        rotation={[0, 0.833, 0]}
-        scale={0.561}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.NurbsPath.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_2.geometry}
-            material={materials.Leaves2}
-          />
-        </group>
-      </group>
-      <group
-        position={[36.015, 0.737, 31.534]}
-        rotation={[0, -0.292, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
-        />
-      </group>
       <group position={[-2.391, 0.687, 5.308]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube005.geometry}
           material={materials.TreeBranch}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube005_1.geometry}
           material={materials.TreeBark}
         />
@@ -553,6 +29,8 @@ export default function Model(props) {
         scale={[2.302, 2.46, 2.302]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -564,6 +42,8 @@ export default function Model(props) {
         scale={[1.647, 1.832, 1.191]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_1.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -575,6 +55,8 @@ export default function Model(props) {
         scale={[3.179, 2.403, 3.179]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_2.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -586,6 +68,8 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_3.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -597,6 +81,8 @@ export default function Model(props) {
         scale={[3.179, 2.403, 3.179]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_4.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -608,6 +94,8 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_5.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -619,6 +107,8 @@ export default function Model(props) {
         scale={[4.162, 3.146, 4.162]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_6.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -630,6 +120,8 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_7.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -641,6 +133,8 @@ export default function Model(props) {
         scale={[3.906, 2.953, 3.906]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_8.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -652,6 +146,8 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_9.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -663,6 +159,8 @@ export default function Model(props) {
         scale={[3.908, 3.644, 3.909]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_10.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -674,6 +172,8 @@ export default function Model(props) {
         scale={[2.986, 2.6, 2.402]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_11.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -685,6 +185,8 @@ export default function Model(props) {
         scale={[3.185, 3.487, 3.189]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_12.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -696,6 +198,8 @@ export default function Model(props) {
         scale={[2.976, 1.733, 2.097]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_13.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -707,6 +211,8 @@ export default function Model(props) {
         scale={[4.162, 3.146, 4.162]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_14.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -718,6 +224,8 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_15.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -729,6 +237,8 @@ export default function Model(props) {
         scale={[4.162, 3.146, 4.162]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_16.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -740,6 +250,8 @@ export default function Model(props) {
         scale={[1.416, 1.07, 1.416]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_17.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -751,6 +263,8 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_18.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
@@ -762,139 +276,287 @@ export default function Model(props) {
         scale={[1.119, 1.281, 1.117]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_19.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-30.164, -5.382, 13.692]}
+        position={[-30.164, -2.486, 13.692]}
         rotation={[Math.PI, 0.445, 0]}
         scale={[-2.302, -5.724, -2.302]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_20.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-31.785, -5.431, 21.483]}
+        position={[-31.785, -1.914, 21.483]}
         rotation={[2.958, 0.439, -0.069]}
         scale={[-1.722, -4.178, -1.261]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_21.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-36.857, -4.244, 9.038]}
+        position={[-36.857, -3.125, 9.038]}
         rotation={[3.135, 0.911, 0.108]}
         scale={[-4.258, -7.289, -4.162]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_22.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-22.151, -5.382, 3.827]}
+        position={[-22.151, -2.486, 3.827]}
         rotation={[Math.PI, 0.445, 0]}
         scale={[-2.302, -5.724, -2.302]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_23.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-13.089, -5.431, 14.203]}
+        position={[-13.089, -1.842, 14.203]}
         rotation={[2.958, 0.439, -0.069]}
         scale={[-1.722, -4.178, -1.261]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_24.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-17.471, -4.244, 9.21]}
+        position={[-17.471, -2.262, 9.21]}
         rotation={[3.135, 0.911, 0.108]}
         scale={[-2.686, -4.598, -2.625]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_25.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-15.345, -4.411, 3.009]}
+        position={[-15.345, -2.429, 3.009]}
         rotation={[Math.PI, 0.65, 0]}
         scale={[-4.199, -5.724, -2.847]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_26.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group
-        position={[-28.311, -5.382, 18.172]}
+        position={[-28.311, -1.573, 18.172]}
         rotation={[Math.PI, 0.108, 0]}
         scale={[-3.279, -3.441, -1.982]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Stone004_27.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
       </group>
       <group position={[0, -1.056, 0]} scale={[8.961, 3.575, 8.961]}>
-        <mesh geometry={nodes.Mesh001.geometry} material={materials.Dirt} />
-        <mesh geometry={nodes.Mesh001_1.geometry} material={materials.Grass} />
-        <mesh geometry={nodes.Mesh001_2.geometry} material={materials.Grass1} />
-        <mesh geometry={nodes.Mesh001_3.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh001_4.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh001_5.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh001_6.geometry} material={materials.Grass5} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001.geometry}
+          material={materials.Dirt}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_1.geometry}
+          material={materials.Grass}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_2.geometry}
+          material={materials.Grass1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_3.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_4.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_5.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_6.geometry}
+          material={materials.Grass5}
+        />
       </group>
       <group position={[-52.659, 0.131, 22.666]} scale={[12.2, 1.066, 12.2]}>
-        <mesh geometry={nodes.Mesh003.geometry} material={materials.Dirt} />
-        <mesh geometry={nodes.Mesh003_1.geometry} material={materials.Grass} />
-        <mesh geometry={nodes.Mesh003_2.geometry} material={materials.Grass1} />
-        <mesh geometry={nodes.Mesh003_3.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh003_4.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh003_5.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh003_6.geometry} material={materials.Grass5} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003.geometry}
+          material={materials.Dirt}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_1.geometry}
+          material={materials.Grass}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_2.geometry}
+          material={materials.Grass1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_3.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_4.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_5.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_6.geometry}
+          material={materials.Grass5}
+        />
       </group>
       <group
         position={[-76.134, -0.253, 105.873]}
         scale={[7.366, 1.421, 7.366]}
       >
-        <mesh geometry={nodes.Mesh005.geometry} material={materials.Dirt} />
-        <mesh geometry={nodes.Mesh005_1.geometry} material={materials.Grass} />
-        <mesh geometry={nodes.Mesh005_2.geometry} material={materials.Grass1} />
-        <mesh geometry={nodes.Mesh005_3.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh005_4.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh005_5.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh005_6.geometry} material={materials.Grass5} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005.geometry}
+          material={materials.Dirt}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_1.geometry}
+          material={materials.Grass}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_2.geometry}
+          material={materials.Grass1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_3.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_4.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_5.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_6.geometry}
+          material={materials.Grass5}
+        />
       </group>
       <group
         position={[-179.704, 0, 178.768]}
         rotation={[0, 0.324, 0]}
         scale={[30.219, 8.536, 30.219]}
       >
-        <mesh geometry={nodes.Mesh006.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh006_1.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh006_2.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh006_3.geometry} material={materials.Grass5} />
-        <mesh geometry={nodes.Mesh006_4.geometry} material={materials.Grass1} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_1.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_2.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_3.geometry}
+          material={materials.Grass5}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_4.geometry}
+          material={materials.Grass1}
+        />
       </group>
       <group
         position={[0.016, 0.722, 0.01]}
@@ -902,6 +564,8 @@ export default function Model(props) {
         scale={1.415}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -913,6 +577,8 @@ export default function Model(props) {
         scale={[1.255, 1.499, 1.406]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_1.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -924,6 +590,8 @@ export default function Model(props) {
         scale={[0.936, 1.051, 1.394]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_2.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -935,6 +603,8 @@ export default function Model(props) {
         scale={[0.926, 1.051, 0.96]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_3.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -946,6 +616,8 @@ export default function Model(props) {
         scale={1.415}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_4.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -957,6 +629,8 @@ export default function Model(props) {
         scale={[1.255, 1.499, 1.406]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_5.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -968,6 +642,8 @@ export default function Model(props) {
         scale={[0.936, 1.051, 1.394]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_6.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -979,6 +655,8 @@ export default function Model(props) {
         scale={[0.926, 1.051, 0.96]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_7.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -991,10 +669,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -1005,6 +687,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1016,10 +700,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1034,10 +722,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1049,10 +741,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1064,10 +760,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1079,6 +779,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_1.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1090,10 +792,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1108,10 +814,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1123,10 +833,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1138,10 +852,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1154,6 +872,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_2.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1165,10 +885,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1183,10 +907,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1198,10 +926,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1213,10 +945,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1225,6 +961,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_3.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1236,10 +974,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1254,10 +996,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1269,10 +1015,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1284,10 +1034,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1300,6 +1054,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_4.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1311,10 +1067,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1329,10 +1089,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1344,10 +1108,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1359,10 +1127,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1377,10 +1149,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -1391,6 +1167,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_5.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1402,10 +1180,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1420,10 +1202,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1435,10 +1221,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1450,10 +1240,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1465,6 +1259,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_6.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1476,10 +1272,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1494,10 +1294,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1509,10 +1313,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1524,10 +1332,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1540,6 +1352,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_7.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1551,10 +1365,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1569,10 +1387,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1584,10 +1406,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1599,10 +1425,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1611,6 +1441,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_8.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1622,10 +1454,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1640,10 +1476,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1655,10 +1495,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1670,10 +1514,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1686,6 +1534,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_9.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1697,10 +1547,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -1715,10 +1569,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1730,10 +1588,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1745,10 +1607,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -1766,8 +1632,15 @@ export default function Model(props) {
           rotation={[-0.014, 0.637, 0.046]}
           scale={[5.391, 2.97, 5.391]}
         >
-          <mesh geometry={nodes.Mesh004.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh004.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh004_1.geometry}
             material={materials.TreeBark}
           />
@@ -1783,8 +1656,15 @@ export default function Model(props) {
           rotation={[0.001, -0.033, -0.044]}
           scale={[4.661, 2.723, 4.661]}
         >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh_1.geometry}
             material={materials.TreeBark}
           />
@@ -1800,8 +1680,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -1817,8 +1704,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -1830,6 +1724,8 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_8.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -1841,6 +1737,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_9.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -1856,8 +1754,15 @@ export default function Model(props) {
           rotation={[-0.014, 0.637, 0.046]}
           scale={[5.391, 2.97, 5.391]}
         >
-          <mesh geometry={nodes.Mesh004.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh004.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh004_1.geometry}
             material={materials.TreeBark}
           />
@@ -1873,8 +1778,15 @@ export default function Model(props) {
           rotation={[0.001, -0.033, -0.044]}
           scale={[4.661, 2.723, 4.661]}
         >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh_1.geometry}
             material={materials.TreeBark}
           />
@@ -1890,8 +1802,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -1907,8 +1826,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -1920,6 +1846,8 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_10.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -1931,6 +1859,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_11.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -1942,6 +1872,8 @@ export default function Model(props) {
         scale={0.716}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_12.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -1953,6 +1885,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_13.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -1965,10 +1899,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -1979,6 +1917,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_10.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -1990,10 +1930,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2008,10 +1952,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2023,10 +1971,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2038,10 +1990,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2053,6 +2009,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_11.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2064,10 +2022,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2082,10 +2044,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2097,10 +2063,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2112,10 +2082,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2128,6 +2102,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_12.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2139,10 +2115,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2157,10 +2137,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2172,10 +2156,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2187,10 +2175,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2199,6 +2191,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_13.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2210,10 +2204,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2228,10 +2226,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2243,10 +2245,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2258,10 +2264,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2274,6 +2284,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_14.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2285,10 +2297,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2303,10 +2319,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2318,10 +2338,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2333,10 +2357,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2350,6 +2378,8 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_14.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -2361,6 +2391,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_15.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -2373,10 +2405,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -2387,6 +2423,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_15.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2398,10 +2436,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2416,10 +2458,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2431,10 +2477,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2446,10 +2496,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2461,6 +2515,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_16.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2472,10 +2528,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2490,10 +2550,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2505,10 +2569,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2520,10 +2588,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2536,6 +2608,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_17.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2547,10 +2621,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2565,10 +2643,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2580,10 +2662,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2595,10 +2681,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2607,6 +2697,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_18.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2618,10 +2710,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2636,10 +2732,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2651,10 +2751,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2666,10 +2770,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2682,6 +2790,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_19.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2693,10 +2803,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2711,10 +2825,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2726,10 +2844,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2741,10 +2863,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2759,10 +2885,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -2773,6 +2903,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_20.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2784,10 +2916,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2802,10 +2938,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2817,10 +2957,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2832,10 +2976,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2847,6 +2995,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_21.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2858,10 +3008,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2876,10 +3030,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2891,10 +3049,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2906,10 +3068,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2922,6 +3088,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_22.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -2933,10 +3101,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2951,10 +3123,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2966,10 +3142,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2981,10 +3161,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2993,6 +3177,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_23.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3004,10 +3190,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3022,10 +3212,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3037,10 +3231,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3052,10 +3250,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3068,6 +3270,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_24.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3079,10 +3283,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3097,10 +3305,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3112,10 +3324,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3127,10 +3343,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3148,8 +3368,15 @@ export default function Model(props) {
           rotation={[0.001, -0.033, -0.044]}
           scale={[4.661, 2.723, 4.661]}
         >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh_1.geometry}
             material={materials.TreeBark}
           />
@@ -3162,10 +3389,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -3176,6 +3407,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_25.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3187,10 +3420,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3205,10 +3442,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3220,10 +3461,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3235,10 +3480,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3250,6 +3499,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_26.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3261,10 +3512,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3279,10 +3534,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3294,10 +3553,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3309,10 +3572,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3325,6 +3592,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_27.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3336,10 +3605,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3354,10 +3627,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3369,10 +3646,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3384,10 +3665,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3396,6 +3681,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_28.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3407,10 +3694,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3425,10 +3716,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3440,10 +3735,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3455,10 +3754,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3471,6 +3774,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_29.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3482,10 +3787,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3500,10 +3809,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3515,10 +3828,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3530,10 +3847,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3551,8 +3872,15 @@ export default function Model(props) {
           rotation={[0.001, -0.033, -0.044]}
           scale={[4.661, 2.723, 4.661]}
         >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh_1.geometry}
             material={materials.TreeBark}
           />
@@ -3568,8 +3896,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -3585,8 +3920,15 @@ export default function Model(props) {
           rotation={[-0.014, 0.637, 0.046]}
           scale={[5.391, 2.97, 5.391]}
         >
-          <mesh geometry={nodes.Mesh004.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh004.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh004_1.geometry}
             material={materials.TreeBark}
           />
@@ -3602,8 +3944,15 @@ export default function Model(props) {
           rotation={[0.001, -0.033, -0.044]}
           scale={[4.661, 2.723, 4.661]}
         >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh_1.geometry}
             material={materials.TreeBark}
           />
@@ -3619,8 +3968,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -3636,8 +3992,15 @@ export default function Model(props) {
           rotation={[0.001, -0.033, -0.044]}
           scale={[4.661, 2.723, 4.661]}
         >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh_1.geometry}
             material={materials.TreeBark}
           />
@@ -3653,8 +4016,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -3667,10 +4037,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -3681,6 +4055,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_30.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3692,10 +4068,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3710,10 +4090,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3725,10 +4109,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3740,10 +4128,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3755,6 +4147,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_31.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3766,10 +4160,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3784,10 +4182,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3799,10 +4201,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3814,10 +4220,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3830,6 +4240,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_32.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3841,10 +4253,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3859,10 +4275,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3874,10 +4294,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3889,10 +4313,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3901,6 +4329,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_33.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3912,10 +4342,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -3930,10 +4364,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3945,10 +4383,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3960,10 +4402,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -3976,6 +4422,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_34.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -3987,10 +4435,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4005,10 +4457,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4020,10 +4476,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4035,10 +4495,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4053,10 +4517,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -4067,6 +4535,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_35.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4078,10 +4548,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4096,10 +4570,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4111,10 +4589,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4126,10 +4608,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4141,6 +4627,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_36.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4152,10 +4640,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4170,10 +4662,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4185,10 +4681,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4200,10 +4700,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4216,6 +4720,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_37.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4227,10 +4733,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4245,10 +4755,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4260,10 +4774,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4275,10 +4793,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4287,6 +4809,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_38.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4298,10 +4822,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4316,10 +4844,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4331,10 +4863,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4346,10 +4882,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4362,6 +4902,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_39.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4373,10 +4915,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4391,10 +4937,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4406,10 +4956,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4421,10 +4975,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4438,6 +4996,8 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_16.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -4449,6 +5009,8 @@ export default function Model(props) {
         scale={[1.611, 1.219, 1.611]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_17.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -4461,10 +5023,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -4475,6 +5041,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_40.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4486,10 +5054,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4504,10 +5076,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4519,10 +5095,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4534,10 +5114,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4549,6 +5133,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_41.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4560,10 +5146,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4578,10 +5168,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4593,10 +5187,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4608,10 +5206,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4624,6 +5226,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_42.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4635,10 +5239,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4653,10 +5261,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4668,10 +5280,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4683,10 +5299,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4695,6 +5315,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_43.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4706,10 +5328,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4724,10 +5350,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4739,10 +5369,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4754,10 +5388,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4770,6 +5408,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_44.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4781,10 +5421,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4799,10 +5443,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4814,10 +5462,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4829,10 +5481,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4846,6 +5502,8 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_18.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -4857,6 +5515,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_19.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -4869,10 +5529,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -4883,6 +5547,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_45.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4894,10 +5560,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4912,10 +5582,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4927,10 +5601,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4942,10 +5620,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4957,6 +5639,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_46.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -4968,10 +5652,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -4986,10 +5674,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5001,10 +5693,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5016,10 +5712,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5032,6 +5732,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_47.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5043,10 +5745,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5061,10 +5767,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5076,10 +5786,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5091,10 +5805,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5103,6 +5821,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_48.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5114,10 +5834,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5132,10 +5856,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5147,10 +5875,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5162,10 +5894,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5178,6 +5914,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_49.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5189,10 +5927,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5207,10 +5949,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5222,10 +5968,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5237,10 +5987,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5255,10 +6009,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -5269,6 +6027,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_50.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5280,10 +6040,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5298,10 +6062,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5313,10 +6081,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5328,10 +6100,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5343,6 +6119,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_51.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5354,10 +6132,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5372,10 +6154,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5387,10 +6173,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5402,10 +6192,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5418,6 +6212,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_52.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5429,10 +6225,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5447,10 +6247,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5462,10 +6266,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5477,10 +6285,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5489,6 +6301,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_53.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5500,10 +6314,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5518,10 +6336,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5533,10 +6355,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5548,10 +6374,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5564,6 +6394,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_54.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5575,10 +6407,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5593,10 +6429,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5608,10 +6448,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5623,10 +6467,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5641,10 +6489,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -5655,6 +6507,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_55.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5666,10 +6520,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5684,10 +6542,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5699,10 +6561,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5714,10 +6580,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5729,6 +6599,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_56.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5740,10 +6612,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5758,10 +6634,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5773,10 +6653,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5788,10 +6672,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5804,6 +6692,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_57.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5815,10 +6705,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5833,10 +6727,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5848,10 +6746,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5863,10 +6765,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5875,6 +6781,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_58.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5886,10 +6794,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5904,10 +6816,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5919,10 +6835,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5934,10 +6854,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5950,6 +6874,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_59.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -5961,10 +6887,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -5979,10 +6909,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -5994,10 +6928,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6009,10 +6947,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6030,8 +6972,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -6043,6 +6992,8 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_20.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6054,6 +7005,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_21.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6066,10 +7019,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -6080,6 +7037,8 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_60.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -6091,10 +7050,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -6109,10 +7072,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6124,10 +7091,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6139,10 +7110,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6154,6 +7129,8 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_61.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -6165,10 +7142,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -6183,10 +7164,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6198,10 +7183,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6213,10 +7202,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6229,6 +7222,8 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_62.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -6240,10 +7235,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -6258,10 +7257,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6273,10 +7276,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6288,10 +7295,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6300,6 +7311,8 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_63.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -6311,10 +7324,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -6329,10 +7346,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6344,10 +7365,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6359,10 +7384,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6375,6 +7404,8 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube001_64.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
@@ -6386,10 +7417,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -6404,10 +7439,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6419,10 +7458,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6434,10 +7477,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -6451,6 +7498,8 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_22.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6462,6 +7511,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_23.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6473,6 +7524,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_24.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6484,6 +7537,8 @@ export default function Model(props) {
         scale={[1.314, 0.995, 1.314]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_25.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6499,8 +7554,15 @@ export default function Model(props) {
           rotation={[3.028, 1.466, -3.026]}
           scale={[4.888, 3.685, 4.888]}
         >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
           <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Mesh002.geometry}
+            material={materials.Leaves}
+          />
+          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Mesh002_1.geometry}
             material={materials.TreeBark}
           />
@@ -6512,6 +7574,8 @@ export default function Model(props) {
         scale={[1.092, 0.831, 1.079]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_26.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6523,6 +7587,8 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_27.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -6534,10 +7600,768 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_28.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
+      </group>
+      <group
+        position={[-55.249, 0.737, 30.143]}
+        rotation={[0, 0.827, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[-141.016, 2.645, 29.943]}
+        rotation={[0, 0.827, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[-115.566, 0.714, -26.567]}
+        rotation={[0, 0.827, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[-192.516, 0.919, -49.612]}
+        rotation={[0, 0.827, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[25.058, 0.786, 46.016]}
+        rotation={[0, 1.268, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[16.898, 0.737, 92.92]}
+        rotation={[0, -0.039, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[81.699, 0.835, 52.945]}
+        rotation={[0, 0.967, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[36.015, 0.737, 31.534]}
+        rotation={[0, -0.292, 0]}
+        scale={0.182}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.Leaves1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_2.geometry}
+          material={materials.Leaves2}
+        />
+      </group>
+      <group
+        position={[-66.006, 0.581, 41.635]}
+        rotation={[0, 0.676, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[-139.549, 1.829, 20.393]}
+        rotation={[0, 0.676, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[-151.773, 1.097, 41.434]}
+        rotation={[0, 0.676, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[-126.323, 0.532, -15.076]}
+        rotation={[0, 0.676, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[-203.273, 0.675, -38.121]}
+        rotation={[0, 0.676, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[20.443, 0.491, 49.671]}
+        rotation={[0, 1.117, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[30.486, 2.768, 79.226]}
+        rotation={[0, 0.676, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[1.175, 1.19, 92.167]}
+        rotation={[0, -0.19, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[72.651, 1.73, 65.826]}
+        rotation={[0, 0.816, 0]}
+        scale={0.589}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_2.geometry}
+            material={materials.Leaves2}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube003_3.geometry}
+            material={materials.Leaves3}
+          />
+        </group>
+      </group>
+      <group
+        position={[-71.478, 1.665, 44.478]}
+        rotation={[0, 0.693, 0]}
+        scale={0.561}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_2.geometry}
+            material={materials.Leaves2}
+          />
+        </group>
+      </group>
+      <group
+        position={[-145.021, 2.671, 23.236]}
+        rotation={[0, 0.693, 0]}
+        scale={0.561}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_2.geometry}
+            material={materials.Leaves2}
+          />
+        </group>
+      </group>
+      <group
+        position={[16.706, 0.665, 54.576]}
+        rotation={[0, 1.134, 0]}
+        scale={0.561}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_2.geometry}
+            material={materials.Leaves2}
+          />
+        </group>
+      </group>
+      <group
+        position={[25.014, 2.757, 82.068]}
+        rotation={[0, 0.693, 0]}
+        scale={0.561}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_2.geometry}
+            material={materials.Leaves2}
+          />
+        </group>
+      </group>
+      <group
+        position={[-4.535, 1.499, 89.839]}
+        rotation={[0, -0.173, 0]}
+        scale={0.561}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_2.geometry}
+            material={materials.Leaves2}
+          />
+        </group>
+      </group>
+      <group
+        position={[67.655, 1.008, 69.389]}
+        rotation={[0, 0.833, 0]}
+        scale={0.561}
+      >
+        <group scale={0.134}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_1.geometry}
+            material={materials.Leaves1}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.NurbsPath_2.geometry}
+            material={materials.Leaves2}
+          />
+        </group>
+      </group>
+      <group
+        position={[-82.656, 1.194, 44.367]}
+        rotation={[0.014, 0.003, -0.058]}
+        scale={0.553}
+      >
+        <group scale={0.201}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-153.598, 2.736, 25.182]}
+        rotation={[-0.01, -0.002, -0.048]}
+        scale={0.553}
+      >
+        <group scale={0.201}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[30.514, 0.379, 32.798]}
+        rotation={[-3.073, 1.424, 3.025]}
+        scale={0.553}
+      >
+        <group scale={0.201}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[49.783, 0.715, 70.5]}
+        rotation={[-3.103, 1.311, 3.055]}
+        scale={0.553}
+      >
+        <group scale={0.201}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-82.851, 1.381, 35.301]}
+        rotation={[-0.019, 0, 0.029]}
+        scale={0.601}
+      >
+        <group scale={0.201}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_65.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_66.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-90.866, 1.381, 13.258]}
+        rotation={[-0.019, 0, 0.029]}
+        scale={0.601}
+      >
+        <group scale={0.201}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_65.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_66.geometry}
+            material={materials.Leaves}
+          />
+        </group>
       </group>
     </group>
   );
