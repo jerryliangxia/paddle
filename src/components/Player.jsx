@@ -202,8 +202,8 @@ export default function Player(props) {
       </group>
       <PlayerLight player={body} />
       {/* Invisible transition mesh */}
-      <mesh ref={transitionMesh} visible={true}>
-        <boxGeometry args={[10, 10, 10]} />
+      <mesh ref={transitionMesh} visible={false}>
+        <boxGeometry args={[1, 1, 1]} />
         <meshBasicMaterial color={0x00ff00} />
       </mesh>
     </group>

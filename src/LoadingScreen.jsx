@@ -19,6 +19,7 @@ export const LoadingScreen = ({ started, onStarted }) => {
           className="loadingScreen__button"
           disabled={progress < 100}
           onClick={onStarted}
+          onTouchStart={onStarted}
         >
           Begin
         </button>

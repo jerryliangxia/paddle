@@ -49,7 +49,7 @@ export default function Dog(props) {
       currentAnimationAction.reset().play();
       currentAnimationAction.clampWhenFinished = true;
 
-      if (currentAction === "Idle1") {
+      if (currentAction === "Idle1LongSniffAround") {
         currentAnimationAction.setLoop(THREE.LoopRepeat, 1);
       } else {
         currentAnimationAction.setLoop(THREE.LoopOnce, 1);
@@ -77,47 +77,72 @@ export default function Dog(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <mesh
-          name="Circle"
-          geometry={nodes.Circle.geometry}
-          material={materials.Eyes}
-          position={[0, 1.382, 0.345]}
-          rotation={[0.308, 0, 0]}
-          scale={[0.426, 0.309, 0.309]}
-        />
-        <mesh
-          name="Circle001"
-          geometry={nodes.Circle001.geometry}
-          material={materials.Eyes}
-          position={[0, 0.745, -0.222]}
-          rotation={[0.998, 0, 0]}
-          scale={[0.426, 0.309, 0.309]}
-        />
         <group name="Dog">
           <group name="DogMesh">
             <skinnedMesh
               name="Cube001"
               geometry={nodes.Cube001.geometry}
-              material={materials.Base}
               skeleton={nodes.Cube001.skeleton}
-            />
+            >
+              <meshStandardMaterial
+                attach="material"
+                color={materials.Base.color}
+                roughness={0.5}
+                metalness={0.5}
+              />
+            </skinnedMesh>
             <skinnedMesh
               name="Cube001_1"
               geometry={nodes.Cube001_1.geometry}
-              material={materials.Eyes}
               skeleton={nodes.Cube001_1.skeleton}
-            />
+            >
+              <meshStandardMaterial
+                attach="material"
+                color={materials.Eyes.color}
+                roughness={0.5}
+                metalness={0.5}
+              />
+            </skinnedMesh>
           </group>
           <primitive object={nodes.spine004} />
         </group>
-        <mesh
+        <group
           name="JacketMesh001"
-          geometry={nodes.JacketMesh001.geometry}
-          material={materials.Lifejacket}
           position={[0, 1.425, -0.293]}
           rotation={[2.438, 0, Math.PI]}
           scale={0.725}
-        />
+        >
+          <mesh name="Plane003" geometry={nodes.Plane003.geometry}>
+            <meshStandardMaterial
+              attach="material"
+              color={materials.Lifejacket.color}
+              roughness={1.0}
+              metalness={1.0}
+            />
+          </mesh>
+          <mesh name="Plane003_1" geometry={nodes.Plane003_1.geometry}>
+            <meshStandardMaterial
+              attach="material"
+              color={materials.Gray.color}
+              roughness={0.8}
+              metalness={0.8}
+            />
+          </mesh>
+        </group>
+        <mesh
+          name="Plane"
+          geometry={nodes.Plane.geometry}
+          position={[0.02, -0.033, -0.057]}
+          rotation={[0.054, -0.003, 0.031]}
+        >
+          <meshStandardMaterial
+            attach="material"
+            color={materials.ShinyGray.color}
+            roughness={0.8}
+            metalness={0.2}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
       </group>
     </group>
   );
