@@ -10,91 +10,167 @@ export default function Model(props) {
   return (
     <group {...props} dispose={null}>
       <group
+        position={[24.097, 0.573, -16.842]}
+        rotation={[0, 0.924, 0]}
+        scale={[1.091, 1.172, 1.044]}
+      >
+        <group scale={0.693}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[27.743, 0.93, -0.392]} scale={[1.253, 1.117, 1.199]}>
+        <group scale={0.693}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_2.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_3.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[55.361, 0.825, -42.057]}
+        rotation={[0, 0.924, 0]}
+        scale={[1.091, 1.172, 1.044]}
+      >
+        <group scale={0.693}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_4.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_5.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-18.609, 0.939, -57.282]}
+        rotation={[0, 0.924, 0]}
+        scale={[1.267, 1.361, 1.213]}
+      >
+        <group scale={0.693}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_6.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_7.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[10.892, 0.389, -87.112]} scale={[1.253, 1.367, 1.199]}>
+        <group scale={0.693}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_8.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_9.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[56.836, 0.551, -99.583]} scale={[1.253, 1.012, 1.199]}>
+        <group scale={0.693}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_10.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_11.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-18.712, 0.939, -88.525]}
+        rotation={[0, 0.924, 0]}
+        scale={[1.267, 1.361, 1.213]}
+      >
+        <group scale={0.693}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_12.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube015_13.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
         position={[-15.48, 0.687, 0.264]}
         rotation={[-Math.PI, 0.028, -Math.PI]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube005.geometry}
           material={materials.TreeBranch}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube005_1.geometry}
           material={materials.TreeBark}
         />
       </group>
-      <group
-        position={[-26.212, 2.438, 4.681]}
-        rotation={[-Math.PI, 0.31, -Math.PI]}
-        scale={[2.302, 2.46, 2.302]}
-      >
-        <mesh
-          geometry={nodes.Stone004.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[-24.439, 2.398, 1.873]}
-        rotation={[2.967, 0.305, -2.941]}
-        scale={[1.647, 1.832, 1.191]}
-      >
-        <mesh
-          geometry={nodes.Stone004_1.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[53.313, 1.315, -31.455]}
-        rotation={[3.069, 0.06, 3.091]}
-        scale={[3.179, 2.403, 3.179]}
-      >
-        <mesh
-          geometry={nodes.Stone004_2.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[56.637, 1.118, -34.606]}
-        rotation={[3.034, 0.37, 3.043]}
-        scale={[2.945, 1.201, 2.085]}
-      >
-        <mesh
-          geometry={nodes.Stone004_3.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[100.607, 1.4, -25.176]}
-        rotation={[3.118, 0.052, 3.122]}
-        scale={[3.179, 2.403, 3.179]}
-      >
-        <mesh
-          geometry={nodes.Stone004_4.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[105.762, 1.347, -28.24]}
-        rotation={[3.075, 0.674, -3.139]}
-        scale={[2.945, 1.201, 2.085]}
-      >
-        <mesh
-          geometry={nodes.Stone004_5.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.TreesOutside.geometry}
+        material={materials.Leaves}
+        position={[78.379, 0, -179.856]}
+        scale={[2.673, 1.46, 2.673]}
+      />
       <group
         position={[131.064, 3.308, -20.607]}
         rotation={[3.136, -0.199, -3.128]}
         scale={[4.162, 3.146, 4.162]}
       >
         <mesh
-          geometry={nodes.Stone004_6.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -105,51 +181,9 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
-          geometry={nodes.Stone004_7.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[108.687, 2.006, 34.487]}
-        rotation={[-3.08, 0.683, 3.061]}
-        scale={[3.906, 2.953, 3.906]}
-      >
-        <mesh
-          geometry={nodes.Stone004_8.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[113.75, 2.429, 32.474]}
-        rotation={[2.906, 1.053, -2.889]}
-        scale={[2.945, 1.201, 2.085]}
-      >
-        <mesh
-          geometry={nodes.Stone004_9.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[-17.593, 4.078, -72.452]}
-        rotation={[3.116, 0.689, 3.09]}
-        scale={[3.908, 3.644, 3.909]}
-      >
-        <mesh
-          geometry={nodes.Stone004_10.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[-12.529, 3.867, -74.466]}
-        rotation={[2.583, 1.005, -2.743]}
-        scale={[2.986, 2.6, 2.402]}
-      >
-        <mesh
-          geometry={nodes.Stone004_11.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_1.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -160,7 +194,9 @@ export default function Model(props) {
         scale={[3.185, 3.487, 3.189]}
       >
         <mesh
-          geometry={nodes.Stone004_12.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_2.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -171,7 +207,9 @@ export default function Model(props) {
         scale={[2.976, 1.733, 2.097]}
       >
         <mesh
-          geometry={nodes.Stone004_13.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_3.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -182,7 +220,9 @@ export default function Model(props) {
         scale={[4.162, 3.146, 4.162]}
       >
         <mesh
-          geometry={nodes.Stone004_14.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_4.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -193,51 +233,9 @@ export default function Model(props) {
         scale={[2.945, 1.201, 2.085]}
       >
         <mesh
-          geometry={nodes.Stone004_15.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[-34.958, 1.06, 8.412]}
-        rotation={[3.138, -0.156, 3.038]}
-        scale={[4.162, 3.146, 4.162]}
-      >
-        <mesh
-          geometry={nodes.Stone004_16.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[61.358, 0.888, -99.392]}
-        rotation={[-0.392, -1.381, -0.472]}
-        scale={[1.416, 1.07, 1.416]}
-      >
-        <mesh
-          geometry={nodes.Stone004_17.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[69.077, 0.359, -105.685]}
-        rotation={[3.075, 0.674, -3.139]}
-        scale={[2.945, 1.201, 2.085]}
-      >
-        <mesh
-          geometry={nodes.Stone004_18.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[63.632, 0.868, -98.173]}
-        rotation={[-3.022, 0.089, -3.013]}
-        scale={[1.119, 1.281, 1.117]}
-      >
-        <mesh
-          geometry={nodes.Stone004_19.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_5.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -248,7 +246,9 @@ export default function Model(props) {
         scale={[-0.63, -1.041, -0.63]}
       >
         <mesh
-          geometry={nodes.Stone004_20.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_6.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -259,7 +259,9 @@ export default function Model(props) {
         scale={[-0.459, -0.921, -0.336]}
       >
         <mesh
-          geometry={nodes.Stone004_21.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_7.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -270,7 +272,9 @@ export default function Model(props) {
         scale={[-1.162, -1.318, -1.139]}
       >
         <mesh
-          geometry={nodes.Stone004_22.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_8.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -281,7 +285,9 @@ export default function Model(props) {
         scale={[-0.616, -1.069, -0.616]}
       >
         <mesh
-          geometry={nodes.Stone004_23.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_9.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -292,7 +298,9 @@ export default function Model(props) {
         scale={[-0.458, -0.733, -0.335]}
       >
         <mesh
-          geometry={nodes.Stone004_24.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_10.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -303,7 +311,9 @@ export default function Model(props) {
         scale={[-0.717, -1.023, -0.702]}
       >
         <mesh
-          geometry={nodes.Stone004_25.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_11.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -314,7 +324,9 @@ export default function Model(props) {
         scale={[-1.123, -1.191, -0.761]}
       >
         <mesh
-          geometry={nodes.Stone004_26.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_12.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -325,7 +337,9 @@ export default function Model(props) {
         scale={[-0.897, -0.796, -0.542]}
       >
         <mesh
-          geometry={nodes.Stone004_27.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_13.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -336,7 +350,9 @@ export default function Model(props) {
         scale={[-0.525, -0.705, -0.525]}
       >
         <mesh
-          geometry={nodes.Stone004_28.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_14.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -347,7 +363,9 @@ export default function Model(props) {
         scale={[-0.384, -0.931, -0.281]}
       >
         <mesh
-          geometry={nodes.Stone004_29.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_15.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -358,7 +376,9 @@ export default function Model(props) {
         scale={[-0.748, -0.785, -0.452]}
       >
         <mesh
-          geometry={nodes.Stone004_30.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_16.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -369,18 +389,9 @@ export default function Model(props) {
         scale={[-0.942, -0.942, -0.689]}
       >
         <mesh
-          geometry={nodes.Stone004_31.geometry}
-          material={materials.Rock}
-          scale={[1, 0.393, 1]}
-        />
-      </group>
-      <group
-        position={[20.889, 0.588, -9.959]}
-        rotation={[-3.1, 0.067, 3.105]}
-        scale={[3.179, 2.403, 3.179]}
-      >
-        <mesh
-          geometry={nodes.Stone004_32.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_17.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -391,7 +402,9 @@ export default function Model(props) {
         scale={[-0.573, -0.949, -0.574]}
       >
         <mesh
-          geometry={nodes.Stone004_33.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_18.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -402,7 +415,9 @@ export default function Model(props) {
         scale={[-0.898, -1.537, -0.878]}
       >
         <mesh
-          geometry={nodes.Stone004_34.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_19.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -413,7 +428,9 @@ export default function Model(props) {
         scale={[-0.897, -0.942, -0.542]}
       >
         <mesh
-          geometry={nodes.Stone004_35.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_20.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -424,7 +441,9 @@ export default function Model(props) {
         scale={[-0.525, -1.306, -0.525]}
       >
         <mesh
-          geometry={nodes.Stone004_36.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_21.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -435,7 +454,9 @@ export default function Model(props) {
         scale={[-0.576, -0.888, -0.451]}
       >
         <mesh
-          geometry={nodes.Stone004_37.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_22.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -446,7 +467,9 @@ export default function Model(props) {
         scale={[-0.942, -0.942, -0.689]}
       >
         <mesh
-          geometry={nodes.Stone004_38.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_23.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -457,7 +480,9 @@ export default function Model(props) {
         scale={[-0.653, -0.721, -0.476]}
       >
         <mesh
-          geometry={nodes.Stone004_39.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_24.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -468,7 +493,9 @@ export default function Model(props) {
         scale={[-1.436, -1.048, -1.408]}
       >
         <mesh
-          geometry={nodes.Stone004_40.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_25.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -479,7 +506,9 @@ export default function Model(props) {
         scale={[-1.347, -1.377, -0.913]}
       >
         <mesh
-          geometry={nodes.Stone004_41.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_26.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -490,7 +519,9 @@ export default function Model(props) {
         scale={[-1.055, -0.9, -1.055]}
       >
         <mesh
-          geometry={nodes.Stone004_42.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_27.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -501,7 +532,9 @@ export default function Model(props) {
         scale={[-1.502, -0.86, -0.908]}
       >
         <mesh
-          geometry={nodes.Stone004_43.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_28.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -512,7 +545,9 @@ export default function Model(props) {
         scale={[-1.157, -1.32, -1.126]}
       >
         <mesh
-          geometry={nodes.Stone004_44.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_29.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -523,7 +558,9 @@ export default function Model(props) {
         scale={[-0.896, -0.852, -0.869]}
       >
         <mesh
-          geometry={nodes.Stone004_45.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_30.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -534,7 +571,9 @@ export default function Model(props) {
         scale={[-0.893, -0.631, -0.542]}
       >
         <mesh
-          geometry={nodes.Stone004_46.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_31.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -545,7 +584,9 @@ export default function Model(props) {
         scale={[-0.505, -0.718, -0.502]}
       >
         <mesh
-          geometry={nodes.Stone004_47.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_32.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -556,7 +597,9 @@ export default function Model(props) {
         scale={[-0.554, -0.581, -0.433]}
       >
         <mesh
-          geometry={nodes.Stone004_48.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_33.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -567,7 +610,9 @@ export default function Model(props) {
         scale={[-0.908, -1.098, -0.882]}
       >
         <mesh
-          geometry={nodes.Stone004_49.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_34.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -578,7 +623,9 @@ export default function Model(props) {
         scale={[-0.46, -0.647, -0.333]}
       >
         <mesh
-          geometry={nodes.Stone004_50.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_35.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -589,7 +636,9 @@ export default function Model(props) {
         scale={[-0.616, -1.53, -0.616]}
       >
         <mesh
-          geometry={nodes.Stone004_51.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_36.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -600,7 +649,9 @@ export default function Model(props) {
         scale={[-0.46, -1.117, -0.337]}
       >
         <mesh
-          geometry={nodes.Stone004_52.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_37.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -611,7 +662,9 @@ export default function Model(props) {
         scale={[-0.718, -1.229, -0.702]}
       >
         <mesh
-          geometry={nodes.Stone004_53.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_38.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -622,7 +675,9 @@ export default function Model(props) {
         scale={[-1.123, -1.53, -0.761]}
       >
         <mesh
-          geometry={nodes.Stone004_54.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_39.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -633,7 +688,9 @@ export default function Model(props) {
         scale={[-0.525, -1.306, -0.525]}
       >
         <mesh
-          geometry={nodes.Stone004_55.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_40.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -644,7 +701,9 @@ export default function Model(props) {
         scale={[-0.748, -0.785, -0.452]}
       >
         <mesh
-          geometry={nodes.Stone004_56.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_41.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -655,7 +714,9 @@ export default function Model(props) {
         scale={[-0.897, -0.942, -0.542]}
       >
         <mesh
-          geometry={nodes.Stone004_57.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Stone004_42.geometry}
           material={materials.Rock}
           scale={[1, 0.393, 1]}
         />
@@ -665,50 +726,180 @@ export default function Model(props) {
         rotation={[-Math.PI, 0.028, -Math.PI]}
         scale={[8.961, 3.575, 8.961]}
       >
-        <mesh geometry={nodes.Mesh001.geometry} material={materials.Dirt} />
-        <mesh geometry={nodes.Mesh001_1.geometry} material={materials.Grass} />
-        <mesh geometry={nodes.Mesh001_2.geometry} material={materials.Grass1} />
-        <mesh geometry={nodes.Mesh001_3.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh001_4.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh001_5.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh001_6.geometry} material={materials.Grass5} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001.geometry}
+          material={materials.Dirt}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_1.geometry}
+          material={materials.Grass}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_2.geometry}
+          material={materials.Grass1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_3.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_4.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_5.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh001_6.geometry}
+          material={materials.Grass5}
+        />
       </group>
       <group
         position={[35.252, 0.131, -15.684]}
         rotation={[-Math.PI, 0.028, -Math.PI]}
         scale={[12.2, 1.066, 12.2]}
       >
-        <mesh geometry={nodes.Mesh003.geometry} material={materials.Dirt} />
-        <mesh geometry={nodes.Mesh003_1.geometry} material={materials.Grass} />
-        <mesh geometry={nodes.Mesh003_2.geometry} material={materials.Grass1} />
-        <mesh geometry={nodes.Mesh003_3.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh003_4.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh003_5.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh003_6.geometry} material={materials.Grass5} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003.geometry}
+          material={materials.Dirt}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_1.geometry}
+          material={materials.Grass}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_2.geometry}
+          material={materials.Grass1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_3.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_4.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_5.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh003_6.geometry}
+          material={materials.Grass5}
+        />
       </group>
       <group
         position={[61.041, -0.253, -98.203]}
         rotation={[-Math.PI, 0.028, -Math.PI]}
         scale={[7.366, 1.421, 7.366]}
       >
-        <mesh geometry={nodes.Mesh005.geometry} material={materials.Dirt} />
-        <mesh geometry={nodes.Mesh005_1.geometry} material={materials.Grass} />
-        <mesh geometry={nodes.Mesh005_2.geometry} material={materials.Grass1} />
-        <mesh geometry={nodes.Mesh005_3.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh005_4.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh005_5.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh005_6.geometry} material={materials.Grass5} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005.geometry}
+          material={materials.Dirt}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_1.geometry}
+          material={materials.Grass}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_2.geometry}
+          material={materials.Grass1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_3.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_4.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_5.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh005_6.geometry}
+          material={materials.Grass5}
+        />
       </group>
       <group
         position={[166.605, 0, -168.179]}
         rotation={[Math.PI, -0.296, Math.PI]}
         scale={[30.219, 8.536, 30.219]}
       >
-        <mesh geometry={nodes.Mesh006.geometry} material={materials.Grass2} />
-        <mesh geometry={nodes.Mesh006_1.geometry} material={materials.Grass3} />
-        <mesh geometry={nodes.Mesh006_2.geometry} material={materials.Grass4} />
-        <mesh geometry={nodes.Mesh006_3.geometry} material={materials.Grass5} />
-        <mesh geometry={nodes.Mesh006_4.geometry} material={materials.Grass1} />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006.geometry}
+          material={materials.Grass2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_1.geometry}
+          material={materials.Grass3}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_2.geometry}
+          material={materials.Grass4}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_3.geometry}
+          material={materials.Grass5}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Mesh006_4.geometry}
+          material={materials.Grass1}
+        />
       </group>
       <group
         position={[-18.035, 0.722, 5.493]}
@@ -716,6 +907,8 @@ export default function Model(props) {
         scale={1.415}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -727,6 +920,8 @@ export default function Model(props) {
         scale={[1.255, 1.499, 1.406]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_1.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -738,6 +933,8 @@ export default function Model(props) {
         scale={[0.936, 1.051, 1.394]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_2.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -749,6 +946,8 @@ export default function Model(props) {
         scale={[0.926, 1.051, 0.96]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_3.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -760,6 +959,8 @@ export default function Model(props) {
         scale={1.415}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_4.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -771,6 +972,8 @@ export default function Model(props) {
         scale={[1.255, 1.499, 1.406]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_5.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -782,6 +985,8 @@ export default function Model(props) {
         scale={[0.936, 1.051, 1.394]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_6.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
@@ -793,1389 +998,87 @@ export default function Model(props) {
         scale={[0.926, 1.051, 0.96]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_7.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[32.011, 0.372, -17.566]}
-        rotation={[0.014, -0.333, 0.171]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_1.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_2.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_3.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_4.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[36.208, 0.523, -9.885]}
-        rotation={[-3.107, 0.901, -3.084]}
-        scale={1.009}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_5.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_6.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_7.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_8.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_9.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[70.647, 1.366, -46.09]}
-        rotation={[-3.131, 0.244, 3.032]}
-        scale={0.573}
-      >
-        <group
-          position={[0, 0.857, 0]}
-          rotation={[-0.014, 0.637, 0.046]}
-          scale={[5.391, 2.97, 5.391]}
-        >
-          <mesh geometry={nodes.Mesh004.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh004_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[91.029, 0.929, -11.151]}
-        rotation={[-3.05, 0.116, -3.089]}
-        scale={0.718}
-      >
-        <group
-          position={[0, 0.909, -0.232]}
-          rotation={[0.001, -0.033, -0.044]}
-          scale={[4.661, 2.723, 4.661]}
-        >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[79.167, 1.125, -27.585]}
-        rotation={[-3.08, 0.469, 3.106]}
-        scale={0.573}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[52.62, 2.489, -23.219]}
-        rotation={[0.042, 1.465, 0.029]}
-        scale={0.548}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[42.601, 1.098, -26.253]}
-        rotation={[3.059, 0.057, 3.061]}
+        position={[25.134, 1.162, 0.46]}
+        rotation={[-2.684, 0.92, 2.895]}
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_8.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[45.016, 0.982, -27.307]}
-        rotation={[3.059, 0.057, 3.061]}
-        scale={[1.548, 1.172, 1.548]}
+        position={[21.89, 1.261, -0.213]}
+        rotation={[0.156, -0.689, -0.007]}
+        scale={[1.798, 1.361, 1.798]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_9.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[131.939, 2.235, -0.038]}
-        rotation={[-0.056, -1.011, -0.166]}
-        scale={0.636}
-      >
-        <group
-          position={[0, 0.857, 0]}
-          rotation={[-0.014, 0.637, 0.046]}
-          scale={[5.391, 2.97, 5.391]}
-        >
-          <mesh geometry={nodes.Mesh004.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh004_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[122.567, 1.834, -28.827]}
-        rotation={[-0.03, -0.607, 0.156]}
-        scale={0.628}
-      >
-        <group
-          position={[0, 0.909, -0.232]}
-          rotation={[0.001, -0.033, -0.044]}
-          scale={[4.661, 2.723, 4.661]}
-        >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[114.799, 1.457, 17.934]}
-        rotation={[0.111, -1.223, 0.214]}
-        scale={0.526}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[150.624, 1.757, -27.141]}
-        rotation={[3.063, -0.671, 3.139]}
-        scale={0.699}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[50.944, 0.609, -38.845]}
-        rotation={[-0.283, -0.295, 0.042]}
-        scale={1.092}
+        position={[58.579, 0.818, -46.236]}
+        rotation={[-1.06, 1.394, 0.931]}
+        scale={0.716}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_10.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[53.361, 0.838, -39.966]}
-        rotation={[2.921, 0.053, 2.927]}
+        position={[59.54, 1.248, -43.792]}
+        rotation={[-1.06, 1.394, 0.931]}
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_11.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[61.511, 0.818, -46.399]}
-        rotation={[-1.06, 1.394, 0.931]}
-        scale={0.716}
+        position={[16.677, 0.816, -0.626]}
+        rotation={[0.781, -1.25, 0.583]}
+        scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_12.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[62.472, 1.248, -43.955]}
-        rotation={[-1.06, 1.394, 0.931]}
-        scale={[1.548, 1.172, 1.548]}
+        position={[18.986, 1.007, 1.023]}
+        rotation={[-2.666, 1.207, 2.968]}
+        scale={[1.811, 1.473, 1.804]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_13.geometry}
-          material={materials.Leaves}
-          scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[79.573, 1.086, -54.351]}
-        rotation={[-2.904, -1.006, -2.808]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_10.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_11.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_12.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_13.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_14.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[105.204, 1.429, -22.094]}
-        rotation={[-0.283, -0.295, 0.042]}
-        scale={1.092}
-      >
-        <mesh
-          geometry={nodes.Bush_14.geometry}
-          material={materials.Leaves}
-          scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[107.621, 1.658, -23.216]}
-        rotation={[2.921, 0.053, 2.927]}
-        scale={[1.548, 1.172, 1.548]}
-      >
-        <mesh
-          geometry={nodes.Bush_15.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -2187,10 +1090,14 @@ export default function Model(props) {
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -2201,7 +1108,9 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
-            geometry={nodes.Cube001_15.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2212,10 +1121,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2230,10 +1143,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2245,10 +1162,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2260,10 +1181,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2275,7 +1200,9 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
-            geometry={nodes.Cube001_16.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_1.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2286,10 +1213,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2304,10 +1235,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2319,10 +1254,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2334,10 +1273,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2350,7 +1293,9 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
-            geometry={nodes.Cube001_17.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_2.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2361,10 +1306,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2379,10 +1328,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2394,10 +1347,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2409,10 +1366,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2421,7 +1382,9 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
-            geometry={nodes.Cube001_18.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_3.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2432,10 +1395,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2450,10 +1417,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2465,10 +1436,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2480,10 +1455,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2496,7 +1475,9 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
-            geometry={nodes.Cube001_19.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_4.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2507,10 +1488,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2525,10 +1510,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2540,10 +1529,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2555,10 +1548,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2567,16 +1564,20 @@ export default function Model(props) {
         </group>
       </group>
       <group
-        position={[78.442, 0.372, -0.433]}
-        rotation={[0.026, 1.026, 0.144]}
+        position={[7.122, 0.646, -76.738]}
+        rotation={[-3.07, 0.348, -3.108]}
         scale={0.848}
       >
         <group position={[0, 2.532, 0]}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cylinder001_1.geometry}
             material={materials.Wood}
           />
@@ -2587,7 +1588,9 @@ export default function Model(props) {
           scale={0.617}
         >
           <mesh
-            geometry={nodes.Cube001_20.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_5.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2598,10 +1601,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2616,10 +1623,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2631,10 +1642,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2646,10 +1661,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2661,7 +1680,9 @@ export default function Model(props) {
           rotation={[-3.026, 1.128, -3.013]}
         >
           <mesh
-            geometry={nodes.Cube001_21.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_6.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2672,10 +1693,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2690,10 +1715,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2705,10 +1734,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2720,10 +1753,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2736,7 +1773,9 @@ export default function Model(props) {
           scale={0.775}
         >
           <mesh
-            geometry={nodes.Cube001_22.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_7.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2747,10 +1786,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2765,10 +1808,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2780,10 +1827,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2795,10 +1846,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2807,7 +1862,9 @@ export default function Model(props) {
         </group>
         <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
           <mesh
-            geometry={nodes.Cube001_23.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_8.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2818,10 +1875,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2836,10 +1897,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2851,10 +1916,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2866,10 +1935,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2882,7 +1955,9 @@ export default function Model(props) {
           scale={0.909}
         >
           <mesh
-            geometry={nodes.Cube001_24.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube001_9.geometry}
             material={materials.TreeBark}
             position={[-0.636, 0.291, -0.448]}
             rotation={[0.342, -0.683, -0.166]}
@@ -2893,10 +1968,14 @@ export default function Model(props) {
             scale={[0.184, 0.074, 0.308]}
           >
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012.geometry}
               material={materials.Leaves}
             />
             <mesh
+              castShadow
+              receiveShadow
               geometry={nodes.Icosphere012_1.geometry}
               material={materials.TreeBark}
             />
@@ -2911,10 +1990,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2926,10 +2009,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -2941,1304 +2028,14 @@ export default function Model(props) {
               scale={[0.184, 0.074, 0.308]}
             >
               <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012.geometry}
                 material={materials.Leaves}
               />
               <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[86.742, 0.907, 41.853]}
-        rotation={[-3.023, -0.878, -3.013]}
-        scale={0.718}
-      >
-        <group
-          position={[0, 0.909, -0.232]}
-          rotation={[0.001, -0.033, -0.044]}
-          scale={[4.661, 2.723, 4.661]}
-        >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[118.886, 0.814, 51.616]}
-        rotation={[0.001, 0.649, 0.026]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_25.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_26.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_27.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_28.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_29.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[153.769, 1.657, 61.006]}
-        rotation={[-3.098, -0.269, -3.056]}
-        scale={0.718}
-      >
-        <group
-          position={[0, 0.909, -0.232]}
-          rotation={[0.001, -0.033, -0.044]}
-          scale={[4.661, 2.723, 4.661]}
-        >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[136.526, 1.556, 50.355]}
-        rotation={[3.137, 0.078, -3.136]}
-        scale={0.573}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[-55.682, 2.097, -35.129]}
-        rotation={[-3.103, 0.255, 3.118]}
-        scale={0.573}
-      >
-        <group
-          position={[0, 0.857, 0]}
-          rotation={[-0.014, 0.637, 0.046]}
-          scale={[5.391, 2.97, 5.391]}
-        >
-          <mesh geometry={nodes.Mesh004.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh004_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[-83.019, 2.658, -50.142]}
-        rotation={[-3.076, 0.149, -2.886]}
-        scale={0.718}
-      >
-        <group
-          position={[0, 0.909, -0.232]}
-          rotation={[0.001, -0.033, -0.044]}
-          scale={[4.661, 2.723, 4.661]}
-        >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[-108.555, 1.356, -37.845]}
-        rotation={[0.28, 1.46, -0.241]}
-        scale={0.548}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[-23.971, 1.834, -76.258]}
-        rotation={[-0.03, -0.607, 0.156]}
-        scale={0.628}
-      >
-        <group
-          position={[0, 0.909, -0.232]}
-          rotation={[0.001, -0.033, -0.044]}
-          scale={[4.661, 2.723, 4.661]}
-        >
-          <mesh geometry={nodes.Mesh.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[3.04, 1.733, -79.564]}
-        rotation={[-3.091, -0.676, -3.053]}
-        scale={0.699}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[-11.558, 1.134, -61.441]}
-        rotation={[0.028, 1.077, 0.142]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_30.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_31.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_32.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_33.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_34.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[-3.304, 0.775, -64.356]}
-        rotation={[-3.117, -0.509, -3.044]}
-        scale={1.009}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_35.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_36.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_37.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_38.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_39.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
+                castShadow
+                receiveShadow
                 geometry={nodes.Icosphere012_1.geometry}
                 material={materials.TreeBark}
               />
@@ -4252,7 +2049,9 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
-          geometry={nodes.Bush_16.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_14.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -4263,2001 +2062,64 @@ export default function Model(props) {
         scale={[1.611, 1.219, 1.611]}
       >
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_15.geometry}
+          material={materials.Leaves}
+          scale={[1, 0.687, 1]}
+        />
+      </group>
+      <group
+        position={[-21.735, 1.145, -53.103]}
+        rotation={[0.327, -0.356, -0.083]}
+        scale={1.092}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_16.geometry}
+          material={materials.Leaves}
+          scale={[1, 0.687, 1]}
+        />
+      </group>
+      <group
+        position={[-19.318, 1.046, -54.225]}
+        rotation={[-3.067, 0.049, -3.121]}
+        scale={[1.548, 1.172, 1.548]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_17.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[-48.183, 0.484, 16.325]}
-        rotation={[0.004, 0.106, 0.03]}
-        scale={1.009}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_40.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_41.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_42.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_43.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_44.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[-20.805, 1.145, -58.26]}
-        rotation={[-0.058, -0.296, 0.18]}
+        position={[5.569, 0.974, -62.54]}
+        rotation={[-3.009, -0.144, -2.962]}
         scale={1.092}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_18.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[-18.388, 1.658, -59.382]}
-        rotation={[2.921, 0.053, 2.927]}
+        position={[3.726, 0.991, -60.677]}
+        rotation={[0.294, 0.358, -0.029]}
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Bush_19.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
-      </group>
-      <group
-        position={[-45.74, 1.016, -87.255]}
-        rotation={[0.026, -1.041, 0.189]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_45.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_46.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_47.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_48.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_49.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[-94.602, 0.691, -36.058]}
-        rotation={[0.195, 1.098, -0.158]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_50.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_51.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_52.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_53.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_54.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[-119.196, 0.692, -35.249]}
-        rotation={[-0.132, -0.018, 0.053]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_55.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_56.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_57.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_58.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_59.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-      </group>
-      <group
-        position={[-40.613, 3.842, -63.718]}
-        rotation={[-3, 0.529, -3.029]}
-        scale={0.573}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[-44.456, 2.939, -79.159]}
-        rotation={[-0.135, -0.238, 0.128]}
-        scale={1.092}
-      >
-        <mesh
-          geometry={nodes.Bush_20.geometry}
-          material={materials.Leaves}
-          scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[-42.049, 2.8, -80.192]}
-        rotation={[2.867, 0.013, -3.061]}
-        scale={[1.548, 1.172, 1.548]}
-      >
-        <mesh
-          geometry={nodes.Bush_21.geometry}
-          material={materials.Leaves}
-          scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[-60.327, 0.789, -78.37]}
-        rotation={[-0.274, -1.36, -0.128]}
-        scale={0.848}
-      >
-        <group position={[0, 2.532, 0]}>
-          <mesh
-            geometry={nodes.Cylinder001.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.Wood}
-          />
-        </group>
-        <group
-          position={[-0.191, 4.459, -0.529]}
-          rotation={[0, -0.392, 0]}
-          scale={0.617}
-        >
-          <mesh
-            geometry={nodes.Cube001_60.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.209, 2.226, 0.949]}
-          rotation={[-3.026, 1.128, -3.013]}
-        >
-          <mesh
-            geometry={nodes.Cube001_61.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[-0.903, 2.948, 0.22]}
-          rotation={[-0.105, 0.371, 0.421]}
-          scale={0.775}
-        >
-          <mesh
-            geometry={nodes.Cube001_62.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group position={[0.788, 4.459, -0.69]} rotation={[0, -1.547, 0]}>
-          <mesh
-            geometry={nodes.Cube001_63.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
-        <group
-          position={[0.881, 6.066, 0.514]}
-          rotation={[3.061, 0.218, 3.047]}
-          scale={0.909}
-        >
-          <mesh
-            geometry={nodes.Cube001_64.geometry}
-            material={materials.TreeBark}
-            position={[-0.636, 0.291, -0.448]}
-            rotation={[0.342, -0.683, -0.166]}
-            scale={[0.917, 0.098, 0.107]}
-          />
-          <group
-            rotation={[-2.878, -0.25, 3.101]}
-            scale={[0.184, 0.074, 0.308]}
-          >
-            <mesh
-              geometry={nodes.Icosphere012.geometry}
-              material={materials.Leaves}
-            />
-            <mesh
-              geometry={nodes.Icosphere012_1.geometry}
-              material={materials.TreeBark}
-            />
-          </group>
-          <group
-            position={[-2.2, 1.296, -1.336]}
-            rotation={[-2.565, 0.787, 2.828]}
-            scale={0.907}
-          >
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-1.048, 0.507, -0.658]} rotation={[0, -1.077, 0]}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-          <group position={[-2.721, 1.459, -1.599]} scale={0.828}>
-            <group
-              rotation={[-2.878, -0.25, 3.101]}
-              scale={[0.184, 0.074, 0.308]}
-            >
-              <mesh
-                geometry={nodes.Icosphere012.geometry}
-                material={materials.Leaves}
-              />
-              <mesh
-                geometry={nodes.Icosphere012_1.geometry}
-                material={materials.TreeBark}
-              />
-            </group>
-          </group>
-        </group>
       </group>
       <group
         position={[-37.107, 1.237, -1.591]}
@@ -6265,7 +2127,9 @@ export default function Model(props) {
         scale={1.092}
       >
         <mesh
-          geometry={nodes.Bush_22.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_20.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6276,7 +2140,9 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
-          geometry={nodes.Bush_23.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_21.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6287,7 +2153,9 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
-          geometry={nodes.Bush_24.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_22.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6298,46 +2166,35 @@ export default function Model(props) {
         scale={[1.314, 0.995, 1.314]}
       >
         <mesh
-          geometry={nodes.Bush_25.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_23.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[64.188, 1.204, -102.952]}
-        rotation={[-3.139, -0.139, -3.096]}
-        scale={0.699}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[57.613, 0.795, -94.975]}
-        rotation={[0.246, -0.337, 0.127]}
+        position={[55.877, 0.624, -96.076]}
+        rotation={[2.332, -1.311, 2.351]}
         scale={[1.092, 0.831, 1.079]}
       >
         <mesh
-          geometry={nodes.Bush_26.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_24.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[60.03, 1.015, -96.097]}
-        rotation={[-3.128, 0.011, 3.009]}
+        position={[57.405, 0.682, -93.883]}
+        rotation={[3.056, 1.407, -3.136]}
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
-          geometry={nodes.Bush_27.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_25.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6348,24 +2205,11 @@ export default function Model(props) {
         scale={[1.548, 1.172, 1.548]}
       >
         <mesh
-          geometry={nodes.Bush_28.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_26.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[38.05, 0.737, -23.086]}
-        rotation={[Math.PI, -0.8, Math.PI]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
         />
       </group>
       <group
@@ -6373,12 +2217,21 @@ export default function Model(props) {
         rotation={[Math.PI, -0.8, Math.PI]}
         scale={0.182}
       >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Leaves1}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_2.geometry}
           material={materials.Leaves2}
         />
@@ -6388,12 +2241,21 @@ export default function Model(props) {
         rotation={[Math.PI, -0.8, Math.PI]}
         scale={0.182}
       >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Leaves1}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_2.geometry}
           material={materials.Leaves2}
         />
@@ -6403,42 +2265,69 @@ export default function Model(props) {
         rotation={[Math.PI, -0.8, Math.PI]}
         scale={0.182}
       >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Leaves1}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_2.geometry}
           material={materials.Leaves2}
         />
       </group>
       <group
-        position={[-41.783, 0.786, -41.194]}
+        position={[41.05, -0.52, -38.74]}
         rotation={[Math.PI, -1.24, Math.PI]}
         scale={0.182}
       >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Leaves1}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_2.geometry}
           material={materials.Leaves2}
         />
       </group>
       <group
-        position={[-32.317, 0.737, -87.852]}
-        rotation={[-Math.PI, 0.067, -Math.PI]}
+        position={[7.711, 0.339, -72.792]}
+        rotation={[Math.PI, -1.326, Math.PI]}
         scale={0.182}
       >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Leaves1}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_2.geometry}
           material={materials.Leaves2}
         />
@@ -6448,12 +2337,21 @@ export default function Model(props) {
         rotation={[Math.PI, -0.94, Math.PI]}
         scale={0.182}
       >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Leaves1}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_2.geometry}
           material={materials.Leaves2}
         />
@@ -6463,39 +2361,24 @@ export default function Model(props) {
         rotation={[-Math.PI, 0.319, -Math.PI]}
         scale={0.182}
       >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
         <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.TreeBark}
+        />
+        <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_1.geometry}
           material={materials.Leaves1}
         />
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Cube006_2.geometry}
           material={materials.Leaves2}
         />
-      </group>
-      <group
-        position={[49.124, 0.581, -34.273]}
-        rotation={[Math.PI, -0.648, Math.PI]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
       </group>
       <group
         position={[122.045, 1.829, -10.987]}
@@ -6504,18 +2387,26 @@ export default function Model(props) {
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_2.geometry}
             material={materials.Leaves2}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_3.geometry}
             material={materials.Leaves3}
           />
@@ -6528,42 +2419,26 @@ export default function Model(props) {
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_2.geometry}
             material={materials.Leaves2}
           />
           <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[107.835, 0.532, 24.099]}
-        rotation={[Math.PI, -0.648, Math.PI]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_3.geometry}
             material={materials.Leaves3}
           />
@@ -6576,90 +2451,122 @@ export default function Model(props) {
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_2.geometry}
             material={materials.Leaves2}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_3.geometry}
             material={materials.Leaves3}
           />
         </group>
       </group>
       <group
-        position={[-37.067, 0.491, -44.719]}
+        position={[35.516, -0.461, -36.072]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={0.589}
+        scale={[0.773, 0.54, 0.773]}
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_2.geometry}
             material={materials.Leaves2}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_3.geometry}
             material={materials.Leaves3}
           />
         </group>
       </group>
       <group
-        position={[-46.281, 2.768, -74.542]}
+        position={[10.062, -0.907, -82.147]}
         rotation={[Math.PI, -0.648, Math.PI]}
-        scale={0.589}
+        scale={[0.659, 0.418, 0.659]}
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_2.geometry}
             material={materials.Leaves2}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_3.geometry}
             material={materials.Leaves3}
           />
         </group>
       </group>
       <group
-        position={[-16.621, 1.19, -86.66]}
-        rotation={[-Math.PI, 0.218, -Math.PI]}
+        position={[48.981, -0.175, -45.607]}
+        rotation={[0, 1.462, 0]}
         scale={0.589}
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_2.geometry}
             material={materials.Leaves2}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_3.geometry}
             material={materials.Leaves3}
           />
@@ -6672,38 +2579,52 @@ export default function Model(props) {
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_2.geometry}
             material={materials.Leaves2}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.Cube003_3.geometry}
             material={materials.Leaves3}
           />
         </group>
       </group>
       <group
-        position={[54.673, 1.665, -36.962]}
+        position={[16.748, 0.502, -2.774]}
         rotation={[Math.PI, -0.665, Math.PI]}
-        scale={0.561}
+        scale={[0.473, 0.322, 0.473]}
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_2.geometry}
             material={materials.Leaves2}
           />
@@ -6716,74 +2637,98 @@ export default function Model(props) {
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_2.geometry}
             material={materials.Leaves2}
           />
         </group>
       </group>
       <group
-        position={[-33.195, 0.665, -49.518]}
+        position={[44.051, -0.651, -40.567]}
         rotation={[Math.PI, -1.106, Math.PI]}
-        scale={0.561}
+        scale={[0.634, 0.518, 0.634]}
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_2.geometry}
             material={materials.Leaves2}
           />
         </group>
       </group>
       <group
-        position={[-40.732, 2.757, -77.231]}
-        rotation={[Math.PI, -0.665, Math.PI]}
-        scale={0.561}
+        position={[9.48, 0.008, -79.401]}
+        rotation={[0, -1.549, 0]}
+        scale={[0.628, 0.494, 0.628]}
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_2.geometry}
             material={materials.Leaves2}
           />
         </group>
       </group>
       <group
-        position={[-10.978, 1.499, -84.174]}
-        rotation={[-Math.PI, 0.201, -Math.PI]}
+        position={[47.119, -0.207, -42.884]}
+        rotation={[-Math.PI, 1.004, -Math.PI]}
         scale={0.561}
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_2.geometry}
             material={materials.Leaves2}
           />
@@ -6796,27 +2741,23 @@ export default function Model(props) {
       >
         <group scale={0.134}>
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath.geometry}
             material={materials.TreeBark}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_1.geometry}
             material={materials.Leaves1}
           />
           <mesh
+            castShadow
+            receiveShadow
             geometry={nodes.NurbsPath_2.geometry}
             material={materials.Leaves2}
           />
-        </group>
-      </group>
-      <group
-        position={[65.844, 1.194, -36.539]}
-        rotation={[3.128, 0.025, 3.084]}
-        scale={0.553}
-      >
-        <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
         </group>
       </group>
       <group
@@ -6825,69 +2766,49 @@ export default function Model(props) {
         scale={0.553}
       >
         <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
-        </group>
-      </group>
-      <group
-        position={[-47.605, 0.379, -28.133]}
-        rotation={[-0.084, -1.452, -0.132]}
-        scale={0.553}
-      >
-        <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
-        </group>
-      </group>
-      <group
-        position={[-65.814, 0.715, -66.359]}
-        rotation={[-0.044, -1.339, -0.091]}
-        scale={0.553}
-      >
-        <group scale={0.201}>
-          <mesh geometry={nodes.Cube.geometry} material={materials.TreeBark} />
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Leaves} />
-        </group>
-      </group>
-      <group
-        position={[65.785, 1.381, -27.471]}
-        rotation={[-3.123, 0.028, -3.113]}
-        scale={0.601}
-      >
-        <group scale={0.201}>
           <mesh
-            geometry={nodes.Cube001_65.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry}
             material={materials.TreeBark}
           />
           <mesh
-            geometry={nodes.Cube001_66.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube_1.geometry}
             material={materials.Leaves}
           />
         </group>
       </group>
       <group
-        position={[73.182, 1.381, -5.213]}
-        rotation={[-3.123, 0.028, -3.113]}
-        scale={0.601}
+        position={[-38.777, 0.074, -13.06]}
+        rotation={[-0.016, 0.877, -0.036]}
+        scale={0.553}
       >
         <group scale={0.201}>
           <mesh
-            geometry={nodes.Cube001_65.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry}
             material={materials.TreeBark}
           />
           <mesh
-            geometry={nodes.Cube001_66.geometry}
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube_1.geometry}
             material={materials.Leaves}
           />
         </group>
       </group>
       <group
-        position={[15.87, 0.704, 1.334]}
-        rotation={[3.137, 0.524, 2.964]}
+        position={[15.985, 0.704, 1.793]}
+        rotation={[3.137, 0.318, 2.963]}
         scale={[2.271, 1.63, 1.287]}
       >
         <mesh
-          geometry={nodes.Bush_29.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_27.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6898,7 +2819,9 @@ export default function Model(props) {
         scale={[2.131, 1.499, 1.63]}
       >
         <mesh
-          geometry={nodes.Bush_30.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_28.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6909,7 +2832,9 @@ export default function Model(props) {
         scale={[2.795, 1.361, 1.721]}
       >
         <mesh
-          geometry={nodes.Bush_31.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_29.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6920,7 +2845,9 @@ export default function Model(props) {
         scale={[3.428, 1.886, 1.72]}
       >
         <mesh
-          geometry={nodes.Bush_32.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_30.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6931,7 +2858,9 @@ export default function Model(props) {
         scale={[0.84, 1.752, 2.615]}
       >
         <mesh
-          geometry={nodes.Bush_33.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_31.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -6942,90 +2871,9 @@ export default function Model(props) {
         scale={[1.694, 1.192, 2.854]}
       >
         <mesh
-          geometry={nodes.Bush_34.geometry}
-          material={materials.Leaves}
-          scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[20.228, 0.857, -1.932]}
-        rotation={[0, -0.286, 0]}
-        scale={0.589}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.Cube003.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.Cube003_2.geometry}
-            material={materials.Leaves2}
-          />
-          <mesh
-            geometry={nodes.Cube003_3.geometry}
-            material={materials.Leaves3}
-          />
-        </group>
-      </group>
-      <group
-        position={[17.007, 0.875, -5.721]}
-        rotation={[0, -0.269, 0]}
-        scale={0.561}
-      >
-        <group scale={0.134}>
-          <mesh
-            geometry={nodes.NurbsPath.geometry}
-            material={materials.TreeBark}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_1.geometry}
-            material={materials.Leaves1}
-          />
-          <mesh
-            geometry={nodes.NurbsPath_2.geometry}
-            material={materials.Leaves2}
-          />
-        </group>
-      </group>
-      <group
-        position={[26.755, 1.491, -8.989]}
-        rotation={[-3.089, -0.344, -3.107]}
-        scale={0.573}
-      >
-        <group
-          position={[0, 1.038, 0]}
-          rotation={[3.028, 1.466, -3.026]}
-          scale={[4.888, 3.685, 4.888]}
-        >
-          <mesh geometry={nodes.Mesh002.geometry} material={materials.Leaves} />
-          <mesh
-            geometry={nodes.Mesh002_1.geometry}
-            material={materials.TreeBark}
-          />
-        </group>
-      </group>
-      <group
-        position={[25.002, 1.535, -4.236]}
-        rotation={[3.059, 0.057, 3.061]}
-        scale={1.092}
-      >
-        <mesh
-          geometry={nodes.Bush_35.geometry}
-          material={materials.Leaves}
-          scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[27.417, 1.419, -5.29]}
-        rotation={[3.059, 0.057, 3.061]}
-        scale={[1.548, 1.172, 1.548]}
-      >
-        <mesh
-          geometry={nodes.Bush_36.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_32.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7036,7 +2884,9 @@ export default function Model(props) {
         scale={[2.024, 1.096, 1.162]}
       >
         <mesh
-          geometry={nodes.Bush_37.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_33.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7047,7 +2897,9 @@ export default function Model(props) {
         scale={[2.715, 2.77, 1.995]}
       >
         <mesh
-          geometry={nodes.Bush_38.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_34.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7058,7 +2910,9 @@ export default function Model(props) {
         scale={[2.244, 1.092, 1.382]}
       >
         <mesh
-          geometry={nodes.Bush_39.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_35.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7069,7 +2923,9 @@ export default function Model(props) {
         scale={[3.428, 1.886, 1.72]}
       >
         <mesh
-          geometry={nodes.Bush_40.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_36.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7080,35 +2936,24 @@ export default function Model(props) {
         scale={[0.809, 0.731, 1.974]}
       >
         <mesh
-          geometry={nodes.Bush_41.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_37.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
       <group
-        position={[23.576, 0.478, 2.655]}
+        position={[22.456, 0.701, 2.628]}
         rotation={[-3.107, -1.315, 2.766]}
         scale={[1.694, 1.192, 2.854]}
       >
         <mesh
-          geometry={nodes.Bush_42.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_38.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
-        />
-      </group>
-      <group
-        position={[17.229, 0.164, 2.703]}
-        rotation={[0, -0.464, 0]}
-        scale={0.182}
-      >
-        <mesh geometry={nodes.Cube006.geometry} material={materials.TreeBark} />
-        <mesh
-          geometry={nodes.Cube006_1.geometry}
-          material={materials.Leaves1}
-        />
-        <mesh
-          geometry={nodes.Cube006_2.geometry}
-          material={materials.Leaves2}
         />
       </group>
       <group
@@ -7117,7 +2962,9 @@ export default function Model(props) {
         scale={[3.574, 1.935, 2.051]}
       >
         <mesh
-          geometry={nodes.Bush_43.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_39.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7128,7 +2975,9 @@ export default function Model(props) {
         scale={[3.93, 2.578, 1.894]}
       >
         <mesh
-          geometry={nodes.Bush_44.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_40.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7139,7 +2988,9 @@ export default function Model(props) {
         scale={[2.888, 1.406, 1.779]}
       >
         <mesh
-          geometry={nodes.Bush_45.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_41.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7150,7 +3001,9 @@ export default function Model(props) {
         scale={[3.886, 2.138, 1.95]}
       >
         <mesh
-          geometry={nodes.Bush_46.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_42.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7161,7 +3014,9 @@ export default function Model(props) {
         scale={[1.908, 2.066, 2.277]}
       >
         <mesh
-          geometry={nodes.Bush_47.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_43.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
@@ -7172,12 +3027,988 @@ export default function Model(props) {
         scale={[2.235, 1.573, 3.766]}
       >
         <mesh
-          geometry={nodes.Bush_48.geometry}
+          castShadow
+          receiveShadow
+          geometry={nodes.Bush_44.geometry}
           material={materials.Leaves}
           scale={[1, 0.687, 1]}
         />
       </group>
+      <group position={[14.748, 0.66, -5.017]} scale={1.206}>
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[20.408, 1.056, -0.901]} scale={[0.858, 1.029, 0.858]}>
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[17.833, 1.056, -12.63]}
+        rotation={[Math.PI, -1.388, Math.PI]}
+        scale={[0.858, 1.029, 0.858]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_2.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_3.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[30.461, 0.473, -22.744]}
+        rotation={[0, 1.376, 0]}
+        scale={[0.856, 1.026, 0.856]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_4.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_5.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[37.421, 0.473, -26.755]}
+        rotation={[Math.PI, -0.471, Math.PI]}
+        scale={[1.188, 1.425, 1.188]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_6.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_7.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[35.615, 1.056, -3.579]}
+        rotation={[Math.PI, -1.388, Math.PI]}
+        scale={[0.858, 1.029, 0.858]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_8.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_9.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[50.598, 0.473, -10.072]}
+        rotation={[0, 1.424, 0]}
+        scale={[0.856, 1.026, 0.856]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_10.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_11.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-41.587, 0.417, -20.48]}
+        rotation={[Math.PI, -1.069, Math.PI]}
+        scale={[1.412, 1.694, 1.412]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_12.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_13.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[43.423, 0.66, -5.578]} scale={[1.206, 1.481, 1.206]}>
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-46.431, 0.417, -30.169]}
+        rotation={[-Math.PI, 0.811, -Math.PI]}
+        scale={[0.948, 1.137, 0.948]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_14.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_15.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-29.745, 1.251, -53.987]}
+        rotation={[0, -0.82, 0]}
+        scale={[1.401, 1.68, 1.401]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_16.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_17.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-10.367, 0.992, -61.119]}
+        rotation={[0, -0.746, 0]}
+        scale={[0.968, 1.161, 0.968]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_18.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_19.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[7.396, 0.703, -67.982]}
+        rotation={[-Math.PI, 1.35, -Math.PI]}
+        scale={[1.188, 1.425, 1.188]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_20.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_21.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-46.162, 1.435, -41.876]}
+        rotation={[Math.PI, -1.069, Math.PI]}
+        scale={[1.447, 1.736, 1.447]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_22.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_23.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-37.011, 0.417, -46.452]}
+        rotation={[0, -0.042, 0]}
+        scale={[1.078, 1.293, 1.078]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_24.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_25.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-1.938, 0.74, -61.401]} scale={1.206}>
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[110.592, 0.66, 19.594]} scale={1.206}>
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[55.881, 0.951, -17.755]}
+        rotation={[0, -1.491, 0]}
+        scale={[1.356, 1.484, 1.356]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[71.887, 0.516, -0.703]}
+        rotation={[0, 0.072, 0]}
+        scale={[1.033, 1.239, 1.033]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_26.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_27.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[79.592, 1.056, 42.49]}
+        rotation={[Math.PI, -1.388, Math.PI]}
+        scale={[0.858, 1.029, 0.858]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_28.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_29.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[85.149, 0.473, 35.871]}
+        rotation={[0, -0.681, 0]}
+        scale={[1.203, 1.443, 1.203]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_30.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_31.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[93.226, 0.473, 31.773]}
+        rotation={[0, 1.376, 0]}
+        scale={[0.856, 1.026, 0.856]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_32.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_33.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[100.99, 0.473, 26.555]}
+        rotation={[Math.PI, -0.471, Math.PI]}
+        scale={[1.188, 1.425, 1.188]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_34.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_35.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[80.202, 0.691, -3.268]}
+        rotation={[Math.PI, -1.46, Math.PI]}
+        scale={[1.072, 1.431, 1.072]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_36.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_37.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[94.682, 0.741, -10.817]}
+        rotation={[0, 1.495, 0]}
+        scale={[0.856, 1.262, 0.856]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_38.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_39.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[87.847, 0.87, -5.82]}
+        rotation={[0, 0.072, 0]}
+        scale={[1.206, 1.855, 1.206]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[118.453, 1.526, 7.153]}
+        rotation={[0, 0.887, 0]}
+        scale={[1.183, 1.42, 1.183]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_40.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_41.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[112.646, 0.473, -15.075]}
+        rotation={[Math.PI, -0.043, Math.PI]}
+        scale={[1.088, 1.464, 1.088]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_42.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_43.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[118.37, 0.66, -5.419]}
+        rotation={[-Math.PI, 1.381, -Math.PI]}
+        scale={[1.359, 1.669, 1.359]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[121.749, 0.985, 16.076]} scale={[1.206, 1.733, 1.206]}>
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[103.673, 0.51, -13.955]}
+        rotation={[0, 0.072, 0]}
+        scale={[1.413, 1.228, 1.413]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[44.451, 0.691, -30.649]}
+        rotation={[0, -1.32, 0]}
+        scale={[1.072, 1.281, 1.072]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_44.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_45.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[51.111, 0.87, -36.366]}
+        rotation={[0, 0.434, 0]}
+        scale={[1.23, 1.46, 1.23]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[71.026, 0.763, -53.803]}
+        rotation={[Math.PI, -0.405, Math.PI]}
+        scale={[1.088, 1.464, 1.088]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_46.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_47.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[63.032, 0.51, -49.578]}
+        rotation={[0, 0.434, 0]}
+        scale={[1.413, 1.228, 1.413]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-62.579, 0.88, -28.468]}
+        rotation={[0, -0.592, 0]}
+        scale={[1.078, 1.293, 1.078]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_48.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_49.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-53.646, 0.241, -23.446]}
+        rotation={[-Math.PI, 1.011, -Math.PI]}
+        scale={[1.078, 1.538, 1.078]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_50.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_51.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[70.54, 0.741, -24.936]}
+        rotation={[0, 1.481, 0]}
+        scale={[0.856, 1.262, 0.856]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_52.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_53.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[62.568, 0.87, -23.349]}
+        rotation={[0, 0.057, 0]}
+        scale={[1.23, 1.46, 1.23]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[82.169, 0.763, -15.682]}
+        rotation={[Math.PI, -0.028, Math.PI]}
+        scale={[1.088, 1.464, 1.088]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_54.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_55.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[79.926, 0.675, -55.673]}
+        rotation={[0, -1.046, 0]}
+        scale={[1.413, 1.228, 1.413]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[74.553, 0.401, -11.051]}
+        rotation={[Math.PI, -0.028, Math.PI]}
+        scale={[1.088, 1.31, 1.088]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_56.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_57.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[67.339, 0.454, -5.251]}
+        rotation={[Math.PI, -1.195, Math.PI]}
+        scale={[1.232, 1.211, 1.232]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_58.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_59.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[3.233, 0.897, -76.285]}
+        rotation={[0, 0.28, 0]}
+        scale={[0.871, 1.28, 0.871]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[63.585, 0.763, -93.909]}
+        rotation={[Math.PI, -0.405, Math.PI]}
+        scale={[1.088, 1.279, 1.088]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_60.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_61.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[67.516, 0.51, -105.736]}
+        rotation={[0, 0.434, 0]}
+        scale={[1.413, 1.228, 1.413]}
+      >
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-29.745, 1.251, -87.171]}
+        rotation={[0, -0.82, 0]}
+        scale={[1.401, 1.68, 1.401]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_62.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_63.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[2.702, 0.429, -90.627]}
+        rotation={[0, 0.172, 0]}
+        scale={[0.968, 1.161, 0.968]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_64.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_65.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-33.948, 0.417, -74.223]}
+        rotation={[0, -0.042, 0]}
+        scale={[1.078, 1.293, 1.078]}
+      >
+        <group position={[0, -0.872, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_66.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube007_67.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-7.553, 0.51, -89.275]} scale={1.206}>
+        <group position={[0, -0.615, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube004_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
       <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Mball014.geometry}
         material={materials.Leaves}
         position={[48.724, 0, -4.855]}
@@ -7185,6 +4016,8 @@ export default function Model(props) {
         scale={[1.235, 0.856, 1.235]}
       />
       <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Mball029.geometry}
         material={materials.Leaves}
         position={[70.291, 0, 2.037]}
@@ -7192,6 +4025,8 @@ export default function Model(props) {
         scale={[1.289, 1.023, 1.289]}
       />
       <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Mball039.geometry}
         material={materials.Leaves}
         position={[57.933, 0, -90.627]}
@@ -7199,6 +4034,8 @@ export default function Model(props) {
         scale={[1, 0.646, 1]}
       />
       <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Mball043.geometry}
         material={materials.Leaves}
         position={[14.441, 0, -14.441]}
@@ -7206,6 +4043,8 @@ export default function Model(props) {
         scale={[1.069, 1, 2.073]}
       />
       <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Mball046.geometry}
         material={materials.Leaves}
         position={[-27.687, 0, -7.251]}
@@ -7214,6 +4053,8 @@ export default function Model(props) {
       />
       <group position={[-25.001, 0, -28.477]} rotation={[0, -1.308, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7222,6 +4063,8 @@ export default function Model(props) {
       </group>
       <group position={[-28.611, 0, -30.349]} rotation={[0, 1.331, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_1.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7233,6 +4076,8 @@ export default function Model(props) {
         rotation={[Math.PI, -0.99, Math.PI]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_2.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7241,6 +4086,8 @@ export default function Model(props) {
       </group>
       <group position={[-24.733, 0, -38.37]} rotation={[0, -1.399, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_3.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7249,6 +4096,8 @@ export default function Model(props) {
       </group>
       <group position={[-29.012, 0, -34.226]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_4.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7257,6 +4106,8 @@ export default function Model(props) {
       </group>
       <group position={[-21.124, 0, -22.995]} rotation={[0, -1.283, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_5.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7268,6 +4119,8 @@ export default function Model(props) {
         rotation={[Math.PI, -0.94, Math.PI]}
       >
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_6.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7276,6 +4129,8 @@ export default function Model(props) {
       </group>
       <group position={[-14.439, 0, -39.841]} rotation={[0, -1.435, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_7.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7284,6 +4139,8 @@ export default function Model(props) {
       </group>
       <group position={[-17.509, 0, -35.601]} rotation={[0, 0.519, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_8.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7292,6 +4149,8 @@ export default function Model(props) {
       </group>
       <group position={[-14.658, 0, -30.608]} rotation={[0, -0.008, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_9.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7300,6 +4159,8 @@ export default function Model(props) {
       </group>
       <group position={[-11.21, 0, -26.727]} rotation={[0, 1.54, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_10.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7308,6 +4169,8 @@ export default function Model(props) {
       </group>
       <group position={[-16.444, 0, -24.6]} rotation={[0, -0.692, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_11.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
@@ -7316,18 +4179,2231 @@ export default function Model(props) {
       </group>
       <group position={[-28.744, 0, -24.065]} rotation={[0, 1.318, 0]}>
         <mesh
+          castShadow
+          receiveShadow
           geometry={nodes.Lilypad_12.geometry}
           material={materials.Leaves}
           position={[0, 0.068, 0]}
           scale={[0.373, 0.418, 0.373]}
         />
       </group>
-      <mesh
-        geometry={nodes.Mball084.geometry}
-        material={materials.Leaves}
-        position={[78.379, 0, -179.856]}
-        scale={[2.673, 1.46, 2.673]}
-      />
+      <group position={[25.133, 1.087, -8]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[31.881, 1.087, -6.432]} scale={[1, 1.28, 1]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_2.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_3.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[33.245, 1.087, -13.93]}
+        rotation={[0, -0.846, 0]}
+        scale={[1, 1.21, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_4.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_5.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[38.97, 1.087, -18.769]}
+        rotation={[0, 0.87, 0]}
+        scale={1.139}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_6.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_7.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[40.265, 1.087, -10.181]}
+        rotation={[0, 0.819, 0]}
+        scale={1.253}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_8.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_9.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[46.127, 1.087, -15.089]} rotation={[0, -1.414, 0]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_10.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_11.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[45.991, 1.087, -22.246]}
+        rotation={[0, -0.254, 0]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_12.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_13.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-53.029, 1.087, -31.525]} rotation={[0, 0.96, 0]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_14.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_15.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-58.544, 1.421, -54.664]}
+        rotation={[0, 0.96, 0]}
+        scale={[1, 1.28, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_16.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_17.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-62.302, 1.602, -37.421]}
+        rotation={[0, 0.114, 0]}
+        scale={[1, 1.21, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_18.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_19.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-57.911, 0.657, -45.655]}
+        rotation={[-Math.PI, 1.312, -Math.PI]}
+        scale={1.139}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_20.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_21.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-53.82, 1.685, -38.044]}
+        rotation={[-Math.PI, 1.363, -Math.PI]}
+        scale={[0.816, 1.217, 0.816]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_22.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_23.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-50.484, 1.573, -50.637]} rotation={[0, -0.454, 0]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_24.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_25.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-42.901, 1.338, -53.247]}
+        rotation={[0, 0.706, 0]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_26.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_27.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[74.88, 1.087, -47.993]}
+        rotation={[Math.PI, -0.219, Math.PI]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_28.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_29.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[69.728, 1.087, -44.505]}
+        rotation={[Math.PI, -0.219, Math.PI]}
+        scale={[1, 1.28, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_30.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_31.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[70.673, 1.087, -36.89]}
+        rotation={[-Math.PI, 0.627, -Math.PI]}
+        scale={[1, 1.21, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_32.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_33.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[66.297, 1.087, -30.357]}
+        rotation={[Math.PI, -1.089, Math.PI]}
+        scale={0.87}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_34.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_35.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[61.956, 1.087, -37.652]}
+        rotation={[Math.PI, -1.038, Math.PI]}
+        scale={1.042}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_36.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_37.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[58.672, 1.087, -30.538]}
+        rotation={[-Math.PI, 1.195, -Math.PI]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_38.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_39.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[52.449, 1.087, -27.053]}
+        rotation={[-Math.PI, 0.035, -Math.PI]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_40.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_41.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-30.572, 1.087, -62.133]} rotation={[0, -0.208, 0]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_42.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_43.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-21.397, 2.965, -69.504]}
+        rotation={[0, -0.208, 0]}
+        scale={[1, 1.28, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_44.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_45.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[0.772, 1.129, -71.224]}
+        rotation={[0, -1.054, 0]}
+        scale={[1, 1.21, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_46.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_47.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-2.231, 1.087, -78.732]}
+        rotation={[0, 0.662, 0]}
+        scale={1.139}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_48.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_49.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-40.555, 2.853, -61.465]}
+        rotation={[0, 0.611, 0]}
+        scale={1.253}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_50.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_51.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-6.247, 1.662, -68.391]}
+        rotation={[Math.PI, -1.52, Math.PI]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_52.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_53.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[4.24, 1.087, -83.884]}
+        rotation={[0, -0.462, 0]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_54.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_55.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-51.317, 2.853, -60.672]}
+        rotation={[-Math.PI, 1.459, -Math.PI]}
+        scale={0.984}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_56.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_57.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-59.732, 1.087, -74.473]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_58.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_59.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-52.984, 1.087, -72.906]} scale={[1, 1.28, 1]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_60.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_61.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-51.621, 1.087, -80.403]}
+        rotation={[0, -0.846, 0]}
+        scale={[1, 1.21, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_62.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_63.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-11.071, 2.072, -79.533]}
+        rotation={[0, 0.87, 0]}
+        scale={[1.139, 1.293, 1.139]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_64.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_65.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-13.203, 3.588, -70.086]}
+        rotation={[0, 0.819, 0]}
+        scale={1.253}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_66.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_67.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-19.988, 2.971, -76.879]} rotation={[0, -1.414, 0]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_68.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_69.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-31.093, 2.099, -71.262]}
+        rotation={[0, -0.254, 0]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_70.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_71.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[85.921, 1.087, 42.949]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_72.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_73.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[92.332, 1.087, 38.908]}
+        rotation={[0, -0.846, 0]}
+        scale={[1, 1.21, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_74.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_75.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[97.963, 1.087, 36.241]}
+        rotation={[0, 0.87, 0]}
+        scale={1.139}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_76.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_77.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[104.133, 1.087, 32.292]}
+        rotation={[0, -0.254, 0]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_78.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_79.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[109.174, 2.091, 27.485]}
+        rotation={[-Math.PI, 0.035, -Math.PI]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_80.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_81.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[76.437, 1.087, -7.468]} rotation={[0, -0.166, 0]}>
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_82.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_83.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[83.427, 1.087, -10.395]}
+        rotation={[0, -1.012, 0]}
+        scale={[1, 1.21, 1]}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_84.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_85.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[89.422, 1.087, -12.095]}
+        rotation={[0, 0.704, 0]}
+        scale={1.139}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_86.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_87.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[96.16, 1.087, -14.97]}
+        rotation={[0, -0.42, 0]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_88.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_89.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[101.926, 2.091, -18.878]}
+        rotation={[-Math.PI, 0.201, -Math.PI]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_90.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_91.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-27.093, 1.726, -77.955]}
+        rotation={[0, -0.69, 0]}
+        scale={1.143}
+      >
+        <group position={[0, -1.177, 0]} scale={0.327}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_92.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube011_93.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[26.852, 0, -9.496]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[28.509, 0, -11.935]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[29.475, 0, -15.799]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[33.753, 0, -8.53]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[27.956, 0, -4.804]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[42.513, 0, -15.611]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[40.018, 0, -14.042]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[37.583, 0, -10.889]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[36.578, 0, -19.263]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[43.383, 0, -20.353]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[58.159, 0, -27.945]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[55.664, 0, -26.375]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[53.23, 0, -23.222]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[53.998, 0, -33.656]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[59.029, 0, -32.686]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[62.807, 0, -36.498]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[64.463, 0, -38.936]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[66.923, 0, -43.315]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[69.708, 0, -35.532]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-52.365, 0, -51.86]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-50.194, 0, -53.854]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-48.369, 0, -57.395]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-45.868, 0, -49.34]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-50.478, 0, -48.415]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-35.721, 0, -54.228]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-38.509, 1.284, -53.271]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-41.6, 0, -50.759]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-40.662, 2.427, -59.142]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-33.788, 0, -58.645]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-17.667, 0, -62.653]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-20.455, 1.447, -61.696]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-23.546, 1.384, -59.184]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-20.411, 0, -69.165]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-15.734, 0, -67.07]}
+        rotation={[-Math.PI, 0.643, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-11.185, 0, -69.916]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-9.015, 0, -71.911]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-5.618, 0, -75.61]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[-4.688, 0, -67.396]}
+        rotation={[0, -0.231, 0]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-55.028, 0, -35.71]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-48.785, 0, -37.945]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-55.514, 0, -42.268]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-51.388, 0, -32.909]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-60.294, 0, -29.336]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-27.747, 0, -63.003]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-26.09, 0, -65.442]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-25.124, 0, -69.306]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-20.845, 0, -62.037]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-26.642, 1.438, -58.311]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[82.586, 0.623, 42.333]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[88.408, 0.623, 38.979]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[94.23, 0.623, 34.622]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[98.663, 1.16, 32.154]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[101.131, 1.16, 35.316]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[95.001, 0.623, 38.67]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[89.41, 0.623, 40.983]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[106.645, 2.253, 29.378]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[107.724, 1.004, 24.79]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[108.572, 2.401, 31.884]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[112.428, 2.403, 29.648]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[113.083, 1.821, 25.793]}
+        rotation={[-Math.PI, 0.413, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[92.699, 1.16, -12.483]}
+        rotation={[-Math.PI, 0.579, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group
+        position={[80.203, 0.623, -8.83]}
+        rotation={[-Math.PI, 0.579, -Math.PI]}
+        scale={[1, 0.812, 1]}
+      >
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-20.821, 3.057, -74.868]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-19.165, 3.057, -77.306]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-18.199, 3.057, -81.171]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-13.92, 3.057, -73.902]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-19.717, 3.057, -70.175]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-7.29, 2.435, -75.847]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-5.634, 2.435, -78.285]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-4.668, 2.435, -82.15]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-0.389, 1.416, -74.881]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
+      <group position={[-6.186, 2.435, -71.154]} scale={[1, 0.812, 1]}>
+        <group rotation={[0, 0, -Math.PI]} scale={[-0.147, -1, -0.187]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013.geometry}
+            material={materials.TreeBark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube013_1.geometry}
+            material={materials.Leaves}
+          />
+        </group>
+      </group>
     </group>
   );
 }

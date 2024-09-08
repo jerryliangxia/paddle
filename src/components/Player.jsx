@@ -20,7 +20,7 @@ export default function Player(props) {
   const texture = useTexture("/img/paddleboard.png");
   const [subscribeKeys, getKeys] = useKeyboardControls();
 
-  const lookUpPosition = 2;
+  const lookUpPosition = 1.65;
   const stablePosition = 1.1;
 
   const [transitionStart, setTransitionStart] = useState(null);

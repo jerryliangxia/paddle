@@ -87,3 +87,34 @@ body,
 .loadingScreen--started .loadingScreen__board {
   opacity: 0;
 }
+
+.controlKeys {
+  position: absolute;
+  width: 20rem;
+  left: 50%;
+  margin-left: -10rem;
+  bottom: 13%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@media (max-width: 768px) {
+  .controlKeys {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+}
+
+@media (max-height: 450px) {
+  .controlKeys {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+}
