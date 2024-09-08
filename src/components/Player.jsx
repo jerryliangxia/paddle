@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { RigidBody, CuboidCollider } from "@react-three/rapier";
 import { useFrame } from "@react-three/fiber";
@@ -11,24 +11,76 @@ import Dog from "./Dog";
 export default function Player(props) {
   const body = useRef();
   const visualGroup = useRef();
+  const transitionMesh = useRef();
   const { controlsMobile } = useGame();
   const deviceType = useGame((state) => state.deviceType);
+  const overlayVisible = useGame((state) => state.overlayVisible);
 
   const { nodes } = useGLTF("/paddle.glb");
   const texture = useTexture("/img/paddleboard.png");
   const [subscribeKeys, getKeys] = useKeyboardControls();
 
+  const lookUpPosition = 2;
+  const stablePosition = 1.1;
+
+  const [transitionStart, setTransitionStart] = useState(null);
+
+  useEffect(() => {
+    if (overlayVisible) {
+      setTransitionStart(Date.now());
+    }
+  }, [overlayVisible]);
+
   useFrame((state, delta) => {
+    if (!body || !body.current) return;
     const bodyPosition = body.current.translation();
 
     const cameraPosition = new THREE.Vector3();
     cameraPosition.copy(bodyPosition);
     cameraPosition.y += 1.25;
 
-    state.camera.position.copy(cameraPosition);
+    if (!overlayVisible) {
+      state.camera.position.copy(cameraPosition);
+      const lookAtPosition = new THREE.Vector3(
+        bodyPosition.x,
+        bodyPosition.y + lookUpPosition,
+        bodyPosition.z - 1
+      );
+      state.camera.lookAt(lookAtPosition);
+    } else if (transitionStart) {
+      const elapsed = (Date.now() - transitionStart) / 1000;
+      const t = Math.min(elapsed / 1.5, 1);
+
+      transitionMesh.current.position.set(
+        bodyPosition.x,
+        bodyPosition.y - t,
+        bodyPosition.z - 1
+      );
+
+      const lookAtPosition = new THREE.Vector3(
+        bodyPosition.x,
+        bodyPosition.y + lookUpPosition,
+        bodyPosition.z - 1
+      );
+      const targetLookAt = new THREE.Vector3(
+        bodyPosition.x,
+        bodyPosition.y + stablePosition,
+        bodyPosition.z - 1
+      );
+      const currentLookAt = lookAtPosition.lerp(targetLookAt, t);
+      state.camera.lookAt(currentLookAt);
+
+      if (t === 1) {
+        setTransitionStart(null);
+      }
+    } else {
+      state.camera.position.copy(cameraPosition);
+    }
   });
 
   useFrame((state, delta) => {
+    if (!body || !body.current) return;
+
     let forward, backward, leftward, rightward, shift;
 
     if (deviceType === 1) {
@@ -149,6 +201,11 @@ export default function Player(props) {
         </mesh>
       </group>
       <PlayerLight player={body} />
+      {/* Invisible transition mesh */}
+      <mesh ref={transitionMesh} visible={true}>
+        <boxGeometry args={[10, 10, 10]} />
+        <meshBasicMaterial color={0x00ff00} />
+      </mesh>
     </group>
   );
 }

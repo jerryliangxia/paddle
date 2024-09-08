@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import {
   PointerLockControls as PointerLockControlsDesktop,
   Environment,
 } from "@react-three/drei";
+import { EffectComposer, Bloom } from "@react-three/postprocessing";
+import { useControls } from "leva";
 import { useGame } from "./stores/useGame.js";
 import { Perf } from "r3f-perf";
 import { PointerLockControls as PointerLockControlsImpl } from "./hooks/PointerLockControls.js";
@@ -14,6 +16,7 @@ import Lights from "./Lights.jsx";
 import * as THREE from "three";
 import Water from "./components/Water.jsx";
 import Scene from "./components/Scene.jsx";
+import { LoadingScreen } from "./LoadingScreen.jsx";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -27,8 +30,11 @@ function PointerLockControlsMobile() {
 }
 
 export default function App() {
+  // const [start, setStart] = useState(false);
   const deviceType = useGame((state) => state.deviceType);
   const setDeviceType = useGame((state) => state.setDeviceType);
+  const overlayVisible = useGame((state) => state.overlayVisible);
+  const setOverlayVisible = useGame((state) => state.setOverlayVisible);
 
   useEffect(() => {
     if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
@@ -53,7 +59,7 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <Suspense>
       <Canvas
         shadows
         camera={{
@@ -64,6 +70,16 @@ export default function App() {
       >
         {/* <Perf /> */}
         <Environment background files="img/rustig_koppie_puresky_1k.hdr" />
+        <EffectComposer>
+          <Bloom
+            mipmapBlur={2}
+            luminanceThreshold={1}
+            luminanceSmoothing={100}
+            intensity={0.2}
+            radius={0.7}
+            height={100}
+          />
+        </EffectComposer>
         <Physics>
           {deviceType === 0 ? (
             <PointerLockControlsDesktop />
@@ -80,6 +96,10 @@ export default function App() {
         <Scene />
       </Canvas>
       {deviceType === 1 ? <MobileControls /> : <></>}
-    </>
+      <LoadingScreen
+        started={overlayVisible}
+        onStarted={() => setOverlayVisible(true)}
+      />
+    </Suspense>
   );
 }
