@@ -44,6 +44,12 @@ export const useGame = create(
             shiftPressed: false,
           },
         })),
+
+      // Geometry type
+      geometryType: 0,
+      setGeometryType: (geometryType) => {
+        set((state) => ({ geometryType: geometryType }));
+      },
     };
   })
 );

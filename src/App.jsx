@@ -15,7 +15,8 @@ import Player from "./components/Player.jsx";
 import Lights from "./Lights.jsx";
 import * as THREE from "three";
 import Water from "./components/Water.jsx";
-import Scene from "./components/Scene.jsx";
+import Geom2 from "./components/Geom2Scene.jsx";
+import Geom3 from "./components/Geom3Scene.jsx";
 import { LoadingScreen } from "./LoadingScreen.jsx";
 
 function PointerLockControlsMobile() {
@@ -30,11 +31,11 @@ function PointerLockControlsMobile() {
 }
 
 export default function App() {
-  // const [start, setStart] = useState(false);
   const deviceType = useGame((state) => state.deviceType);
   const setDeviceType = useGame((state) => state.setDeviceType);
   const overlayVisible = useGame((state) => state.overlayVisible);
   const setOverlayVisible = useGame((state) => state.setOverlayVisible);
+  const geometryType = useGame((state) => state.geometryType);
 
   useEffect(() => {
     if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
@@ -58,6 +59,25 @@ export default function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const handlePointerLockChange = () => {
+      if (document.pointerLockElement !== null) {
+        setOverlayVisible(true);
+      } else {
+        setOverlayVisible(false);
+      }
+    };
+
+    document.addEventListener("pointerlockchange", handlePointerLockChange);
+
+    return () => {
+      document.removeEventListener(
+        "pointerlockchange",
+        handlePointerLockChange
+      );
+    };
+  }, [setOverlayVisible]);
+
   return (
     <Suspense>
       <Canvas
@@ -65,10 +85,11 @@ export default function App() {
         camera={{
           fov: 45,
           near: 0.1,
-          far: 200,
+          far: 1000,
         }}
       >
-        {/* <Perf /> */}
+        <fog attach="fog" color="green" near={1} far={800} />
+        <Perf />
         <Environment background files="img/rustig_koppie_puresky_1k.hdr" />
         <EffectComposer>
           <Bloom
@@ -88,12 +109,12 @@ export default function App() {
           )}
           <Lights />
           <RigidBody type="fixed" friction={0}>
-            <CuboidCollider args={[100, 0.1, 100]} />
+            <CuboidCollider args={[1000, 0.1, 1000]} />
           </RigidBody>
           <Player />
         </Physics>
         <Water />
-        <Scene />
+        {geometryType === 0 ? <Geom2 /> : <Geom3 />}
       </Canvas>
       {deviceType === 1 ? <MobileControls /> : <></>}
       <LoadingScreen

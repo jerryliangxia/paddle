@@ -2,7 +2,7 @@ import { Water } from "three/addons/objects/Water2.js";
 import * as THREE from "three";
 
 export default function Water2() {
-  const waterGeometry = new THREE.PlaneGeometry(400, 400);
+  const waterGeometry = new THREE.PlaneGeometry(700, 650);
   const loader = new THREE.TextureLoader();
 
   const water = new Water(waterGeometry, {

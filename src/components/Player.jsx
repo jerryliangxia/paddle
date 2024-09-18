@@ -23,6 +23,9 @@ export default function Player(props) {
   const lookUpPosition = 1.65;
   const stablePosition = 1.1;
 
+  const impulseValue = 0.5;
+  const torqueValue = impulseValue * 0.5;
+
   const [transitionStart, setTransitionStart] = useState(null);
 
   useEffect(() => {
@@ -40,16 +43,27 @@ export default function Player(props) {
     cameraPosition.y += 1.25;
 
     if (!overlayVisible) {
-      state.camera.position.copy(cameraPosition);
+      const targetCameraPosition = cameraPosition.clone();
+      state.camera.position.lerp(targetCameraPosition, 0.1);
+
       const lookAtPosition = new THREE.Vector3(
         bodyPosition.x,
         bodyPosition.y + lookUpPosition,
         bodyPosition.z - 1
       );
-      state.camera.lookAt(lookAtPosition);
+      const currentLookAtPosition = state.camera
+        .getWorldDirection(new THREE.Vector3())
+        .add(state.camera.position);
+      const targetLookAtPosition = lookAtPosition.clone();
+      const lerpedLookAtPosition = currentLookAtPosition.lerp(
+        targetLookAtPosition,
+        0.1
+      );
+
+      state.camera.lookAt(lerpedLookAtPosition);
     } else if (transitionStart) {
       const elapsed = (Date.now() - transitionStart) / 1000;
-      const t = Math.min(elapsed / 1.5, 1);
+      const t = Math.min(elapsed / 0.5, 1);
 
       transitionMesh.current.position.set(
         bodyPosition.x,
@@ -103,8 +117,8 @@ export default function Player(props) {
     const torque = { x: 0, y: 0, z: 0 };
 
     const speedMultiplier = shift ? 2.5 : 1;
-    const impulseStrength = 0.5 * delta * speedMultiplier;
-    const torqueStrength = 0.25 * delta * speedMultiplier;
+    const impulseStrength = impulseValue * delta * speedMultiplier;
+    const torqueStrength = torqueValue * delta * speedMultiplier;
 
     const forwardDirection = new THREE.Vector3(0, 0, -1);
     forwardDirection.applyQuaternion(visualGroup.current.quaternion);
