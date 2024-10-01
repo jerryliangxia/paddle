@@ -20,7 +20,12 @@ export default function Water2() {
   });
 
   return (
-    <mesh rotation-x={-Math.PI / 2}>
+    <mesh
+      position={[95, 0, 17]}
+      scale={0.627}
+      rotation-x={-Math.PI / 2}
+      rotation-z={-0.88}
+    >
       <primitive object={water} />
     </mesh>
   );

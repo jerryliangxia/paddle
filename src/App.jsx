@@ -3,6 +3,7 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import {
   PointerLockControls as PointerLockControlsDesktop,
+  OrbitControls,
   Environment,
 } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
@@ -88,7 +89,7 @@ export default function App() {
           far: 1000,
         }}
       >
-        <fog attach="fog" color="green" near={1} far={800} />
+        <fog attach="fog" color="#1d2b0f" near={1} far={800} />
         <Perf />
         <Environment background files="img/rustig_koppie_puresky_1k.hdr" />
         <EffectComposer>
