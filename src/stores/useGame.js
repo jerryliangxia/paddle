@@ -1,4 +1,3 @@
-import * as THREE from "three";
 import { create } from "zustand";
 import { subscribeWithSelector } from "zustand/middleware";
 
@@ -44,12 +43,6 @@ export const useGame = create(
             shiftPressed: false,
           },
         })),
-
-      // Geometry type
-      geometryType: 0,
-      setGeometryType: (geometryType) => {
-        set((state) => ({ geometryType: geometryType }));
-      },
     };
   })
 );

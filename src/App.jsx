@@ -3,7 +3,6 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import {
   PointerLockControls as PointerLockControlsDesktop,
-  OrbitControls,
   Environment,
 } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
@@ -16,9 +15,9 @@ import Player from "./components/Player.jsx";
 import Lights from "./Lights.jsx";
 import * as THREE from "three";
 import Water from "./components/Water.jsx";
-import Geom2 from "./components/Geom2Scene.jsx";
 import Geom3 from "./components/Geom3Scene.jsx";
 import { LoadingScreen } from "./LoadingScreen.jsx";
+import Colliders from "./components/Colliders.jsx";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -36,7 +35,6 @@ export default function App() {
   const setDeviceType = useGame((state) => state.setDeviceType);
   const overlayVisible = useGame((state) => state.overlayVisible);
   const setOverlayVisible = useGame((state) => state.setOverlayVisible);
-  const geometryType = useGame((state) => state.geometryType);
 
   useEffect(() => {
     if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
@@ -113,9 +111,10 @@ export default function App() {
             <CuboidCollider args={[1000, 0.1, 1000]} />
           </RigidBody>
           <Player />
+          <Colliders />
         </Physics>
         <Water />
-        {geometryType === 0 ? <Geom2 /> : <Geom3 />}
+        <Geom3 />
       </Canvas>
       {deviceType === 1 ? <MobileControls /> : <></>}
       <LoadingScreen

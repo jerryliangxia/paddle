@@ -1,9 +1,7 @@
 import { useProgress } from "@react-three/drei";
-import { useGame } from "./stores/useGame.js";
 
 export const LoadingScreen = ({ started, onStarted }) => {
   const { progress } = useProgress();
-  const { geometryType, setGeometryType } = useGame();
 
   const enter = () => {
     onStarted();
@@ -37,32 +35,6 @@ export const LoadingScreen = ({ started, onStarted }) => {
         >
           Begin
         </button>
-        <div className="loadingScreen__circles">
-          <div
-            className="loadingScreen__circle"
-            style={{ backgroundColor: "white" }}
-            onClick={(e) => {
-              e.stopPropagation();
-              setGeometryType(0);
-            }}
-            onTouchStart={(e) => {
-              e.stopPropagation();
-              setGeometryType(0);
-            }}
-          />
-          <div
-            className="loadingScreen__circle"
-            style={{ backgroundColor: "green" }}
-            onClick={(e) => {
-              e.stopPropagation();
-              setGeometryType(1);
-            }}
-            onTouchStart={(e) => {
-              e.stopPropagation();
-              setGeometryType(1);
-            }}
-          />
-        </div>
       </div>
     </div>
   );
