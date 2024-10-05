@@ -36,7 +36,7 @@ body,
 .loadingScreen__title {
   font-size: 3rem;
   font-weight: 200;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.75);
   margin: 0;
   margin-bottom: 8px;
 }
@@ -94,7 +94,7 @@ body,
   width: 20rem;
   left: 50%;
   margin-left: -10rem;
-  bottom: 13%;
+  bottom: 10%;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;

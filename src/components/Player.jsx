@@ -20,11 +20,13 @@ export default function Player(props) {
   const texture = useTexture("/img/paddleboard.png");
   const [subscribeKeys, getKeys] = useKeyboardControls();
 
-  const lookUpPosition = 1.65;
+  const lookUpPosition = 2.4;
   const stablePosition = 1.1;
 
-  const impulseValue = 0.5;
+  const impulseValue = 1.5;
   const torqueValue = impulseValue * 0.5;
+
+  const shiftMultiplier = 3.75;
 
   const [transitionStart, setTransitionStart] = useState(null);
 
@@ -42,18 +44,25 @@ export default function Player(props) {
     cameraPosition.copy(bodyPosition);
     cameraPosition.y += 1.25;
 
+    // come up
     if (!overlayVisible) {
-      const targetCameraPosition = cameraPosition.clone();
-      state.camera.position.lerp(targetCameraPosition, 0.1);
+      // Position transitionMesh in front of the camera
+      const forwardDirection = new THREE.Vector3(0, 0, -1);
+      forwardDirection.applyQuaternion(state.camera.quaternion);
+      forwardDirection.normalize();
 
-      const lookAtPosition = new THREE.Vector3(
-        bodyPosition.x,
-        bodyPosition.y + lookUpPosition,
-        bodyPosition.z - 1
+      transitionMesh.current.position.set(
+        bodyPosition.x + forwardDirection.x * 2, // Adjust distance as needed
+        lookUpPosition,
+        bodyPosition.z + forwardDirection.z * 2
       );
+
+      const lookAtPosition = transitionMesh.current.position;
+
       const currentLookAtPosition = state.camera
         .getWorldDirection(new THREE.Vector3())
         .add(state.camera.position);
+
       const targetLookAtPosition = lookAtPosition.clone();
       const lerpedLookAtPosition = currentLookAtPosition.lerp(
         targetLookAtPosition,
@@ -61,28 +70,39 @@ export default function Player(props) {
       );
 
       state.camera.lookAt(lerpedLookAtPosition);
+      state.camera.position.copy(cameraPosition);
+
+      // come down
     } else if (transitionStart) {
       const elapsed = (Date.now() - transitionStart) / 1000;
       const t = Math.min(elapsed / 0.5, 1);
 
+      // Calculate forward direction
+      const forwardDirection = new THREE.Vector3(0, 0, -1);
+      forwardDirection.applyQuaternion(state.camera.quaternion);
+      forwardDirection.normalize();
+
+      // Set transitionMesh position in front of the player
       transitionMesh.current.position.set(
-        bodyPosition.x,
-        bodyPosition.y - t,
-        bodyPosition.z - 1
+        bodyPosition.x + forwardDirection.x * 2, // Adjust distance as needed
+        stablePosition,
+        bodyPosition.z + forwardDirection.z * 2
       );
 
-      const lookAtPosition = new THREE.Vector3(
-        bodyPosition.x,
-        bodyPosition.y + lookUpPosition,
-        bodyPosition.z - 1
+      const lookAtPosition = transitionMesh.current.position;
+
+      const currentLookAtPosition = state.camera
+        .getWorldDirection(new THREE.Vector3())
+        .add(state.camera.position);
+
+      const targetLookAtPosition = lookAtPosition.clone();
+      const lerpedLookAtPosition = currentLookAtPosition.lerp(
+        targetLookAtPosition,
+        0.1
       );
-      const targetLookAt = new THREE.Vector3(
-        bodyPosition.x,
-        bodyPosition.y + stablePosition,
-        bodyPosition.z - 1
-      );
-      const currentLookAt = lookAtPosition.lerp(targetLookAt, t);
-      state.camera.lookAt(currentLookAt);
+
+      state.camera.lookAt(lerpedLookAtPosition);
+      state.camera.position.copy(cameraPosition);
 
       if (t === 1) {
         setTransitionStart(null);
@@ -116,7 +136,7 @@ export default function Player(props) {
     const impulse = { x: 0, y: 0, z: 0 };
     const torque = { x: 0, y: 0, z: 0 };
 
-    const speedMultiplier = shift ? 2.5 : 1;
+    const speedMultiplier = shift ? shiftMultiplier : 1;
     const impulseStrength = impulseValue * delta * speedMultiplier;
     const torqueStrength = torqueValue * delta * speedMultiplier;
 
