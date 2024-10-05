@@ -12,10 +12,10 @@ import { Perf } from "r3f-perf";
 import { PointerLockControls as PointerLockControlsImpl } from "./hooks/PointerLockControls.js";
 import MobileControls from "./components/MobileControls.jsx";
 import Player from "./components/Player.jsx";
-import Lights from "./Lights.jsx";
+import Lights from "./components/Lights.jsx";
 import * as THREE from "three";
 import Water from "./components/Water.jsx";
-import Geom3 from "./components/Geom3Scene.jsx";
+import Geom3 from "./components/Scene.jsx";
 import { LoadingScreen } from "./LoadingScreen.jsx";
 import Colliders from "./components/Colliders.jsx";
 
