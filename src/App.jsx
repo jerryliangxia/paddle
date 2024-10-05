@@ -88,7 +88,7 @@ export default function App() {
         }}
       >
         <fog attach="fog" color="#1d2b0f" near={1} far={800} />
-        <Perf />
+        {/* <Perf /> */}
         <Environment background files="img/rustig_koppie_puresky_1k.hdr" />
         <EffectComposer>
           <Bloom

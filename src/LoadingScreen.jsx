@@ -36,6 +36,7 @@ export const LoadingScreen = ({ started, onStarted }) => {
           Begin
         </button>
       </div>
+      <img class="controlKeys" src="./img/tutorial.png" alt="control keys" />
     </div>
   );
 };
