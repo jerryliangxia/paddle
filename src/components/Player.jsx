@@ -15,6 +15,7 @@ export default function Player(props) {
   const { controlsMobile } = useGame();
   const deviceType = useGame((state) => state.deviceType);
   const overlayVisible = useGame((state) => state.overlayVisible);
+  const desktopControl = useGame((state) => state.desktopControl);
 
   const { nodes } = useGLTF("/paddle.glb");
   const texture = useTexture("/img/paddleboard.png");
@@ -161,7 +162,7 @@ export default function Player(props) {
       torque.x += torqueStrength;
     }
 
-    if (deviceType === 1) {
+    if (!desktopControl) {
       if (leftward) {
         impulse.x -= rightDirection.x * impulseStrength;
         impulse.z -= rightDirection.z * impulseStrength;
@@ -178,9 +179,9 @@ export default function Player(props) {
       );
 
       const boatEuler = new THREE.Euler(
-        visualGroup.current.rotation.x, // Keep boat's current x rotation
-        cameraEuler.y, // Apply camera's y rotation
-        visualGroup.current.rotation.z // Keep boat's current z rotation
+        visualGroup.current.rotation.x,
+        cameraEuler.y,
+        visualGroup.current.rotation.z
       );
 
       visualGroup.current.rotation.copy(boatEuler);
@@ -203,7 +204,7 @@ export default function Player(props) {
       bodyPosition.y,
       bodyPosition.z
     );
-    if (deviceType === 0) {
+    if (desktopControl) {
       visualGroup.current.quaternion.set(
         bodyRotation.x,
         bodyRotation.y,
@@ -224,7 +225,10 @@ export default function Player(props) {
         angularDamping={0.5}
         enabledRotations={[false, true, false]}
       >
-        <CuboidCollider args={[0.5, 0.1, 2.4]} position={[0, 0, -0.42]} />
+        <CuboidCollider
+          args={desktopControl ? [0.5, 0.1, 2.4] : [0.8, 0.1, 0.8]}
+          position={[0, 0, -0.42]}
+        />
       </RigidBody>
       <group ref={visualGroup} scale={0.5}>
         <Dog

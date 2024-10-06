@@ -18,6 +18,12 @@ export const useGame = create(
         });
       },
 
+      // Desktop Controls
+      desktopControl: true,
+      setDesktopControl: (desktopControl) => {
+        set((state) => ({ ...state, desktopControl: desktopControl }));
+      },
+
       // Mobile Controls
       controlsMobile: {
         upPressed: false,

@@ -1,7 +1,10 @@
 import { useProgress } from "@react-three/drei";
+import { useGame } from "./stores/useGame";
 
 export const LoadingScreen = ({ started, onStarted }) => {
   const { progress } = useProgress();
+  const { desktopControl, setDesktopControl } = useGame();
+  const { deviceType } = useGame();
 
   const enter = () => {
     onStarted();
@@ -35,8 +38,20 @@ export const LoadingScreen = ({ started, onStarted }) => {
         >
           Begin
         </button>
+        {deviceType === 1 && (
+          <button
+            className="loadingScreen__toggleControl"
+            onTouchStart={() => setDesktopControl(!desktopControl)}
+          >
+            {desktopControl ? "Mobile" : "Desktop"}
+          </button>
+        )}
       </div>
-      <img class="controlKeys" src="./img/tutorial.png" alt="control keys" />
+      <img
+        className="controlKeys"
+        src="./img/tutorial.png"
+        alt="control keys"
+      />
     </div>
   );
 };
