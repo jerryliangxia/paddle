@@ -34,9 +34,11 @@ export default function App() {
   const setDeviceType = useGame((state) => state.setDeviceType);
   const overlayVisible = useGame((state) => state.overlayVisible);
   const setOverlayVisible = useGame((state) => state.setOverlayVisible);
+  const setDesktopControl = useGame((state) => state.setDesktopControl);
 
   useEffect(() => {
     if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
+      setDesktopControl(false);
       setDeviceType(1);
     } else {
       setDeviceType(0);
@@ -75,6 +77,10 @@ export default function App() {
       );
     };
   }, [setOverlayVisible]);
+
+  const handlePause = () => {
+    setOverlayVisible(false);
+  };
 
   return (
     <Suspense>
@@ -115,6 +121,16 @@ export default function App() {
         <Water />
         <Geom3 />
       </Canvas>
+      {deviceType === 1 && overlayVisible && (
+        <button
+          className="pauseButton"
+          style={{ zIndex: 0 }}
+          onClick={handlePause}
+          onTouchStart={handlePause}
+        >
+          ||
+        </button>
+      )}
       {deviceType === 1 ? <MobileControls /> : <></>}
       <LoadingScreen
         started={overlayVisible}
