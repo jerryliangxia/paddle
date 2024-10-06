@@ -1,3 +1,3 @@
 # Paddle
 
-Based off of Paper Mill Lake, Nova Scotia.
+Based off Paper Mill Lake, Nova Scotia.
