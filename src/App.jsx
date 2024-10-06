@@ -13,7 +13,6 @@ import { PointerLockControls as PointerLockControlsImpl } from "./hooks/PointerL
 import MobileControls from "./components/MobileControls.jsx";
 import Player from "./components/Player.jsx";
 import Lights from "./components/Lights.jsx";
-import * as THREE from "three";
 import Water from "./components/Water.jsx";
 import Geom3 from "./components/Scene.jsx";
 import { LoadingScreen } from "./LoadingScreen.jsx";

@@ -160,11 +160,37 @@ export default function Player(props) {
       impulse.z -= forwardDirection.z * impulseStrength;
       torque.x += torqueStrength;
     }
-    if (rightward) {
-      torque.y -= torqueStrength * 2;
-    }
-    if (leftward) {
-      torque.y += torqueStrength * 2;
+
+    if (deviceType === 1) {
+      if (leftward) {
+        impulse.x -= rightDirection.x * impulseStrength;
+        impulse.z -= rightDirection.z * impulseStrength;
+      }
+      if (rightward) {
+        impulse.x += rightDirection.x * impulseStrength;
+        impulse.z += rightDirection.z * impulseStrength;
+      }
+
+      const cameraQuaternion = state.camera.quaternion.clone();
+      const cameraEuler = new THREE.Euler().setFromQuaternion(
+        cameraQuaternion,
+        "YXZ"
+      );
+
+      const boatEuler = new THREE.Euler(
+        visualGroup.current.rotation.x, // Keep boat's current x rotation
+        cameraEuler.y, // Apply camera's y rotation
+        visualGroup.current.rotation.z // Keep boat's current z rotation
+      );
+
+      visualGroup.current.rotation.copy(boatEuler);
+    } else {
+      if (rightward) {
+        torque.y -= torqueStrength * 2;
+      }
+      if (leftward) {
+        torque.y += torqueStrength * 2;
+      }
     }
 
     body.current.applyImpulse(impulse);
@@ -177,12 +203,14 @@ export default function Player(props) {
       bodyPosition.y,
       bodyPosition.z
     );
-    visualGroup.current.quaternion.set(
-      bodyRotation.x,
-      bodyRotation.y,
-      bodyRotation.z,
-      bodyRotation.w
-    );
+    if (deviceType === 0) {
+      visualGroup.current.quaternion.set(
+        bodyRotation.x,
+        bodyRotation.y,
+        bodyRotation.z,
+        bodyRotation.w
+      );
+    }
   });
 
   return (
