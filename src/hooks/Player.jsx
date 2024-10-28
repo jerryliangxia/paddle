@@ -1,10 +1,13 @@
 import { useRef, useState, useEffect, useMemo } from "react";
 import { Capsule } from "three/examples/jsm/math/Capsule.js";
-import { Vector3 } from "three";
+import { Vector3, Mesh, BoxGeometry, MeshBasicMaterial, Group } from "three";
 import { useFrame } from "@react-three/fiber";
 import useKeyboard from "./useKeyboard";
 import { useMultipleSounds } from "./useMultipleSounds";
 import { useGame } from "../stores/useGame";
+import * as THREE from "three";
+import { useGLTF } from "@react-three/drei";
+import { useControls } from "leva";
 
 const STEPS_PER_FRAME = 5;
 
@@ -31,6 +34,7 @@ export default function Player({ octree }) {
   const playerOnFloor = useRef(false);
   const playerVelocity = useMemo(() => new Vector3(), []);
   const playerDirection = useMemo(() => new Vector3(), []);
+  const travelDirection = useMemo(() => new Vector3(0, 0, -1), []); // Initial travel direction
   const capsule = useMemo(
     () => new Capsule(new Vector3(0, 0, 0), new Vector3(0, 3, 0), 0.5),
     []
@@ -42,61 +46,44 @@ export default function Player({ octree }) {
     const fullscreenControl = document.querySelector(
       "#fullscreen-control-container"
     );
-    // Check if the element exists and is visible
     return !(
       fullscreenControl &&
       getComputedStyle(fullscreenControl).display !== "none"
     );
   };
 
-  function getForwardVector(camera, playerDirection) {
-    camera.getWorldDirection(playerDirection);
-    playerDirection.y = 0;
-    playerDirection.normalize();
-    return playerDirection;
+  function getForwardVector() {
+    return travelDirection.clone().normalize();
   }
 
-  function getSideVector(camera, playerDirection) {
-    camera.getWorldDirection(playerDirection);
-    playerDirection.y = 0;
-    playerDirection.normalize();
-    playerDirection.cross(camera.up);
-    return playerDirection;
-  }
-
-  function controlsWASD(camera, delta, playerVelocity, playerDirection) {
-    if (!canMove()) return;
+  function controlsWASD(delta) {
     const shiftSpeedDelta = (keyboard["ShiftLeft"] ? 108 : 36) * delta;
-    keyboard["KeyA"] &&
-      playerVelocity.add(
-        getSideVector(camera, playerDirection).multiplyScalar(-shiftSpeedDelta)
-      );
-    keyboard["KeyD"] &&
-      playerVelocity.add(
-        getSideVector(camera, playerDirection).multiplyScalar(shiftSpeedDelta)
-      );
-    keyboard["KeyW"] &&
-      playerVelocity.add(
-        getForwardVector(camera, playerDirection).multiplyScalar(
-          shiftSpeedDelta
-        )
-      );
-    keyboard["KeyS"] &&
-      playerVelocity.add(
-        getForwardVector(camera, playerDirection).multiplyScalar(
-          -shiftSpeedDelta
-        )
-      );
+    const rotationSpeed = 0.05; // Rotation speed for turning
+
+    // Handle forward and backward movement
+    if (keyboard["KeyW"]) {
+      playerVelocity.add(getForwardVector().multiplyScalar(shiftSpeedDelta));
+    }
+    if (keyboard["KeyS"]) {
+      playerVelocity.add(getForwardVector().multiplyScalar(-shiftSpeedDelta));
+    }
+
+    // Handle rotation
+    if (keyboard["KeyD"]) {
+      travelDirection.applyAxisAngle(new Vector3(0, 1, 0), -rotationSpeed);
+    }
+    if (keyboard["KeyA"]) {
+      travelDirection.applyAxisAngle(new Vector3(0, 1, 0), rotationSpeed);
+    }
   }
 
-  function updatePlayer(camera, delta, octree, capsule, playerVelocity) {
+  function updatePlayer(delta, octree, capsule, playerVelocity) {
     let damping = Math.exp(-8 * delta) - 1;
     playerVelocity.addScaledVector(playerVelocity, damping);
     const deltaPosition = playerVelocity.clone().multiplyScalar(delta);
     capsule.translate(deltaPosition);
     playerCollisions(capsule, octree);
 
-    camera.position.copy(capsule.end);
     return true;
   }
 
@@ -108,21 +95,70 @@ export default function Player({ octree }) {
     return true;
   }
 
-  function teleportPlayerIfOob(camera, capsule, playerVelocity) {
-    if (camera.position.y <= -100) {
+  function teleportPlayerIfOob(capsule, playerVelocity) {
+    if (capsule.end.y <= -100) {
       playerVelocity.set(0, 0, 0);
       capsule.start.set(0, 10, 0);
       capsule.end.set(0, 11, 0);
-      camera.position.copy(capsule.end);
-      camera.rotation.set(0, 0, 0);
     }
   }
 
   const [isSoundPlayed, setIsSoundPlayed] = useState(false);
   const [lastPlayed, setLastPlayed] = useState(Date.now());
 
-  useFrame(({ camera }, delta) => {
-    controlsWASD(camera, delta, playerVelocity, playerDirection);
+  // Load the 3D model
+  const { nodes, materials } = useGLTF("/paddle.glb");
+
+  // Create a group to hold the model parts
+  const modelGroup = useMemo(() => {
+    const group = new THREE.Group();
+
+    // Add each mesh to the group
+    group.add(
+      new THREE.Mesh(nodes.BaseColliders.geometry, materials.Paddleboard),
+      new THREE.Mesh(nodes.BottomYellow.geometry, materials.Yellow),
+      new THREE.Mesh(nodes.Top.geometry, materials.Top),
+      new THREE.Mesh(nodes.Cube007.geometry, materials.Paddleboard),
+      new THREE.Mesh(nodes.Cube007_1.geometry, materials.Black),
+      new THREE.Mesh(nodes.Cube007_2.geometry, materials.Yellow)
+    );
+
+    // Optionally, apply transformations
+    group.scale.set(0.5, 0.5, 0.5); // Scale the model
+
+    return group;
+  }, [nodes, materials]);
+
+  // Customizable y-offset
+  const yOffset = -5; // Adjust this value to shift the model down
+
+  // Use Leva's useControls to create UI controls for rotation
+  const { rotationX, rotationY, rotationZ } = useControls({
+    rotationX: {
+      value: -Math.PI / 2,
+      min: -Math.PI,
+      max: Math.PI,
+      step: 0.01,
+      label: "Rotation X",
+    },
+    rotationY: {
+      value: 0,
+      min: -Math.PI,
+      max: Math.PI,
+      step: 0.01,
+      label: "Rotation Y",
+    },
+    rotationZ: {
+      value: Math.PI / 2,
+      min: -Math.PI,
+      max: Math.PI,
+      step: 0.01,
+      label: "Rotation Z",
+    },
+  });
+
+  useFrame(({ camera, scene }, delta) => {
+    controlsWASD(delta);
     const velocityMagnitude = playerVelocity.length();
     if (playerOnFloor.current) {
       if (playAudio) {
@@ -145,14 +181,27 @@ export default function Player({ octree }) {
     const deltaSteps = Math.min(0.05, delta) / STEPS_PER_FRAME;
     for (let i = 0; i < STEPS_PER_FRAME; i++) {
       playerOnFloor.current = updatePlayer(
-        camera,
         deltaSteps,
         octree,
         capsule,
         playerVelocity
       );
     }
-    teleportPlayerIfOob(camera, capsule, playerVelocity);
+    teleportPlayerIfOob(capsule, playerVelocity);
+
+    // Update the camera position to follow the capsule
+    camera.position.copy(capsule.end);
+
+    // Update the model position and orientation
+    modelGroup.position.copy(capsule.end);
+    modelGroup.position.y += yOffset; // Shift the model down by yOffset
+    modelGroup.rotation.set(rotationX, rotationY, rotationZ); // Apply rotation controls
+    modelGroup.lookAt(capsule.end.clone().add(travelDirection));
+
+    // Add the model to the scene if not already added
+    if (!scene.children.includes(modelGroup)) {
+      scene.add(modelGroup);
+    }
   });
 
   useEffect(() => {

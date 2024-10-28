@@ -61,8 +61,8 @@ export default function App() {
       <Player octree={octree} />
       {/* <Colliders /> */}
       {/* </Physics> */}
-      <Water />
-      <Geom3 />
+      {/* <Water /> */}
+      {/* <Geom3 /> */}
     </>
   );
 }
