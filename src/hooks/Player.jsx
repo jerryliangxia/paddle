@@ -58,12 +58,12 @@ export default function Player({ octree }) {
 
   const maxRotationSpeed = 0.005; // Maximum rotation speed
   const rotationAcceleration = 0.0005; // Acceleration for rotation
-  const rotationDeceleration = 0.00003; // Deceleration for rotation
+  const rotationDeceleration = 0.00008; // Deceleration for rotation
   const rotationalVelocity = useRef(0); // Rotational velocity
 
   const impulse = useRef(0); // Accumulated impulse
   const impulseAcceleration = 0.5; // Rate of impulse increase
-  const impulseDeceleration = 0.0008; // Rate of impulse decrease
+  const impulseDeceleration = 0.003; // Rate of impulse decrease
 
   function controlsWASD(delta) {
     const shiftSpeedDelta = (keyboard["ShiftLeft"] ? 108 : 36) * delta;
