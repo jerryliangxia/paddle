@@ -56,9 +56,13 @@ export default function Player({ octree }) {
     return travelDirection.clone().normalize();
   }
 
+  const maxRotationSpeed = 0.02; // Maximum rotation speed
+  const rotationAcceleration = 0.0005; // Acceleration for rotation
+  const rotationDeceleration = 0.0003; // Deceleration for rotation
+  const rotationalVelocity = useRef(0); // Rotational velocity
+
   function controlsWASD(delta) {
     const shiftSpeedDelta = (keyboard["ShiftLeft"] ? 108 : 36) * delta;
-    const rotationSpeed = 0.05; // Rotation speed for turning
 
     // Handle forward and backward movement
     if (keyboard["KeyW"]) {
@@ -68,13 +72,37 @@ export default function Player({ octree }) {
       playerVelocity.add(getForwardVector().multiplyScalar(-shiftSpeedDelta));
     }
 
-    // Handle rotation
+    // Handle rotation acceleration
     if (keyboard["KeyD"]) {
-      travelDirection.applyAxisAngle(new Vector3(0, 1, 0), -rotationSpeed);
+      rotationalVelocity.current = Math.min(
+        rotationalVelocity.current + rotationAcceleration,
+        maxRotationSpeed
+      );
+    } else if (keyboard["KeyA"]) {
+      rotationalVelocity.current = Math.max(
+        rotationalVelocity.current - rotationAcceleration,
+        -maxRotationSpeed
+      );
+    } else {
+      // Decelerate rotation when no key is pressed
+      if (rotationalVelocity.current > 0) {
+        rotationalVelocity.current = Math.max(
+          rotationalVelocity.current - rotationDeceleration,
+          0
+        );
+      } else if (rotationalVelocity.current < 0) {
+        rotationalVelocity.current = Math.min(
+          rotationalVelocity.current + rotationDeceleration,
+          0
+        );
+      }
     }
-    if (keyboard["KeyA"]) {
-      travelDirection.applyAxisAngle(new Vector3(0, 1, 0), rotationSpeed);
-    }
+
+    // Apply rotation
+    travelDirection.applyAxisAngle(
+      new Vector3(0, 1, 0),
+      rotationalVelocity.current
+    );
   }
 
   function updatePlayer(delta, octree, capsule, playerVelocity) {
@@ -124,38 +152,10 @@ export default function Player({ octree }) {
     );
 
     // Optionally, apply transformations
-    group.scale.set(0.5, 0.5, 0.5); // Scale the model
+    group.scale.set(-1, 1, -1); // Scale the model
 
     return group;
   }, [nodes, materials]);
-
-  // Customizable y-offset
-  const yOffset = -5; // Adjust this value to shift the model down
-
-  // Use Leva's useControls to create UI controls for rotation
-  const { rotationX, rotationY, rotationZ } = useControls({
-    rotationX: {
-      value: -Math.PI / 2,
-      min: -Math.PI,
-      max: Math.PI,
-      step: 0.01,
-      label: "Rotation X",
-    },
-    rotationY: {
-      value: 0,
-      min: -Math.PI,
-      max: Math.PI,
-      step: 0.01,
-      label: "Rotation Y",
-    },
-    rotationZ: {
-      value: Math.PI / 2,
-      min: -Math.PI,
-      max: Math.PI,
-      step: 0.01,
-      label: "Rotation Z",
-    },
-  });
 
   useFrame(({ camera, scene }, delta) => {
     controlsWASD(delta);
@@ -193,10 +193,13 @@ export default function Player({ octree }) {
     camera.position.copy(capsule.end);
 
     // Update the model position and orientation
-    modelGroup.position.copy(capsule.end);
-    modelGroup.position.y += yOffset; // Shift the model down by yOffset
-    modelGroup.rotation.set(rotationX, rotationY, rotationZ); // Apply rotation controls
-    modelGroup.lookAt(capsule.end.clone().add(travelDirection));
+    const positionTarget = capsule.end.clone();
+    positionTarget.y = 0;
+    modelGroup.position.copy(positionTarget);
+
+    const lookAtTarget = capsule.end.clone().add(travelDirection);
+    lookAtTarget.y = 0;
+    modelGroup.lookAt(lookAtTarget);
 
     // Add the model to the scene if not already added
     if (!scene.children.includes(modelGroup)) {

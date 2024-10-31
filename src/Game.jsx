@@ -30,7 +30,7 @@ export default function App() {
   const deviceType = useGame((state) => state.deviceType);
   const { scene } = useGLTF("/geom3_borders1.glb");
   const octree = useOctree(scene);
-  useOctreeHelper(octree);
+  //   useOctreeHelper(octree);
 
   return (
     <>
@@ -62,7 +62,7 @@ export default function App() {
       {/* <Colliders /> */}
       {/* </Physics> */}
       {/* <Water /> */}
-      {/* <Geom3 /> */}
+      <Geom3 />
     </>
   );
 }
