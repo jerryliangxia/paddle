@@ -87,16 +87,16 @@ export default function Player({ octree }) {
       getForwardVector().multiplyScalar(impulse.current * shiftSpeedDelta)
     );
 
-    // Handle rotation acceleration
+    // Reverse rotation direction for A and D keys
     if (keyboard["KeyD"]) {
-      rotationalVelocity.current = Math.min(
-        rotationalVelocity.current + rotationAcceleration,
-        maxRotationSpeed
-      );
-    } else if (keyboard["KeyA"]) {
       rotationalVelocity.current = Math.max(
         rotationalVelocity.current - rotationAcceleration,
         -maxRotationSpeed
+      );
+    } else if (keyboard["KeyA"]) {
+      rotationalVelocity.current = Math.min(
+        rotationalVelocity.current + rotationAcceleration,
+        maxRotationSpeed
       );
     } else {
       // Decelerate rotation when no key is pressed
