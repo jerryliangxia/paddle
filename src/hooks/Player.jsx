@@ -56,21 +56,36 @@ export default function Player({ octree }) {
     return travelDirection.clone().normalize();
   }
 
-  const maxRotationSpeed = 0.02; // Maximum rotation speed
+  const maxRotationSpeed = 0.005; // Maximum rotation speed
   const rotationAcceleration = 0.0005; // Acceleration for rotation
-  const rotationDeceleration = 0.0003; // Deceleration for rotation
+  const rotationDeceleration = 0.00003; // Deceleration for rotation
   const rotationalVelocity = useRef(0); // Rotational velocity
+
+  const impulse = useRef(0); // Accumulated impulse
+  const impulseAcceleration = 0.5; // Rate of impulse increase
+  const impulseDeceleration = 0.0008; // Rate of impulse decrease
 
   function controlsWASD(delta) {
     const shiftSpeedDelta = (keyboard["ShiftLeft"] ? 108 : 36) * delta;
 
-    // Handle forward and backward movement
+    // Handle forward and backward impulse accumulation
     if (keyboard["KeyW"]) {
-      playerVelocity.add(getForwardVector().multiplyScalar(shiftSpeedDelta));
+      impulse.current = Math.min(impulse.current + impulseAcceleration, 1);
+    } else if (keyboard["KeyS"]) {
+      impulse.current = Math.max(impulse.current - impulseAcceleration, -1);
+    } else {
+      // Decelerate impulse when no key is pressed
+      if (impulse.current > 0) {
+        impulse.current = Math.max(impulse.current - impulseDeceleration, 0);
+      } else if (impulse.current < 0) {
+        impulse.current = Math.min(impulse.current + impulseDeceleration, 0);
+      }
     }
-    if (keyboard["KeyS"]) {
-      playerVelocity.add(getForwardVector().multiplyScalar(-shiftSpeedDelta));
-    }
+
+    // Apply the accumulated impulse to the player velocity
+    playerVelocity.add(
+      getForwardVector().multiplyScalar(impulse.current * shiftSpeedDelta)
+    );
 
     // Handle rotation acceleration
     if (keyboard["KeyD"]) {
