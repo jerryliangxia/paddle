@@ -6,7 +6,7 @@ import { useKeyboardControls } from "@react-three/drei";
 import * as THREE from "three";
 import { PlayerLight } from "./PlayerLight";
 import { useGame } from "../stores/useGame";
-import Dog from "./Dog";
+import PhysicsDog from "./PhysicsDog";
 
 export default function Player(props) {
   const body = useRef();
@@ -231,7 +231,7 @@ export default function Player(props) {
         />
       </RigidBody>
       <group ref={visualGroup} scale={0.5}>
-        <Dog
+        <PhysicsDog
           rotation={[0, (-4.5 * Math.PI) / 4, 0]}
           position={[0, 0.5, -3.2]}
           scale={0.6}

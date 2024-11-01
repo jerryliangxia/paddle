@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { useGame } from "./stores/useGame.js";
 import MobileControls from "./components/MobileControls.jsx";
 import { LoadingScreen } from "./LoadingScreen.jsx";
+import PhysicsGame from "./PhysicsGame.jsx";
 import Game from "./Game.jsx";
 
 export default function App() {
@@ -58,6 +59,8 @@ export default function App() {
     setOverlayVisible(false);
   };
 
+  const useOctree = true;
+
   return (
     <Suspense>
       <Canvas
@@ -68,7 +71,7 @@ export default function App() {
           far: 1000,
         }}
       >
-        <Game />
+        {useOctree ? <Game /> : <PhysicsGame />}
       </Canvas>
       {deviceType === 1 && overlayVisible && (
         <button
