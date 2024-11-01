@@ -1,13 +1,11 @@
 import { useRef, useState, useEffect, useMemo } from "react";
 import { Capsule } from "three/examples/jsm/math/Capsule.js";
-import { Vector3, Mesh, BoxGeometry, MeshBasicMaterial, Group } from "three";
 import { useFrame } from "@react-three/fiber";
 import useKeyboard from "./useKeyboard";
 import { useMultipleSounds } from "./useMultipleSounds";
 import { useGame } from "../stores/useGame";
+import Dog from "../components/Dog";
 import * as THREE from "three";
-import { useGLTF } from "@react-three/drei";
-import { useControls } from "leva";
 
 const STEPS_PER_FRAME = 5;
 
@@ -25,18 +23,22 @@ export default function Player({ octree }) {
   const { upPressed, downPressed, leftPressed, rightPressed, shiftPressed } =
     controlsMobile;
 
-  const playRandomWaterSound = useMultipleSounds(waterSoundFiles);
+  const playWaterMultipleSounds = useMultipleSounds(waterSoundFiles);
 
-  function playFootstep() {
-    playRandomWaterSound();
+  function playWaterSound() {
+    playWaterMultipleSounds();
   }
 
   const playerOnFloor = useRef(false);
-  const playerVelocity = useMemo(() => new Vector3(), []);
-  const playerDirection = useMemo(() => new Vector3(), []);
-  const travelDirection = useMemo(() => new Vector3(0, 0, -1), []); // Initial travel direction
+  const playerVelocity = useMemo(() => new THREE.Vector3(), []);
+  const travelDirection = useMemo(() => new THREE.Vector3(0, 0, -1), []);
   const capsule = useMemo(
-    () => new Capsule(new Vector3(0, 0, 0), new Vector3(0, 3, 0), 0.5),
+    () =>
+      new Capsule(
+        new THREE.Vector3(0, 0, 0),
+        new THREE.Vector3(0, 1.25, 0),
+        0.5
+      ),
     []
   );
 
@@ -115,7 +117,7 @@ export default function Player({ octree }) {
 
     // Apply rotation
     travelDirection.applyAxisAngle(
-      new Vector3(0, 1, 0),
+      new THREE.Vector3(0, 1, 0),
       rotationalVelocity.current
     );
   }
@@ -149,30 +151,9 @@ export default function Player({ octree }) {
   const [isSoundPlayed, setIsSoundPlayed] = useState(false);
   const [lastPlayed, setLastPlayed] = useState(Date.now());
 
-  // Load the 3D model
-  const { nodes, materials } = useGLTF("/paddle.glb");
+  const modelGroup = useMemo(() => new THREE.Group(), []);
 
-  // Create a group to hold the model parts
-  const modelGroup = useMemo(() => {
-    const group = new THREE.Group();
-
-    // Add each mesh to the group
-    group.add(
-      new THREE.Mesh(nodes.BaseColliders.geometry, materials.Paddleboard),
-      new THREE.Mesh(nodes.BottomYellow.geometry, materials.Yellow),
-      new THREE.Mesh(nodes.Top.geometry, materials.Top),
-      new THREE.Mesh(nodes.Cube007.geometry, materials.Paddleboard),
-      new THREE.Mesh(nodes.Cube007_1.geometry, materials.Black),
-      new THREE.Mesh(nodes.Cube007_2.geometry, materials.Yellow)
-    );
-
-    // Optionally, apply transformations
-    group.scale.set(-1, 1, -1); // Scale the model
-
-    return group;
-  }, [nodes, materials]);
-
-  useFrame(({ camera, scene }, delta) => {
+  useFrame(({ camera }, delta) => {
     controlsWASD(delta);
     const velocityMagnitude = playerVelocity.length();
     if (playerOnFloor.current) {
@@ -180,10 +161,10 @@ export default function Player({ octree }) {
         if (
           velocityMagnitude > 1 &&
           !isSoundPlayed &&
-          Date.now() - lastPlayed > 500
+          Date.now() - lastPlayed > 1000
         ) {
           setIsSoundPlayed(true);
-          playFootstep();
+          playWaterSound();
           setLastPlayed(Date.now());
           setTimeout(() => {
             setIsSoundPlayed(false);
@@ -215,11 +196,6 @@ export default function Player({ octree }) {
     const lookAtTarget = capsule.end.clone().add(travelDirection);
     lookAtTarget.y = 0;
     modelGroup.lookAt(lookAtTarget);
-
-    // Add the model to the scene if not already added
-    if (!scene.children.includes(modelGroup)) {
-      scene.add(modelGroup);
-    }
   });
 
   useEffect(() => {
@@ -229,4 +205,18 @@ export default function Player({ octree }) {
     keyboard["KeyD"] = rightPressed;
     keyboard["ShiftLeft"] = shiftPressed;
   }, [upPressed, downPressed, leftPressed, rightPressed, shiftPressed]);
+
+  const dogRef = useRef();
+
+  useFrame(() => {
+    if (dogRef.current) {
+      const forwardVector = travelDirection.clone().normalize().setLength(4.0);
+      const newPosition = modelGroup.position.clone().add(forwardVector);
+
+      dogRef.current.position.copy(newPosition);
+      dogRef.current.rotation.copy(modelGroup.rotation);
+    }
+  });
+
+  return <Dog ref={dogRef} />;
 }

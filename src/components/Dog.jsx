@@ -1,11 +1,12 @@
-import React, { useRef, useEffect, useState } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import React, { useEffect, useState, forwardRef } from "react";
+import { useGLTF, useAnimations, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
-export default function Dog(props) {
-  const group = useRef();
+const Dog = forwardRef((props, ref) => {
   const { nodes, materials, animations } = useGLTF("/dog.glb");
-  const { actions } = useAnimations(animations, group);
+  const { nodes: boatNodes, materials: boatMaterials } = useGLTF("/paddle.glb");
+  const texture = useTexture("/img/paddleboard.png");
+  const { actions } = useAnimations(animations, ref);
 
   const [currentAction, setCurrentAction] = useState("Idle1");
   const [idleCount, setIdleCount] = useState(0);
@@ -74,9 +75,58 @@ export default function Dog(props) {
     };
   }, [actions, currentAction, idleCount]);
 
+  const [o] = useState(() => new THREE.Object3D());
+
   return (
-    <group ref={group} {...props} dispose={null}>
-      <group name="Scene">
+    <group ref={ref} {...props} scale={0.5} dispose={null}>
+      <directionalLight target={o} intensity={9} color={0xffffff} />
+      <primitive object={o} position={[0, 0, 0]} />
+      <group
+        dispose={null}
+        scale={1.2}
+        rotation={[0, Math.PI, 0]}
+        position={[0, 0, -7]}
+      >
+        <mesh
+          geometry={boatNodes.BaseColliders.geometry}
+          material={boatMaterials.Paddleboard}
+        />
+        <mesh geometry={boatNodes.BottomYellow.geometry}>
+          <meshStandardMaterial
+            color={0xffe600}
+            metalness={0.5}
+            roughness={1}
+          />
+        </mesh>
+        <mesh geometry={boatNodes.Top.geometry}>
+          <meshBasicMaterial
+            map={texture}
+            map-flipY={false}
+            metalness={1}
+            roughness={1}
+          />
+        </mesh>
+        <mesh geometry={boatNodes.Cube007.geometry}>
+          <meshStandardMaterial
+            map={texture}
+            map-flipY={false}
+            metalness={0}
+            roughness={1}
+          />
+        </mesh>
+        <mesh geometry={boatNodes.Cube007_1.geometry}>
+          <meshStandardMaterial color={0x000000} metalness={0} roughness={1} />
+        </mesh>
+        <mesh geometry={boatNodes.Cube007_2.geometry}>
+          <meshStandardMaterial color={0xffe600} metalness={1} roughness={1} />
+        </mesh>
+      </group>
+      <group
+        name="Scene"
+        scale={0.75}
+        rotation={[0, -Math.PI / 8, 0]}
+        position={[0, 0.35, -3]}
+      >
         <group name="Dog">
           <group name="DogMesh">
             <skinnedMesh
@@ -146,6 +196,8 @@ export default function Dog(props) {
       </group>
     </group>
   );
-}
+});
 
 useGLTF.preload("/dog.glb");
+
+export default Dog;
