@@ -14,6 +14,7 @@ import Geom3 from "./components/Scene.jsx";
 import useOctree from "./hooks/useOctree";
 import useOctreeHelper from "./hooks/useOctreeHelper";
 import { useGLTF } from "@react-three/drei";
+import { Perf } from "r3f-perf";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -35,7 +36,7 @@ export default function App() {
   return (
     <>
       <fog attach="fog" color="#1d2b0f" near={1} far={800} />
-      {/* <Perf /> */}
+      <Perf />
       <Environment background files="img/rustig_koppie_puresky_1k.hdr" />
       <EffectComposer>
         <Bloom
