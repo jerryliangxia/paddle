@@ -19,7 +19,10 @@ export const LoadingScreen = ({ started, onStarted }) => {
   };
 
   return (
-    <div className={`loadingScreen ${started ? "loadingScreen--started" : ""}`}>
+    <div
+      id="fullscreen-control-container"
+      className={`loadingScreen ${started ? "loadingScreen--started" : ""}`}
+    >
       <div className="loadingScreen__progress">
         <div
           className="loadingScreen__progress__value"
