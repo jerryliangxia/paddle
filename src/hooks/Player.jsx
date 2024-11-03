@@ -67,8 +67,30 @@ export default function Player({ octree }) {
   const impulseAcceleration = 0.5; // Rate of impulse increase
   const impulseDeceleration = 0.003; // Rate of impulse decrease
 
+  const baseSpeed = 36;
+  const maxSpeed = 72; // Maximum speed cap
+  const shiftAcceleration = 0.1; // Rate of speed increase when shift is pressed
+  const shiftDeceleration = 0.05; // Rate of speed decrease when shift is released
+  const currentSpeed = useRef(baseSpeed);
+
   function controlsWASD(delta) {
-    const shiftSpeedDelta = (keyboard["ShiftLeft"] ? 108 : 36) * delta;
+    // Adjust speed based on shift key
+    if (keyboard["ShiftLeft"]) {
+      currentSpeed.current = Math.min(
+        currentSpeed.current + shiftAcceleration,
+        maxSpeed
+      );
+    } else {
+      currentSpeed.current = Math.max(
+        currentSpeed.current - shiftDeceleration,
+        baseSpeed
+      );
+    }
+
+    // Ensure the speed does not exceed the maximum speed
+    currentSpeed.current = Math.min(currentSpeed.current, maxSpeed);
+
+    const shiftSpeedDelta = currentSpeed.current * delta;
 
     // Handle forward and backward impulse accumulation
     if (keyboard["KeyW"]) {

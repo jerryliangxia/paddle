@@ -46,11 +46,11 @@ export default function Overlay() {
       setControlsMobile("upPressed", true);
     }
 
-    if (distance > radius * 0.9) {
-      setControlsMobile("shiftPressed", true);
-    } else {
-      setControlsMobile("shiftPressed", false);
-    }
+    // if (distance > radius * 0.9) {
+    //   setControlsMobile("shiftPressed", true);
+    // } else {
+    //   setControlsMobile("shiftPressed", false);
+    // }
   };
 
   useEffect(() => {
