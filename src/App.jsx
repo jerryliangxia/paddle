@@ -59,7 +59,7 @@ export default function App() {
     setOverlayVisible(false);
   };
 
-  const useOctree = false;
+  const useOctree = true;
 
   return (
     <Suspense>

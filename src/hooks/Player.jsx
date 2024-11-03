@@ -72,9 +72,19 @@ export default function Player({ octree }) {
 
     // Handle forward and backward impulse accumulation
     if (keyboard["KeyW"]) {
-      impulse.current = Math.min(impulse.current + impulseAcceleration, 1);
+      if (impulse.current < 0) {
+        // If moving backward, slow down instead of moving forward
+        impulse.current = Math.min(impulse.current + impulseDeceleration, 0);
+      } else {
+        impulse.current = Math.min(impulse.current + impulseAcceleration, 1);
+      }
     } else if (keyboard["KeyS"]) {
-      impulse.current = Math.max(impulse.current - impulseAcceleration, -1);
+      if (impulse.current > 0) {
+        // If moving forward, slow down instead of moving backward
+        impulse.current = Math.max(impulse.current - impulseDeceleration, 0);
+      } else {
+        impulse.current = Math.max(impulse.current - impulseAcceleration, -1);
+      }
     } else {
       // Decelerate impulse when no key is pressed
       if (impulse.current > 0) {
