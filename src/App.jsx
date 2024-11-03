@@ -72,7 +72,7 @@ export default function App() {
           far: 1000,
         }}
       >
-        <Perf />
+        {/* <Perf /> */}
         {useOctree ? <Game /> : <PhysicsGame />}
       </Canvas>
       {deviceType === 1 && overlayVisible && (
