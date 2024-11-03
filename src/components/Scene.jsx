@@ -1,8 +1,8 @@
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
-export default function Model(props) {
-  const { scene } = useGLTF("/geom4.glb");
+export default function Scene(props) {
+  const { scene } = useGLTF(props.file);
 
   return (
     <group {...props} dispose={null}>

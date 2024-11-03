@@ -49,6 +49,14 @@ export const useGame = create(
             shiftPressed: false,
           },
         })),
+
+      // Map
+      map: 0,
+      setMap: (map) => {
+        set((state) => {
+          return { ...state, map: map };
+        });
+      },
     };
   })
 );
