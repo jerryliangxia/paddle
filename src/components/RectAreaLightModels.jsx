@@ -12,7 +12,7 @@ const RectArealightWithHelper = ({
   position,
   color,
 }) => {
-  // This somehow changes the texture of the ground-plane and makes it more shiny? Very interesting
+  // This somehow changes the texture of the ground-plane and makes it more shiny?
   RectAreaLightUniformsLib.init();
   const rectAreaLight = useRef();
   useHelper(rectAreaLight, RectAreaLightHelper);

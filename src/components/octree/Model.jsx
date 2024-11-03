@@ -2,7 +2,8 @@ import React, { useEffect, useState, forwardRef } from "react";
 import { useGLTF, useAnimations, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
-const Dog = forwardRef((props, ref) => {
+// Octree Dog
+const Model = forwardRef((props, ref) => {
   const { nodes, materials, animations } = useGLTF("/dog.glb");
   const { nodes: boatNodes, materials: boatMaterials } = useGLTF("/paddle.glb");
   const texture = useTexture("/img/paddleboard.png");
@@ -11,7 +12,6 @@ const Dog = forwardRef((props, ref) => {
   const [currentAction, setCurrentAction] = useState("Idle1");
   const [idleCount, setIdleCount] = useState(0);
 
-  // Constants for idle loops
   const MIN_IDLE_LOOPS = 2;
   const MAX_IDLE_LOOPS = 3;
 
@@ -198,6 +198,7 @@ const Dog = forwardRef((props, ref) => {
   );
 });
 
+useGLTF.preload("/paddle.glb");
 useGLTF.preload("/dog.glb");
 
-export default Dog;
+export default Model;

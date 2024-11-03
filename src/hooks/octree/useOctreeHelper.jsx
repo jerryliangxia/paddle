@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { OctreeHelper } from "three/examples/jsm/helpers/OctreeHelper";
 import { useThree } from "@react-three/fiber";
-import { useControls } from "leva";
+// import { useControls } from "leva";
 
 export default function useOctreeHelper(octree) {
   const { scene } = useThree();

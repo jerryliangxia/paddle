@@ -2,9 +2,9 @@ import { useRef, useState, useEffect, useMemo } from "react";
 import { Capsule } from "three/examples/jsm/math/Capsule.js";
 import { useFrame } from "@react-three/fiber";
 import useKeyboard from "./useKeyboard";
-import { useMultipleSounds } from "./useMultipleSounds";
-import { useGame } from "../stores/useGame";
-import Dog from "../components/Dog";
+import { useMultipleSounds } from "../useMultipleSounds";
+import { useGame } from "../../stores/useGame";
+import Dog from "../../components/octree/Model";
 import * as THREE from "three";
 
 const STEPS_PER_FRAME = 5;
@@ -58,23 +58,22 @@ export default function Player({ octree }) {
     return travelDirection.clone().normalize();
   }
 
-  const maxRotationSpeed = 0.005; // Maximum rotation speed
-  const rotationAcceleration = 0.0005; // Acceleration for rotation
-  const rotationDeceleration = 0.00008; // Deceleration for rotation
-  const rotationalVelocity = useRef(0); // Rotational velocity
+  const maxRotationSpeed = 0.005;
+  const rotationAcceleration = 0.0005;
+  const rotationDeceleration = 0.00008;
+  const rotationalVelocity = useRef(0);
 
-  const impulse = useRef(0); // Accumulated impulse
-  const impulseAcceleration = 0.5; // Rate of impulse increase
-  const impulseDeceleration = 0.003; // Rate of impulse decrease
+  const impulse = useRef(0);
+  const impulseAcceleration = 0.5;
+  const impulseDeceleration = 0.003;
 
   const baseSpeed = 36;
-  const maxSpeed = 72; // Maximum speed cap
-  const shiftAcceleration = 0.1; // Rate of speed increase when shift is pressed
-  const shiftDeceleration = 0.05; // Rate of speed decrease when shift is released
+  const maxSpeed = 72;
+  const shiftAcceleration = 0.1;
+  const shiftDeceleration = 0.05;
   const currentSpeed = useRef(baseSpeed);
 
   function controlsWASD(delta) {
-    // Adjust speed based on shift key
     if (keyboard["ShiftLeft"]) {
       currentSpeed.current = Math.min(
         currentSpeed.current + shiftAcceleration,
@@ -87,7 +86,6 @@ export default function Player({ octree }) {
       );
     }
 
-    // Ensure the speed does not exceed the maximum speed
     currentSpeed.current = Math.min(currentSpeed.current, maxSpeed);
 
     const shiftSpeedDelta = currentSpeed.current * delta;
@@ -147,7 +145,6 @@ export default function Player({ octree }) {
       }
     }
 
-    // Apply rotation
     travelDirection.applyAxisAngle(
       new THREE.Vector3(0, 1, 0),
       rotationalVelocity.current

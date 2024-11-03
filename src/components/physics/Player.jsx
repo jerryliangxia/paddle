@@ -1,12 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
-import { useGLTF, useTexture } from "@react-three/drei";
-import { RigidBody, CuboidCollider } from "@react-three/rapier";
 import { useFrame } from "@react-three/fiber";
-import { useKeyboardControls } from "@react-three/drei";
+import { useGLTF, useTexture, useKeyboardControls } from "@react-three/drei";
+import { RigidBody, CuboidCollider } from "@react-three/rapier";
 import * as THREE from "three";
 import { PlayerLight } from "./PlayerLight";
-import { useGame } from "../stores/useGame";
-import PhysicsDog from "./PhysicsDog";
+import { useGame } from "../../stores/useGame";
+import Dog from "./Dog";
 
 export default function Player(props) {
   const body = useRef();
@@ -53,7 +52,7 @@ export default function Player(props) {
       forwardDirection.normalize();
 
       transitionMesh.current.position.set(
-        bodyPosition.x + forwardDirection.x * 2, // Adjust distance as needed
+        bodyPosition.x + forwardDirection.x * 2,
         lookUpPosition,
         bodyPosition.z + forwardDirection.z * 2
       );
@@ -85,7 +84,7 @@ export default function Player(props) {
 
       // Set transitionMesh position in front of the player
       transitionMesh.current.position.set(
-        bodyPosition.x + forwardDirection.x * 2, // Adjust distance as needed
+        bodyPosition.x + forwardDirection.x * 2,
         stablePosition,
         bodyPosition.z + forwardDirection.z * 2
       );
@@ -231,7 +230,7 @@ export default function Player(props) {
         />
       </RigidBody>
       <group ref={visualGroup} scale={0.5}>
-        <PhysicsDog
+        <Dog
           rotation={[0, (-4.5 * Math.PI) / 4, 0]}
           position={[0, 0.5, -3.2]}
           scale={0.6}

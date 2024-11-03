@@ -1,18 +1,19 @@
 import React from "react";
 import { useThree } from "@react-three/fiber";
-import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import {
   PointerLockControls as PointerLockControlsDesktop,
   Environment,
+  useGLTF,
 } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
-import { useGame } from "./stores/useGame.js";
-import { PointerLockControls as PointerLockControlsImpl } from "./hooks/PointerLockControls.js";
-import Player from "./components/Player.jsx";
-import Lights from "./components/Lights.jsx";
-import Water from "./components/Water.jsx";
-import Geom3 from "./components/Scene.jsx";
-import Colliders from "./components/Colliders.jsx";
+import { useGame } from "../../stores/useGame.js";
+import { PointerLockControls as PointerLockControlsImpl } from "../../hooks/PointerLockControls.js";
+import Player from "../../hooks/octree/Player.jsx";
+import Lights from "../Lights.jsx";
+import Water from "../Water.jsx";
+import Geom3 from "../Scene.jsx";
+import useOctree from "../../hooks/octree/useOctree.jsx";
+// import useOctreeHelper from "../../hooks/octree/useOctreeHelper.jsx";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -25,13 +26,16 @@ function PointerLockControlsMobile() {
   return null;
 }
 
-export default function PhysicsGame() {
+// Octree Game
+export default function Game() {
   const deviceType = useGame((state) => state.deviceType);
+  const { scene } = useGLTF("/geom3_borders1.glb");
+  const octree = useOctree(scene);
+  // useOctreeHelper(octree);
 
   return (
     <>
       <fog attach="fog" color="#1d2b0f" near={1} far={800} />
-      {/* <Perf /> */}
       <Environment background files="img/rustig_koppie_puresky_1k.hdr" />
       <EffectComposer>
         <Bloom
@@ -43,19 +47,13 @@ export default function PhysicsGame() {
           height={100}
         />
       </EffectComposer>
-      <Physics>
-        {deviceType === 0 ? (
-          <PointerLockControlsDesktop />
-        ) : (
-          <PointerLockControlsMobile />
-        )}
-        <Lights />
-        <RigidBody type="fixed" friction={0}>
-          <CuboidCollider args={[1000, 0.1, 1000]} />
-        </RigidBody>
-        <Player />
-        <Colliders />
-      </Physics>
+      {deviceType === 0 ? (
+        <PointerLockControlsDesktop />
+      ) : (
+        <PointerLockControlsMobile />
+      )}
+      <Lights />
+      <Player octree={octree} />
       <Water />
       <Geom3 />
     </>

@@ -46,6 +46,7 @@ export default function Overlay() {
       setControlsMobile("upPressed", true);
     }
 
+    // Spring option (removed)
     // if (distance > radius * 0.9) {
     //   setControlsMobile("shiftPressed", true);
     // } else {

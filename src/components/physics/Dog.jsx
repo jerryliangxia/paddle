@@ -2,7 +2,8 @@ import React, { useRef, useEffect, useState } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import * as THREE from "three";
 
-export default function PhysicsDog(props) {
+// Physics Dog
+export default function Dog(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/dog.glb");
   const { actions } = useAnimations(animations, group);
@@ -10,7 +11,6 @@ export default function PhysicsDog(props) {
   const [currentAction, setCurrentAction] = useState("Idle1");
   const [idleCount, setIdleCount] = useState(0);
 
-  // Constants for idle loops
   const MIN_IDLE_LOOPS = 2;
   const MAX_IDLE_LOOPS = 3;
 

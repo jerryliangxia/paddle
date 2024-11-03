@@ -1,7 +1,7 @@
 import { useProgress } from "@react-three/drei";
 import { useGame } from "./stores/useGame";
 
-export const LoadingScreen = ({ started, onStarted }) => {
+export const LoadingScreen = ({ started, onStarted, useOctree }) => {
   const { progress } = useProgress();
   const { desktopControl, setDesktopControl } = useGame();
   const { deviceType } = useGame();
@@ -41,12 +41,12 @@ export const LoadingScreen = ({ started, onStarted }) => {
         >
           Begin
         </button>
-        {deviceType === 1 && (
+        {deviceType === 1 && !useOctree && (
           <button
             className="loadingScreen__toggleControl"
             onTouchStart={() => setDesktopControl(!desktopControl)}
           >
-            {desktopControl ? "Mobile" : "Desktop"}
+            {desktopControl ? "Standard" : "Simple"}
           </button>
         )}
       </div>

@@ -3,8 +3,9 @@ import { Canvas } from "@react-three/fiber";
 import { useGame } from "./stores/useGame.js";
 import MobileControls from "./components/MobileControls.jsx";
 import { LoadingScreen } from "./LoadingScreen.jsx";
-import PhysicsGame from "./PhysicsGame.jsx";
-import Game from "./Game.jsx";
+import PhysicsGame from "./components/physics/Game.jsx";
+import Game from "./components/octree/Game.jsx";
+import { Perf } from "r3f-perf";
 
 export default function App() {
   const deviceType = useGame((state) => state.deviceType);
@@ -71,6 +72,7 @@ export default function App() {
           far: 1000,
         }}
       >
+        <Perf />
         {useOctree ? <Game /> : <PhysicsGame />}
       </Canvas>
       {deviceType === 1 && overlayVisible && (
@@ -87,6 +89,7 @@ export default function App() {
       <LoadingScreen
         started={overlayVisible}
         onStarted={() => setOverlayVisible(true)}
+        useOctree={useOctree}
       />
     </Suspense>
   );
