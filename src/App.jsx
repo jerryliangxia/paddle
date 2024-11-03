@@ -5,6 +5,7 @@ import MobileControls from "./components/MobileControls.jsx";
 import { LoadingScreen } from "./LoadingScreen.jsx";
 import PhysicsGame from "./components/physics/Game.jsx";
 import Game from "./components/octree/Game.jsx";
+import GameObjects from "./components/GameObjects.jsx";
 import { Perf } from "r3f-perf";
 
 export default function App() {
@@ -74,6 +75,7 @@ export default function App() {
       >
         {/* <Perf /> */}
         {useOctree ? <Game /> : <PhysicsGame />}
+        <GameObjects />
       </Canvas>
       {deviceType === 1 && overlayVisible && (
         <button
