@@ -4,6 +4,7 @@ import { useGame } from "./stores/useGame";
 export const LoadingScreen = ({ started, onStarted, useOctree }) => {
   const { progress } = useProgress();
   const { desktopControl, setDesktopControl } = useGame();
+  const { setMap } = useGame();
   const { deviceType } = useGame();
 
   const enter = () => {
@@ -49,6 +50,32 @@ export const LoadingScreen = ({ started, onStarted, useOctree }) => {
             {desktopControl ? "Standard" : "Simple"}
           </button>
         )}
+        <div className="loadingScreen__circles">
+          <div
+            className="loadingScreen__circle"
+            style={{ backgroundColor: "#91B76F" }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setMap(0);
+            }}
+            onTouchStart={(e) => {
+              e.stopPropagation();
+              setMap(0);
+            }}
+          />
+          <div
+            className="loadingScreen__circle"
+            style={{ backgroundColor: "#88B3D6" }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setMap(1);
+            }}
+            onTouchStart={(e) => {
+              e.stopPropagation();
+              setMap(1);
+            }}
+          />
+        </div>
       </div>
       <img
         className="controlKeys"

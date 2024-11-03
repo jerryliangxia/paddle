@@ -9,7 +9,7 @@ import { useGame } from "../stores/useGame.js";
 import { PointerLockControls as PointerLockControlsImpl } from "../hooks/PointerLockControls.js";
 import Lights from "./Lights.jsx";
 import Water from "./Water.jsx";
-import Geom3 from "./Scene.jsx";
+import Scene from "./Scene.jsx";
 
 function PointerLockControlsMobile() {
   const { camera, gl } = useThree();
@@ -24,7 +24,7 @@ function PointerLockControlsMobile() {
 
 export default function GameObjects() {
   const deviceType = useGame((state) => state.deviceType);
-
+  const map = useGame((state) => state.map);
   return (
     <>
       {deviceType === 0 ? (
@@ -46,7 +46,7 @@ export default function GameObjects() {
       </EffectComposer>
       <Lights />
       <Water />
-      <Geom3 />
+      {map === 0 ? <Scene file="/geom4.glb" /> : <></>}
     </>
   );
 }
