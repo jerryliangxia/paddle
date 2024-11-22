@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import Player from "../../hooks/octree/Player.jsx";
 import GroundPlayerPreface from "../../hooks/octree/GroundPlayerPreface.jsx";
@@ -12,12 +12,13 @@ export default function Game() {
   );
   const octree = useOctree(scene);
 
-  const [isPlayer, setIsPlayer] = useState(true);
+  const player = useGame((state) => state.player);
+  const setPlayer = useGame((state) => state.setPlayer);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "e" || event.key === "E") {
-        setIsPlayer((prev) => !prev);
+        setPlayer(!player); // Toggle the player state
       }
     };
 
@@ -29,7 +30,7 @@ export default function Game() {
 
   return (
     <>
-      {isPlayer ? (
+      {player ? (
         <Player octree={octree} />
       ) : (
         <GroundPlayerPreface octree={octree} />

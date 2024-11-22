@@ -6,7 +6,7 @@ import useOctree from "./useOctree";
 import Player from "./GroundPlayer";
 import * as Constants from "../../Constants";
 
-export default function GroundPlayerPreface() {
+const GroundPlayerPreface = React.memo(() => {
   const { scene } = useGLTF("/giant_plane2.glb");
   const octree = useOctree(scene);
   // useOctreeHelper(octree);
@@ -100,4 +100,6 @@ export default function GroundPlayerPreface() {
       />
     </>
   );
-}
+});
+
+export default GroundPlayerPreface;

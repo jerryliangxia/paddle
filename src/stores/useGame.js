@@ -58,6 +58,11 @@ export const useGame = create(
         });
       },
 
+      player: true,
+      setPlayer: (player) => {
+        set((state) => ({ ...state, player: player }));
+      },
+
       visibleSequences: 0,
       setVisibleSequences: (visibleSequences) => {
         set((state) => ({ ...state, visibleSequences: visibleSequences }));
