@@ -57,6 +57,29 @@ export const useGame = create(
           return { ...state, map: map };
         });
       },
+
+      visibleSequences: 0,
+      setVisibleSequences: (visibleSequences) => {
+        set((state) => ({ ...state, visibleSequences: visibleSequences }));
+      },
+
+      completeGameVisible: false,
+      setCompleteGameVisible: (completeGameVisible) => {
+        set((state) => ({
+          ...state,
+          completeGameVisible: completeGameVisible,
+        }));
+      },
+
+      resetGame: false,
+      setResetGame: (resetGame) => {
+        set((state) => ({ ...state, resetGame: resetGame }));
+      },
+
+      playAudio: true,
+      setPlayAudio: (playAudio) => {
+        set((state) => ({ ...state, playAudio: playAudio }));
+      },
     };
   })
 );

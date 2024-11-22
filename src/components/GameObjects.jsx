@@ -45,8 +45,12 @@ export default function GameObjects() {
         />
       </EffectComposer>
       <Lights />
-      <Water />
-      {map === 0 ? <Scene file="/geom4.glb" /> : <></>}
+      {/* <Water /> */}
+      {map === 0 ? (
+        <Scene file="/geom4.glb" />
+      ) : (
+        <Scene file="future_scene.glb" />
+      )}
     </>
   );
 }

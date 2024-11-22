@@ -7,7 +7,7 @@ import * as THREE from "three";
 export default function Collider() {
   const map = useGame((state) => state.map);
   const { nodes } = useGLTF(
-    map === 0 ? "/geom3_borders.glb" : "/giant_plane.glb"
+    map === 0 ? "/geom3_borders.glb" : "/giant_plane2.glb"
   );
   const colliderRef = useRef();
 
