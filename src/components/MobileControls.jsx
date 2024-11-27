@@ -1,12 +1,36 @@
 import { useRef, useState, useEffect } from "react";
 import { useGame } from "../stores/useGame";
-import { bw } from "../Constants";
+import { bw, bh } from "../Constants";
 
-export default function Overlay() {
+export default function MobileControls() {
   const dpadRef = useRef();
+  const throwButtonRef = useRef();
+  const jumpButtonRef = useRef();
+  const togglePlayerButtonRef = useRef();
   const [isTouched, setIsTouched] = useState(false);
+  const [isThrowButtonTouched, setIsThrowButtonTouched] = useState(false);
+  const [isJumpButtonTouched, setIsJumpButtonTouched] = useState(false);
   const [touchPosition, setTouchPosition] = useState({ x: 0, y: 0 });
-  const { setControlsMobile, resetControlsMobile } = useGame();
+  const { setControlsMobile, resetControlsMobile, player, setPlayer } =
+    useGame();
+
+  const handleJump = () => {
+    setControlsMobile("spacePressed", true);
+    setTimeout(() => setControlsMobile("spacePressed", false), 100);
+    setIsJumpButtonTouched(true);
+    setTimeout(() => setIsJumpButtonTouched(false), 500);
+  };
+
+  const handleThrowButtonPress = () => {
+    setControlsMobile("throwPressed", true);
+    setTimeout(() => setControlsMobile("throwPressed", false), 100);
+    setIsThrowButtonTouched(true);
+    setTimeout(() => setIsThrowButtonTouched(false), 500);
+  };
+
+  const handleTogglePlayer = () => {
+    setPlayer(!player); // Toggle the player state
+  };
 
   const handleTouchMove = (event) => {
     event.stopPropagation();
@@ -45,13 +69,6 @@ export default function Overlay() {
     } else if (direction < (Math.PI * 7) / 4) {
       setControlsMobile("upPressed", true);
     }
-
-    // Spring option (removed)
-    // if (distance > radius * 0.9) {
-    //   setControlsMobile("shiftPressed", true);
-    // } else {
-    //   setControlsMobile("shiftPressed", false);
-    // }
   };
 
   useEffect(() => {
@@ -71,35 +88,8 @@ export default function Overlay() {
     return () => cancelAnimationFrame(animationFrameId);
   }, [isTouched]);
 
-  useEffect(() => {
-    const dpad = dpadRef.current;
-
-    if (dpad) {
-      const options = { passive: false };
-
-      const handleTouchStart = (event) => {
-        event.preventDefault();
-        setIsTouched(true);
-        handleTouchMove(event);
-      };
-
-      const handleTouchEnd = (event) => {
-        event.preventDefault();
-        resetControlsMobile();
-        setIsTouched(false);
-      };
-
-      dpad.addEventListener("touchstart", handleTouchStart, options);
-      dpad.addEventListener("touchmove", handleTouchMove, options);
-      dpad.addEventListener("touchend", handleTouchEnd, options);
-
-      return () => {
-        dpad.removeEventListener("touchstart", handleTouchStart);
-        dpad.removeEventListener("touchmove", handleTouchMove);
-        dpad.removeEventListener("touchend", handleTouchEnd);
-      };
-    }
-  }, []);
+  const buttonOpacity = (isButtonTouched) =>
+    isButtonTouched || isTouched ? 0.5 : 0;
 
   return (
     <div style={{ position: "relative", width: "100%", height: "100%" }}>
@@ -118,6 +108,15 @@ export default function Overlay() {
           borderRadius: "50%",
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
+        onTouchStart={(event) => {
+          setIsTouched(true);
+          handleTouchMove(event);
+        }}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={() => {
+          resetControlsMobile();
+          setIsTouched(false);
+        }}
       >
         <div
           style={{
@@ -133,6 +132,81 @@ export default function Overlay() {
             transition: "opacity 0.5s ease-in-out",
           }}
         />
+      </div>
+      <div
+        ref={throwButtonRef}
+        id="throwButton"
+        style={{
+          position: "fixed",
+          right: "1vh",
+          bottom: "calc(1vh + 30% + 10px)",
+          zIndex: 3,
+          opacity: buttonOpacity(isThrowButtonTouched),
+          transition: "opacity 0.25s ease-in-out",
+          width: bw / 2,
+          height: bh / 2,
+          backgroundColor: "#000",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "1.5rem",
+          color: "#FFF",
+          userSelect: "none",
+        }}
+        onTouchStart={handleThrowButtonPress}
+      >
+        Throw
+      </div>
+      <div
+        ref={jumpButtonRef}
+        id="jumpButton"
+        style={{
+          position: "fixed",
+          right: "1vh",
+          bottom: "1vh",
+          zIndex: 3,
+          opacity: buttonOpacity(isJumpButtonTouched),
+          transition: "opacity 0.25s ease-in-out",
+          width: bw / 2,
+          height: bh / 2,
+          backgroundColor: "#000",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "1.5rem",
+          color: "#FFF",
+          userSelect: "none",
+        }}
+        onTouchStart={handleJump}
+      >
+        Jump
+      </div>
+      <div
+        ref={togglePlayerButtonRef}
+        id="togglePlayerButton"
+        style={{
+          position: "fixed",
+          right: "1vh",
+          bottom: "calc(1vh + 60% + 20px)",
+          zIndex: 3,
+          opacity: 0.5,
+          transition: "opacity 0.25s ease-in-out",
+          width: bw / 2,
+          height: bh / 2,
+          backgroundColor: "#000",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "1.5rem",
+          color: "#FFF",
+          userSelect: "none",
+        }}
+        onTouchStart={handleTogglePlayer}
+      >
+        Toggle Player
       </div>
     </div>
   );

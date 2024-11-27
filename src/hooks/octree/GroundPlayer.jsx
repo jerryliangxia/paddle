@@ -221,7 +221,13 @@ const GroundPlayer = React.memo(
     ) {
       // console.log(canMove());
       // if (!canMove()) return;
-      const speedDelta = delta * (playerOnFloor ? 36 : 12);
+      let speedDelta = delta * (playerOnFloor ? 48 : 20);
+      if (playerOnFloor) {
+        if (keyboard["ShiftLeft"]) {
+          console.log("Shift left pressed");
+          speedDelta *= 2.5;
+        }
+      }
       keyboard["KeyA"] &&
         playerVelocity.add(
           getSideVector(camera, playerDirection).multiplyScalar(-speedDelta)
