@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { subscribeWithSelector } from "zustand/middleware";
+import * as THREE from "three";
 
 export const useGame = create(
   subscribeWithSelector((set, get) => {
@@ -84,6 +85,11 @@ export const useGame = create(
       playAudio: true,
       setPlayAudio: (playAudio) => {
         set((state) => ({ ...state, playAudio: playAudio }));
+      },
+
+      prevDogPosition: new THREE.Vector3(0, 1.25, 0),
+      setPrevDogPosition: (prevDogPosition) => {
+        set((state) => ({ ...state, prevDogPosition: prevDogPosition }));
       },
     };
   })

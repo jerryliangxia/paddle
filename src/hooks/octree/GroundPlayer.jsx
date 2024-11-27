@@ -49,6 +49,9 @@ const GroundPlayer = React.memo(
       setResetGame,
       playAudio,
       setPlayAudio,
+      prevDogPosition,
+      setPrevDogPosition,
+      player,
     } = useGame();
 
     const {
@@ -59,6 +62,22 @@ const GroundPlayer = React.memo(
       spacePressed,
       throwPressed,
     } = controlsMobile;
+
+    useEffect(() => {
+      if (!player) {
+        setPrevDogPosition(camera.position);
+      }
+    }, [player, setPrevDogPosition]);
+
+    useEffect(() => {
+      if (!player) {
+        const spawnPosition = prevDogPosition;
+        capsule.end.copy(spawnPosition.clone());
+        playerVelocity.set(0, 0, 0);
+        camera.position.copy(spawnPosition);
+        capsule.start.copy(spawnPosition);
+      }
+    }, [player, prevDogPosition]);
 
     const playRandomFootstep = useMultipleSounds(soundFiles);
     const playRandomWaterSound = useMultipleSounds(waterSoundFiles);
@@ -91,7 +110,7 @@ const GroundPlayer = React.memo(
     const playerVelocity = useMemo(() => new Vector3(), []);
     const playerDirection = useMemo(() => new Vector3(), []);
     const capsule = useMemo(
-      () => new Capsule(new Vector3(0, 0, 0), new Vector3(0, 1, 0), 0.5),
+      () => new Capsule(new Vector3(0, 0, 0), new Vector3(0, 1, 0), 3.0),
       []
     );
     const { camera } = useThree();
