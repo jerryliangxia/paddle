@@ -18,7 +18,7 @@ export default function Game() {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "e" || event.key === "E") {
-        setPlayer(!player); // Toggle the player state
+        setPlayer(!player);
       }
     };
 
@@ -26,7 +26,7 @@ export default function Game() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [player, setPlayer]);
 
   return (
     <>
