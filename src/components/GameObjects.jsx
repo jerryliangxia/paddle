@@ -3,6 +3,7 @@ import { useThree } from "@react-three/fiber";
 import {
   PointerLockControls as PointerLockControlsDesktop,
   Environment,
+  Sky,
 } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useGame } from "../stores/useGame.js";
@@ -34,6 +35,7 @@ export default function GameObjects() {
       )}
       <fog attach="fog" color="#1d2b0f" near={1} far={800} />
       <Environment background files="img/rustig_koppie_puresky_1k.hdr" />
+      {/* <Sky /> */}
       <EffectComposer>
         <Bloom
           mipmapBlur={2}
@@ -45,7 +47,7 @@ export default function GameObjects() {
         />
       </EffectComposer>
       <Lights />
-      {/* <Water /> */}
+      <Water />
       {map === 0 ? (
         <Scene file="/geom4.glb" />
       ) : (

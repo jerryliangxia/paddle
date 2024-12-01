@@ -5,9 +5,10 @@ import Ball from "./Ball";
 import useOctree from "./useOctree";
 import Player from "./GroundPlayer";
 import * as Constants from "../../Constants";
+import useOctreeHelper from "./useOctreeHelper";
 
 const GroundPlayerPreface = React.memo(() => {
-  const { scene } = useGLTF("/giant_plane2.glb");
+  const { scene } = useGLTF("/fsc.glb");
   const octree = useOctree(scene);
   // useOctreeHelper(octree);
 

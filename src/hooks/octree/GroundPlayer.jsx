@@ -364,8 +364,8 @@ const GroundPlayer = React.memo(
     const [lastPlayed, setLastPlayed] = useState(Date.now());
     const centerX = 10;
     const centerY = 2;
-    const centerZ = -30;
-    const halfDiameter = 5;
+    const centerZ = -28;
+    const halfDiameter = 2.5;
 
     useFrame(({ camera }, delta) => {
       controlsWASD(
@@ -411,7 +411,6 @@ const GroundPlayer = React.memo(
 
       // Check if player is within the cube
       const { x, y, z } = capsule.end;
-
       const isInCube =
         x >= centerX - halfDiameter &&
         x <= centerX + halfDiameter &&

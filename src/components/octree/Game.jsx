@@ -8,10 +8,9 @@ import useOctreeHelper from "../../hooks/octree/useOctreeHelper.jsx";
 
 export default function Game() {
   const map = useGame((state) => state.map);
-  const { scene } = useGLTF(
-    map === 0 ? "/geom3_borders1.glb" : "/giant_plane2.glb"
-  );
+  const { scene } = useGLTF(map === 0 ? "/geom3_borders1.glb" : "/fsc.glb");
   const octree = useOctree(scene);
+  // useOctreeHelper(octree);
 
   const player = useGame((state) => state.player);
   const setPlayer = useGame((state) => state.setPlayer);

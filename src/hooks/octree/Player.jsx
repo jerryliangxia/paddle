@@ -214,8 +214,8 @@ export default function Player({ octree }) {
 
   // Leva controls for square bounds
   const centerX = 10;
-  const centerZ = -30;
-  const diameter = 6;
+  const centerZ = -28;
+  const diameter = 5;
 
   useFrame(({ camera }, delta) => {
     controlsWASD(delta);
