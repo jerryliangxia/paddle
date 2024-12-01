@@ -4,7 +4,7 @@ import * as THREE from "three";
 
 function Water2() {
   // const waterGeometry = new THREE.PlaneGeometry(700, 650);
-  const waterGeometry = new THREE.PlaneGeometry(1000, 1000);
+  const waterGeometry = new THREE.PlaneGeometry(2000, 2000);
   const loader = new THREE.TextureLoader();
 
   const water = new Water(waterGeometry, {

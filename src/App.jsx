@@ -16,6 +16,7 @@ export default function App() {
   const setDesktopControl = useGame((state) => state.setDesktopControl);
   const isInSquare = useGame((state) => state.isInSquare);
   const player = useGame((state) => state.player);
+  const map = useGame((state) => state.map);
   const [showPrompt, setShowPrompt] = useState(false);
 
   useEffect(() => {
@@ -104,9 +105,9 @@ export default function App() {
         onStarted={() => setOverlayVisible(true)}
         useOctree={useOctree}
       />
-      {showPrompt && deviceType != 1 && (
+      {showPrompt && deviceType != 1 && map === 1 && (
         <div className="centered-top-div">
-          <h1>{player ? "Press E to get out" : "Press E to get in"}</h1>
+          <h3>{player ? "Press E to exit craft" : "Press E to enter craft"}</h3>
         </div>
       )}
     </Suspense>

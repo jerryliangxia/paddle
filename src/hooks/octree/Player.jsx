@@ -5,6 +5,7 @@ import useKeyboard from "./useKeyboard";
 import { useMultipleSounds } from "../useMultipleSounds";
 import { useGame } from "../../stores/useGame";
 import Dog from "../../components/octree/Model";
+import FutureModel from "../../components/octree/FutureModel";
 import * as THREE from "three";
 import { Vector3 } from "three";
 // import { useControls } from "leva";
@@ -25,6 +26,7 @@ export default function Player({ octree }) {
     setPrevDogPosition,
     player,
     setIsInSquare,
+    map,
   } = useGame();
   const { camera } = useThree();
 
@@ -293,5 +295,5 @@ export default function Player({ octree }) {
     }
   });
 
-  return <Dog ref={dogRef} />;
+  return map === 0 ? <Dog ref={dogRef} /> : <FutureModel ref={dogRef} />;
 }
