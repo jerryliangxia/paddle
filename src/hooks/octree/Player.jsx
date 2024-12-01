@@ -7,6 +7,7 @@ import { useGame } from "../../stores/useGame";
 import Dog from "../../components/octree/Model";
 import * as THREE from "three";
 import { Vector3 } from "three";
+// import { useControls } from "leva";
 
 const STEPS_PER_FRAME = 5;
 
@@ -18,8 +19,13 @@ const waterSoundFiles = [
 ];
 
 export default function Player({ octree }) {
-  const { controlsMobile, prevDogPosition, setPrevDogPosition, player } =
-    useGame();
+  const {
+    controlsMobile,
+    prevDogPosition,
+    setPrevDogPosition,
+    player,
+    setIsInSquare,
+  } = useGame();
   const { camera } = useThree();
 
   const playAudio = true;
@@ -206,6 +212,11 @@ export default function Player({ octree }) {
 
   const modelGroup = useMemo(() => new THREE.Group(), []);
 
+  // Leva controls for square bounds
+  const centerX = 10;
+  const centerZ = -30;
+  const diameter = 6;
+
   useFrame(({ camera }, delta) => {
     controlsWASD(delta);
     const velocityMagnitude = playerVelocity.length();
@@ -249,6 +260,17 @@ export default function Player({ octree }) {
     const lookAtTarget = capsule.end.clone().add(travelDirection);
     lookAtTarget.y = 0;
     modelGroup.lookAt(lookAtTarget);
+
+    // Check if player is within the square
+    const { x, z } = capsule.end;
+    const halfDiameter = diameter / 2;
+    const isInSquare =
+      x >= centerX - halfDiameter &&
+      x <= centerX + halfDiameter &&
+      z >= centerZ - halfDiameter &&
+      z <= centerZ + halfDiameter;
+
+    setIsInSquare(isInSquare);
   });
 
   useEffect(() => {

@@ -61,7 +61,10 @@ export const useGame = create(
 
       player: true,
       setPlayer: (player) => {
-        set((state) => ({ ...state, player: player }));
+        const { isInSquare } = get();
+        if (isInSquare) {
+          set((state) => ({ ...state, player: player }));
+        }
       },
 
       visibleSequences: 0,
@@ -90,6 +93,11 @@ export const useGame = create(
       prevDogPosition: new THREE.Vector3(0, 1.25, 0),
       setPrevDogPosition: (prevDogPosition) => {
         set((state) => ({ ...state, prevDogPosition: prevDogPosition }));
+      },
+
+      isInSquare: false,
+      setIsInSquare: (isInSquare) => {
+        set((state) => ({ ...state, isInSquare: isInSquare }));
       },
     };
   })

@@ -5,7 +5,6 @@ import { useFrame, useThree } from "@react-three/fiber";
 import useKeyboard from "./useKeyboard";
 import useSound from "use-sound";
 import soundFile from "/sounds/step.mp3";
-// import { isDesktop } from "react-device-detect";
 import boingSound from "/sounds/boing.mp3";
 import { useMultipleSounds } from "./useMultipleSounds";
 import throwSound from "/sounds/throw.mp3";
@@ -38,7 +37,7 @@ const checkpoints = [
 ];
 
 const GroundPlayer = React.memo(
-  ({ octree, octreeBouncy, colliders, ballCount }) => {
+  ({ octree, octreeBouncy, octreeBallHit, colliders, ballCount }) => {
     const {
       controlsMobile,
       visibleSequences,
@@ -52,6 +51,7 @@ const GroundPlayer = React.memo(
       prevDogPosition,
       setPrevDogPosition,
       player,
+      setIsInSquare,
     } = useGame();
 
     const {
@@ -224,7 +224,6 @@ const GroundPlayer = React.memo(
       let speedDelta = delta * (playerOnFloor ? 48 : 20);
       if (playerOnFloor) {
         if (keyboard["ShiftLeft"]) {
-          console.log("Shift left pressed");
           speedDelta *= 2.5;
         }
       }
@@ -256,6 +255,7 @@ const GroundPlayer = React.memo(
       delta,
       octree,
       octreeBouncy,
+      octreeBallHit,
       capsule,
       playerVelocity,
       playerOnFloor
@@ -273,6 +273,7 @@ const GroundPlayer = React.memo(
         capsule,
         octree,
         octreeBouncy,
+        octreeBallHit,
         playerVelocity
       );
       if (
@@ -312,9 +313,16 @@ const GroundPlayer = React.memo(
     const [lastBoingTime, setLastBoingTime] = useState(0);
     const boingCooldown = 1000;
 
-    function playerCollisions(capsule, octree, octreeBouncy, playerVelocity) {
+    function playerCollisions(
+      capsule,
+      octree,
+      octreeBouncy,
+      octreeBallHit,
+      playerVelocity
+    ) {
       const result = octree.capsuleIntersect(capsule);
       const otherResult = octreeBouncy.capsuleIntersect(capsule);
+      const ballHitResult = octreeBallHit.capsuleIntersect(capsule);
       let playerOnFloor = false;
       if (result) {
         playerOnFloor = result.normal.y > 0;
@@ -334,6 +342,10 @@ const GroundPlayer = React.memo(
             setLastBoingTime(now);
           }
         }
+      } else if (ballHitResult) {
+        capsule.translate(
+          ballHitResult.normal.multiplyScalar(ballHitResult.depth)
+        );
       }
       return playerOnFloor;
     }
@@ -350,6 +362,10 @@ const GroundPlayer = React.memo(
 
     const [isSoundPlayed, setIsSoundPlayed] = useState(false);
     const [lastPlayed, setLastPlayed] = useState(Date.now());
+    const centerX = 10;
+    const centerY = 2;
+    const centerZ = -30;
+    const halfDiameter = 5;
 
     useFrame(({ camera }, delta) => {
       controlsWASD(
@@ -385,12 +401,26 @@ const GroundPlayer = React.memo(
           deltaSteps,
           octree,
           octreeBouncy,
+          octreeBallHit,
           capsule,
           playerVelocity,
           playerOnFloor.current
         );
       }
       teleportPlayerIfOob(camera, capsule, playerVelocity);
+
+      // Check if player is within the cube
+      const { x, y, z } = capsule.end;
+
+      const isInCube =
+        x >= centerX - halfDiameter &&
+        x <= centerX + halfDiameter &&
+        y >= centerY - halfDiameter &&
+        y <= centerY + halfDiameter &&
+        z >= centerZ - halfDiameter &&
+        z <= centerZ + halfDiameter;
+
+      setIsInSquare(isInCube);
     });
 
     useEffect(() => {

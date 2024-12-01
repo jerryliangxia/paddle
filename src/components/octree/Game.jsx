@@ -4,6 +4,7 @@ import Player from "../../hooks/octree/Player.jsx";
 import GroundPlayerPreface from "../../hooks/octree/GroundPlayerPreface.jsx";
 import useOctree from "../../hooks/octree/useOctree.jsx";
 import { useGame } from "../../stores/useGame.js";
+import useOctreeHelper from "../../hooks/octree/useOctreeHelper.jsx";
 
 export default function Game() {
   const map = useGame((state) => state.map);

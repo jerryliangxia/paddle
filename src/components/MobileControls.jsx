@@ -13,6 +13,7 @@ export default function MobileControls() {
   const [touchPosition, setTouchPosition] = useState({ x: 0, y: 0 });
   const { setControlsMobile, resetControlsMobile, player, setPlayer } =
     useGame();
+  const isInSquare = useGame((state) => state.isInSquare);
 
   const handleJump = () => {
     setControlsMobile("spacePressed", true);
@@ -133,81 +134,87 @@ export default function MobileControls() {
           }}
         />
       </div>
-      <div
-        ref={throwButtonRef}
-        id="throwButton"
-        style={{
-          position: "fixed",
-          right: "1vh",
-          bottom: "calc(1vh + 30% + 10px)",
-          zIndex: 3,
-          opacity: buttonOpacity(isThrowButtonTouched),
-          transition: "opacity 0.25s ease-in-out",
-          width: bw / 2,
-          height: bh / 2,
-          backgroundColor: "#000",
-          borderRadius: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "1.5rem",
-          color: "#FFF",
-          userSelect: "none",
-        }}
-        onTouchStart={handleThrowButtonPress}
-      >
-        Throw
-      </div>
-      <div
-        ref={jumpButtonRef}
-        id="jumpButton"
-        style={{
-          position: "fixed",
-          right: "1vh",
-          bottom: "1vh",
-          zIndex: 3,
-          opacity: buttonOpacity(isJumpButtonTouched),
-          transition: "opacity 0.25s ease-in-out",
-          width: bw / 2,
-          height: bh / 2,
-          backgroundColor: "#000",
-          borderRadius: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "1.5rem",
-          color: "#FFF",
-          userSelect: "none",
-        }}
-        onTouchStart={handleJump}
-      >
-        Jump
-      </div>
-      <div
-        ref={togglePlayerButtonRef}
-        id="togglePlayerButton"
-        style={{
-          position: "fixed",
-          right: "1vh",
-          bottom: "calc(1vh + 60% + 20px)",
-          zIndex: 3,
-          opacity: 0.5,
-          transition: "opacity 0.25s ease-in-out",
-          width: bw / 2,
-          height: bh / 2,
-          backgroundColor: "#000",
-          borderRadius: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "1.5rem",
-          color: "#FFF",
-          userSelect: "none",
-        }}
-        onTouchStart={handleTogglePlayer}
-      >
-        Toggle Player
-      </div>
+      {!player && (
+        <div
+          ref={throwButtonRef}
+          id="throwButton"
+          style={{
+            position: "fixed",
+            right: "1vh",
+            bottom: "calc(1vh + 30% + 10px)",
+            zIndex: 3,
+            opacity: buttonOpacity(isThrowButtonTouched),
+            transition: "opacity 0.25s ease-in-out",
+            width: bw / 2,
+            height: bh / 2,
+            backgroundColor: "#000",
+            borderRadius: "50%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: "1.5rem",
+            color: "#FFF",
+            userSelect: "none",
+          }}
+          onTouchStart={handleThrowButtonPress}
+        >
+          Throw
+        </div>
+      )}
+      {!player && !isInSquare && (
+        <div
+          ref={jumpButtonRef}
+          id="jumpButton"
+          style={{
+            position: "fixed",
+            right: "1vh",
+            bottom: "1vh",
+            zIndex: 3,
+            opacity: buttonOpacity(isJumpButtonTouched),
+            transition: "opacity 0.25s ease-in-out",
+            width: bw / 2,
+            height: bh / 2,
+            backgroundColor: "#000",
+            borderRadius: "50%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: "1.5rem",
+            color: "#FFF",
+            userSelect: "none",
+          }}
+          onTouchStart={handleJump}
+        >
+          Jump
+        </div>
+      )}
+      {isInSquare && (
+        <div
+          ref={togglePlayerButtonRef}
+          id="togglePlayerButton"
+          style={{
+            position: "fixed",
+            right: "1vh",
+            bottom: "1vh",
+            zIndex: 3,
+            opacity: buttonOpacity(isInSquare),
+            transition: "opacity 0.25s ease-in-out",
+            width: bw / 2,
+            height: bh / 2,
+            backgroundColor: "#000",
+            borderRadius: "50%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: "1.5rem",
+            color: "#FFF",
+            userSelect: "none",
+          }}
+          onTouchStart={handleTogglePlayer}
+        >
+          {player ? "↑" : "↓"}
+        </div>
+      )}
     </div>
   );
 }

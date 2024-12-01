@@ -15,7 +15,7 @@ const GroundPlayerPreface = React.memo(() => {
   const octreeBouncy = useOctree(bouncyScene);
   // useOctreeHelper(octreeBouncy);
 
-  const { scene: ballHitScene } = useGLTF("/bouncy_scene.glb");
+  const { scene: ballHitScene } = useGLTF("/ball_hit_scene.glb");
   const octreeBallHit = useOctree(ballHitScene);
   // useOctreeHelper(octreeBallHit);
 
@@ -91,10 +91,10 @@ const GroundPlayerPreface = React.memo(() => {
           <Ball radius={Constants.radius} />
         </SphereCollider>
       ))}
-
       <Player
         ballCount={Constants.ballCount}
         octree={octree}
+        octreeBallHit={octreeBallHit}
         octreeBouncy={octreeBouncy}
         colliders={colliders.current}
       />
