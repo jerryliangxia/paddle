@@ -96,11 +96,13 @@ export default function MobileControls() {
       const options = { passive: false };
 
       const handleTouchStart = (event) => {
+        event.preventDefault();
         setIsTouched(true);
         handleTouchMove(event);
       };
 
       const handleTouchEnd = (event) => {
+        event.preventDefault();
         resetControlsMobile();
         setIsTouched(false);
       };
