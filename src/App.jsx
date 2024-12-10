@@ -37,6 +37,20 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    const preventDefaultTouch = (e) => {
+      e.preventDefault();
+    };
+
+    document.body.addEventListener("touchstart", preventDefaultTouch, {
+      passive: false,
+    });
+
+    return () => {
+      document.body.removeEventListener("touchstart", preventDefaultTouch);
+    };
+  }, []);
+
+  useEffect(() => {
     const handlePointerLockChange = () => {
       if (document.pointerLockElement !== null) {
         setOverlayVisible(true);
