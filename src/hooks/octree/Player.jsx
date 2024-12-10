@@ -8,6 +8,7 @@ import Dog from "../../components/octree/Model";
 import FutureModel from "../../components/octree/FutureModel";
 import * as THREE from "three";
 import { Vector3 } from "three";
+import { centerX, centerZ, halfDiameter } from "../../Constants";
 // import { useControls } from "leva";
 
 const STEPS_PER_FRAME = 5;
@@ -96,7 +97,7 @@ export default function Player({ octree }) {
 
   const impulse = useRef(0);
   const impulseAcceleration = 0.5;
-  const impulseDeceleration = 0.003;
+  const impulseDeceleration = 0.01;
 
   const baseSpeed = 36;
   const maxSpeed = 72;
@@ -213,11 +214,6 @@ export default function Player({ octree }) {
 
   const modelGroup = useMemo(() => new THREE.Group(), []);
 
-  // Leva controls for square bounds
-  const centerX = 10;
-  const centerZ = -28;
-  const diameter = 5;
-
   useFrame(({ camera }, delta) => {
     controlsWASD(delta);
     const velocityMagnitude = playerVelocity.length();
@@ -264,7 +260,6 @@ export default function Player({ octree }) {
 
     // Check if player is within the square
     const { x, z } = capsule.end;
-    const halfDiameter = diameter / 2;
     const isInSquare =
       x >= centerX - halfDiameter &&
       x <= centerX + halfDiameter &&

@@ -9,6 +9,7 @@ import boingSound from "/sounds/boing.mp3";
 import { useMultipleSounds } from "./useMultipleSounds";
 import throwSound from "/sounds/throw.mp3";
 import { useGame } from "../../stores/useGame";
+import { centerX, centerY, centerZ, halfDiameter } from "../../Constants";
 
 const isDesktop = true;
 
@@ -85,10 +86,8 @@ const GroundPlayer = React.memo(
     function playFootstep() {
       const playerYPosition = capsule.start.y;
 
-      if (playerYPosition < 0.6) {
+      if (playerYPosition < 3) {
         playRandomWaterSound();
-      } else if (playerYPosition < 1.3) {
-        playSandSound();
       } else if (
         playerYPosition > 114 &&
         capsule.start.z < 14.5 &&
@@ -356,10 +355,6 @@ const GroundPlayer = React.memo(
 
     const [isSoundPlayed, setIsSoundPlayed] = useState(false);
     const [lastPlayed, setLastPlayed] = useState(Date.now());
-    const centerX = 10;
-    const centerY = 2;
-    const centerZ = -28;
-    const halfDiameter = 2.5;
 
     useFrame(({ camera }, delta) => {
       controlsWASD(

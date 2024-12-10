@@ -19,3 +19,8 @@ export const v1 = new Vector3();
 export const v2 = new Vector3();
 export const v3 = new Vector3();
 export const frameSteps = 5;
+
+export const centerX = 9;
+export const centerY = 2;
+export const centerZ = -29;
+export const halfDiameter = 4;
