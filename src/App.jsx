@@ -89,7 +89,7 @@ export default function App() {
         {useOctree ? <Game /> : <PhysicsGame />}
         <GameObjects />
       </Canvas>
-      {deviceType === 1 && overlayVisible && (
+      {/* {deviceType === 1 && overlayVisible && (
         <button
           className="pauseButton"
           style={{ zIndex: 0 }}
@@ -107,7 +107,7 @@ export default function App() {
         >
           ||
         </button>
-      )}
+      )} */}
       {deviceType === 1 ? <MobileControls /> : <></>}
       <LoadingScreen
         started={overlayVisible}
