@@ -58,7 +58,7 @@ export default function GameObjects() {
       </EffectComposer>
       <Lights />
       <Water />
-      {/* <LightBridge /> */}
+      <LightBridge />
       {map === 0 ? (
         <Scene file="/geom4.glb" />
       ) : (

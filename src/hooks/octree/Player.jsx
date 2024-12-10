@@ -57,10 +57,8 @@ export default function Player({ octree }) {
   const keyboard = useKeyboard();
 
   useEffect(() => {
-    if (player) {
-      setPrevDogPosition(camera.position);
-    }
-  }, [player, setPrevDogPosition]);
+    setPrevDogPosition(new THREE.Vector3(0, 1.25, 0));
+  }, [map]);
 
   useEffect(() => {
     if (player) {
@@ -273,6 +271,7 @@ export default function Player({ octree }) {
       z <= centerZ + halfDiameter;
 
     setIsInSquare(isInSquare);
+    setPrevDogPosition(camera.position);
   });
 
   useEffect(() => {

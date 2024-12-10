@@ -13,12 +13,9 @@ const Model = forwardRef((props, ref) => {
         rotation={[0, Math.PI, 0]}
         position={[0, 0, -8]}
       >
+        <mesh geometry={nodes.Cube006.geometry} material={materials.Material} />
         <mesh
-          geometry={nodes.BottomYellow.geometry}
-          material={materials.Material}
-        />
-        <mesh
-          geometry={nodes.Gray.geometry}
+          geometry={nodes.Cube006_1.geometry}
           material={materials["Future Grey 1"]}
         />
       </group>

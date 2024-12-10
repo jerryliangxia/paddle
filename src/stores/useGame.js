@@ -55,14 +55,27 @@ export const useGame = create(
       map: 0,
       setMap: (map) => {
         set((state) => {
-          return { ...state, map: map };
+          const { player } = get();
+          if (!player) {
+            return {
+              ...state,
+              map: map,
+              prevDogPosition: new THREE.Vector3(0, 1.25, 0),
+              player: true,
+            };
+          } else
+            return {
+              ...state,
+              map: map,
+              prevDogPosition: new THREE.Vector3(0, 1.25, 0),
+            };
         });
       },
 
       player: true,
       setPlayer: (player) => {
-        const { isInSquare } = get();
-        if (isInSquare) {
+        const { isInSquare, map } = get();
+        if (isInSquare && map === 1) {
           set((state) => ({ ...state, player: player }));
         }
       },

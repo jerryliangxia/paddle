@@ -65,12 +65,6 @@ const GroundPlayer = React.memo(
 
     useEffect(() => {
       if (!player) {
-        setPrevDogPosition(camera.position);
-      }
-    }, [player, setPrevDogPosition]);
-
-    useEffect(() => {
-      if (!player) {
         const spawnPosition = prevDogPosition;
         capsule.end.copy(spawnPosition.clone());
         playerVelocity.set(0, 0, 0);
@@ -420,6 +414,7 @@ const GroundPlayer = React.memo(
         z <= centerZ + halfDiameter;
 
       setIsInSquare(isInCube);
+      setPrevDogPosition(camera.position);
     });
 
     useEffect(() => {
