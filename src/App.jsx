@@ -98,6 +98,12 @@ export default function App() {
             e.preventDefault();
             handlePause();
           }}
+          onTouchMove={(e) => {
+            e.preventDefault();
+          }}
+          onTouchEnd={(e) => {
+            e.preventDefault();
+          }}
         >
           ||
         </button>
