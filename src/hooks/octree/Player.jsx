@@ -58,6 +58,7 @@ export default function Player({ octree }) {
 
   useEffect(() => {
     setPrevDogPosition(new THREE.Vector3(0, 1.25, 0));
+    camera.lookAt(new THREE.Vector3(0, 1, -300));
   }, [map]);
 
   useEffect(() => {
