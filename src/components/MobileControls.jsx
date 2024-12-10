@@ -11,7 +11,7 @@ export default function MobileControls() {
   const [isThrowButtonTouched, setIsThrowButtonTouched] = useState(false);
   const [isJumpButtonTouched, setIsJumpButtonTouched] = useState(false);
   const [touchPosition, setTouchPosition] = useState({ x: 0, y: 0 });
-  const { setControlsMobile, resetControlsMobile, player, setPlayer } =
+  const { setControlsMobile, resetControlsMobile, player, setPlayer, map } =
     useGame();
   const isInSquare = useGame((state) => state.isInSquare);
 
@@ -96,13 +96,11 @@ export default function MobileControls() {
       const options = { passive: false };
 
       const handleTouchStart = (event) => {
-        event.preventDefault();
         setIsTouched(true);
         handleTouchMove(event);
       };
 
       const handleTouchEnd = (event) => {
-        event.preventDefault();
         resetControlsMobile();
         setIsTouched(false);
       };
@@ -218,7 +216,7 @@ export default function MobileControls() {
           Jump
         </div>
       )}
-      {isInSquare && (
+      {isInSquare && map === 1 && (
         <div
           ref={togglePlayerButtonRef}
           id="togglePlayerButton"

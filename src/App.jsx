@@ -37,20 +37,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const preventDefaultTouch = (e) => {
-      e.preventDefault();
-    };
-
-    document.body.addEventListener("touchstart", preventDefaultTouch, {
-      passive: false,
-    });
-
-    return () => {
-      document.body.removeEventListener("touchstart", preventDefaultTouch);
-    };
-  }, []);
-
-  useEffect(() => {
     const handlePointerLockChange = () => {
       if (document.pointerLockElement !== null) {
         setOverlayVisible(true);
@@ -94,16 +80,7 @@ export default function App() {
           className="pauseButton"
           style={{ zIndex: 0 }}
           onClick={handlePause}
-          onTouchStart={(e) => {
-            e.preventDefault();
-            handlePause();
-          }}
-          onTouchMove={(e) => {
-            e.preventDefault();
-          }}
-          onTouchEnd={(e) => {
-            e.preventDefault();
-          }}
+          onTouchStart={handlePause}
         >
           ||
         </button>
