@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { subscribeWithSelector } from "zustand/middleware";
+import * as THREE from "three";
 
 export const useGame = create(
   subscribeWithSelector((set, get) => {
@@ -54,8 +55,62 @@ export const useGame = create(
       map: 0,
       setMap: (map) => {
         set((state) => {
-          return { ...state, map: map };
+          const { player } = get();
+          if (!player) {
+            return {
+              ...state,
+              map: map,
+              prevDogPosition: new THREE.Vector3(0, 1.25, 0),
+              player: true,
+            };
+          } else
+            return {
+              ...state,
+              map: map,
+              prevDogPosition: new THREE.Vector3(0, 1.25, 0),
+            };
         });
+      },
+
+      player: true,
+      setPlayer: (player) => {
+        const { isInSquare, map } = get();
+        if (isInSquare && map === 1) {
+          set((state) => ({ ...state, player: player }));
+        }
+      },
+
+      visibleSequences: 0,
+      setVisibleSequences: (visibleSequences) => {
+        set((state) => ({ ...state, visibleSequences: visibleSequences }));
+      },
+
+      completeGameVisible: false,
+      setCompleteGameVisible: (completeGameVisible) => {
+        set((state) => ({
+          ...state,
+          completeGameVisible: completeGameVisible,
+        }));
+      },
+
+      resetGame: false,
+      setResetGame: (resetGame) => {
+        set((state) => ({ ...state, resetGame: resetGame }));
+      },
+
+      playAudio: true,
+      setPlayAudio: (playAudio) => {
+        set((state) => ({ ...state, playAudio: playAudio }));
+      },
+
+      prevDogPosition: new THREE.Vector3(0, 1.25, 0),
+      setPrevDogPosition: (prevDogPosition) => {
+        set((state) => ({ ...state, prevDogPosition: prevDogPosition }));
+      },
+
+      isInSquare: false,
+      setIsInSquare: (isInSquare) => {
+        set((state) => ({ ...state, isInSquare: isInSquare }));
       },
     };
   })

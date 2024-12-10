@@ -6,9 +6,7 @@ import * as THREE from "three";
 
 export default function Collider() {
   const map = useGame((state) => state.map);
-  const { nodes } = useGLTF(
-    map === 0 ? "/geom3_borders.glb" : "/giant_plane.glb"
-  );
+  const { nodes } = useGLTF(map === 0 ? "/geom3_borders1.glb" : "/fsc.glb");
   const colliderRef = useRef();
 
   useEffect(() => {
@@ -30,4 +28,4 @@ export default function Collider() {
   );
 }
 
-useGLTF.preload("/geom3_borders.glb");
+useGLTF.preload("/geom3_borders1.glb");

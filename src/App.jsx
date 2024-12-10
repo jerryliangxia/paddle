@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGame } from "./stores/useGame.js";
 import MobileControls from "./components/MobileControls.jsx";
@@ -14,6 +14,18 @@ export default function App() {
   const overlayVisible = useGame((state) => state.overlayVisible);
   const setOverlayVisible = useGame((state) => state.setOverlayVisible);
   const setDesktopControl = useGame((state) => state.setDesktopControl);
+  const isInSquare = useGame((state) => state.isInSquare);
+  const player = useGame((state) => state.player);
+  const map = useGame((state) => state.map);
+  const [showPrompt, setShowPrompt] = useState(false);
+
+  useEffect(() => {
+    if (isInSquare) {
+      setShowPrompt(true);
+    } else {
+      setShowPrompt(false);
+    }
+  }, [isInSquare]);
 
   useEffect(() => {
     if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
@@ -93,6 +105,11 @@ export default function App() {
         onStarted={() => setOverlayVisible(true)}
         useOctree={useOctree}
       />
+      {showPrompt && deviceType != 1 && map === 1 && (
+        <div className="centered-top-div">
+          <h3>{player ? "Press E to exit craft" : "Press E to enter craft"}</h3>
+        </div>
+      )}
     </Suspense>
   );
 }

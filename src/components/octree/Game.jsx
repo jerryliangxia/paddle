@@ -1,22 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import Player from "../../hooks/octree/Player.jsx";
+import GroundPlayerPreface from "../../hooks/octree/GroundPlayerPreface.jsx";
 import useOctree from "../../hooks/octree/useOctree.jsx";
 import { useGame } from "../../stores/useGame.js";
-// import useOctreeHelper from "../../hooks/octree/useOctreeHelper.jsx";
+import useOctreeHelper from "../../hooks/octree/useOctreeHelper.jsx";
 
-// Octree Game
 export default function Game() {
   const map = useGame((state) => state.map);
-  const { scene } = useGLTF(
-    map === 0 ? "/geom3_borders1.glb" : "/giant_plane.glb"
-  );
+  const { scene } = useGLTF(map === 0 ? "/geom3_borders1.glb" : "/fsc.glb");
   const octree = useOctree(scene);
   // useOctreeHelper(octree);
 
+  const player = useGame((state) => state.player);
+  const setPlayer = useGame((state) => state.setPlayer);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "e" || event.key === "E") {
+        setPlayer(!player);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [player, setPlayer]);
+
   return (
     <>
-      <Player octree={octree} />
+      {player ? (
+        <Player octree={octree} />
+      ) : (
+        <GroundPlayerPreface octree={octree} />
+      )}
     </>
   );
 }

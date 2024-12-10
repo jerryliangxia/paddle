@@ -1,11 +1,14 @@
 import { useRef, useState, useEffect, useMemo } from "react";
 import { Capsule } from "three/examples/jsm/math/Capsule.js";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import useKeyboard from "./useKeyboard";
 import { useMultipleSounds } from "../useMultipleSounds";
 import { useGame } from "../../stores/useGame";
 import Dog from "../../components/octree/Model";
+import FutureModel from "../../components/octree/FutureModel";
 import * as THREE from "three";
+import { Vector3 } from "three";
+// import { useControls } from "leva";
 
 const STEPS_PER_FRAME = 5;
 
@@ -17,7 +20,16 @@ const waterSoundFiles = [
 ];
 
 export default function Player({ octree }) {
-  const { controlsMobile } = useGame();
+  const {
+    controlsMobile,
+    prevDogPosition,
+    setPrevDogPosition,
+    player,
+    setIsInSquare,
+    map,
+  } = useGame();
+  const { camera } = useThree();
+
   const playAudio = true;
 
   const { upPressed, downPressed, leftPressed, rightPressed, shiftPressed } =
@@ -43,6 +55,25 @@ export default function Player({ octree }) {
   );
 
   const keyboard = useKeyboard();
+
+  useEffect(() => {
+    setPrevDogPosition(new THREE.Vector3(0, 1.25, 0));
+    camera.lookAt(new THREE.Vector3(0, 1, -300));
+  }, [map]);
+
+  useEffect(() => {
+    if (player) {
+      const spawnPosition = new Vector3(
+        prevDogPosition.x,
+        1.25,
+        prevDogPosition.z
+      );
+      capsule.end.copy(spawnPosition.clone());
+      playerVelocity.set(0, 0, 0);
+      camera.position.copy(spawnPosition);
+      capsule.start.copy(spawnPosition);
+    }
+  }, [player, prevDogPosition]);
 
   const canMove = () => {
     const fullscreenControl = document.querySelector(
@@ -182,6 +213,11 @@ export default function Player({ octree }) {
 
   const modelGroup = useMemo(() => new THREE.Group(), []);
 
+  // Leva controls for square bounds
+  const centerX = 10;
+  const centerZ = -28;
+  const diameter = 5;
+
   useFrame(({ camera }, delta) => {
     controlsWASD(delta);
     const velocityMagnitude = playerVelocity.length();
@@ -225,6 +261,18 @@ export default function Player({ octree }) {
     const lookAtTarget = capsule.end.clone().add(travelDirection);
     lookAtTarget.y = 0;
     modelGroup.lookAt(lookAtTarget);
+
+    // Check if player is within the square
+    const { x, z } = capsule.end;
+    const halfDiameter = diameter / 2;
+    const isInSquare =
+      x >= centerX - halfDiameter &&
+      x <= centerX + halfDiameter &&
+      z >= centerZ - halfDiameter &&
+      z <= centerZ + halfDiameter;
+
+    setIsInSquare(isInSquare);
+    setPrevDogPosition(camera.position);
   });
 
   useEffect(() => {
@@ -247,5 +295,5 @@ export default function Player({ octree }) {
     }
   });
 
-  return <Dog ref={dogRef} />;
+  return map === 0 ? <Dog ref={dogRef} /> : <FutureModel ref={dogRef} />;
 }
