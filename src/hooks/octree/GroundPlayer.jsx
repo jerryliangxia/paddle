@@ -71,7 +71,7 @@ const GroundPlayer = React.memo(
         camera.position.copy(spawnPosition);
         capsule.start.copy(spawnPosition);
       }
-    }, [player, prevDogPosition]);
+    }, [player]);
 
     const playRandomFootstep = useMultipleSounds(soundFiles);
     const playRandomWaterSound = useMultipleSounds(waterSoundFiles);

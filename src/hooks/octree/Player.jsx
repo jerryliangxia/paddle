@@ -73,7 +73,7 @@ export default function Player({ octree }) {
       camera.position.copy(spawnPosition);
       capsule.start.copy(spawnPosition);
     }
-  }, [player, prevDogPosition]);
+  }, [player]);
 
   const canMove = () => {
     const fullscreenControl = document.querySelector(
