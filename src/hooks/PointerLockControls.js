@@ -93,7 +93,7 @@ var PointerLockControls = function (camera, domElement) {
     scope.dispatchEvent(changeEvent);
   }
   // the delta value of euler and touchmove  should be offset for recalibration from where the last move stopped
-  function onTouchEnd() {
+  function onTouchEnd(e) {
     e.preventDefault();
     eulerY_final = euler.y;
     eulerX_final = euler.x;
