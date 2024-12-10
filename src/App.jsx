@@ -36,19 +36,19 @@ export default function App() {
     }
   }, []);
 
-  // useEffect(() => {
-  //   const preventDefaultTouch = (e) => {
-  //     e.preventDefault();
-  //   };
+  useEffect(() => {
+    const preventDefaultTouch = (e) => {
+      e.preventDefault();
+    };
 
-  //   document.body.addEventListener("touchstart", preventDefaultTouch, {
-  //     passive: false,
-  //   });
+    document.body.addEventListener("touchstart", preventDefaultTouch, {
+      passive: false,
+    });
 
-  //   return () => {
-  //     document.body.removeEventListener("touchstart", preventDefaultTouch);
-  //   };
-  // }, []);
+    return () => {
+      document.body.removeEventListener("touchstart", preventDefaultTouch);
+    };
+  }, []);
 
   useEffect(() => {
     const handlePointerLockChange = () => {
@@ -94,7 +94,10 @@ export default function App() {
           className="pauseButton"
           style={{ zIndex: 0 }}
           onClick={handlePause}
-          onTouchStart={handlePause}
+          onTouchStart={(e) => {
+            e.preventDefault();
+            handlePause();
+          }}
         >
           ||
         </button>
