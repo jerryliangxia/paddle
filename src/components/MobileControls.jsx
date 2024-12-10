@@ -34,7 +34,6 @@ export default function MobileControls() {
   };
 
   const handleTouchMove = (event) => {
-    event.preventDefault();
     event.stopPropagation();
     if (!dpadRef.current) return;
 

@@ -47,6 +47,7 @@ var PointerLockControls = function (camera, domElement) {
 
   //Function for getting arrays fires on touchmove
   function arrayTouches(e) {
+    e.preventDefault();
     if (
       e.changedTouches[0].clientX < bw &&
       e.changedTouches[0].clientY > window.innerHeight - bh
@@ -73,6 +74,7 @@ var PointerLockControls = function (camera, domElement) {
   }
   //Function for set rotation from set arrays fires on  touchmove
   function onTouchMove(e) {
+    e.preventDefault();
     if (
       e.changedTouches[0].clientX < bw &&
       e.changedTouches[0].clientY > window.innerHeight - bh
@@ -92,6 +94,7 @@ var PointerLockControls = function (camera, domElement) {
   }
   // the delta value of euler and touchmove  should be offset for recalibration from where the last move stopped
   function onTouchEnd() {
+    e.preventDefault();
     eulerY_final = euler.y;
     eulerX_final = euler.x;
     eulerY_angle = [];
