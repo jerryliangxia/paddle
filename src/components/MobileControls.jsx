@@ -89,6 +89,36 @@ export default function MobileControls() {
     return () => cancelAnimationFrame(animationFrameId);
   }, [isTouched]);
 
+  useEffect(() => {
+    const dpad = dpadRef.current;
+
+    if (dpad) {
+      const options = { passive: false };
+
+      const handleTouchStart = (event) => {
+        event.preventDefault();
+        setIsTouched(true);
+        handleTouchMove(event);
+      };
+
+      const handleTouchEnd = (event) => {
+        event.preventDefault();
+        resetControlsMobile();
+        setIsTouched(false);
+      };
+
+      dpad.addEventListener("touchstart", handleTouchStart, options);
+      dpad.addEventListener("touchmove", handleTouchMove, options);
+      dpad.addEventListener("touchend", handleTouchEnd, options);
+
+      return () => {
+        dpad.removeEventListener("touchstart", handleTouchStart);
+        dpad.removeEventListener("touchmove", handleTouchMove);
+        dpad.removeEventListener("touchend", handleTouchEnd);
+      };
+    }
+  }, []);
+
   const buttonOpacity = (isButtonTouched) =>
     isButtonTouched || isTouched ? 0.5 : 0;
 
